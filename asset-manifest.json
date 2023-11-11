@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bonus-programm-react/static/css/main.7acaea2f.css",
+    "main.js": "/bonus-programm-react/static/js/main.07d3183d.js",
+    "index.html": "/bonus-programm-react/index.html",
+    "main.7acaea2f.css.map": "/bonus-programm-react/static/css/main.7acaea2f.css.map",
+    "main.07d3183d.js.map": "/bonus-programm-react/static/js/main.07d3183d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.07d3183d.js"
+  ]
+}
