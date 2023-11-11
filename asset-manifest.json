@@ -1,13 +1,27 @@
 {
   "files": {
-    "main.css": "/bonus-programm-react/static/css/main.7acaea2f.css",
-    "main.js": "/bonus-programm-react/static/js/main.07d3183d.js",
+    "main.css": "/bonus-programm-react/static/css/main.c98331ae.css",
+    "main.js": "/bonus-programm-react/static/js/main.f9414e51.js",
+    "static/js/266.bded31af.chunk.js": "/bonus-programm-react/static/js/266.bded31af.chunk.js",
+    "static/css/40.51ce51c3.chunk.css": "/bonus-programm-react/static/css/40.51ce51c3.chunk.css",
+    "static/js/40.6221fe6d.chunk.js": "/bonus-programm-react/static/js/40.6221fe6d.chunk.js",
+    "static/css/635.db53b3a0.chunk.css": "/bonus-programm-react/static/css/635.db53b3a0.chunk.css",
+    "static/js/635.2c26cc44.chunk.js": "/bonus-programm-react/static/js/635.2c26cc44.chunk.js",
+    "static/css/819.06f6daca.chunk.css": "/bonus-programm-react/static/css/819.06f6daca.chunk.css",
+    "static/js/819.1bab3b8d.chunk.js": "/bonus-programm-react/static/js/819.1bab3b8d.chunk.js",
     "index.html": "/bonus-programm-react/index.html",
-    "main.7acaea2f.css.map": "/bonus-programm-react/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/bonus-programm-react/static/js/main.07d3183d.js.map"
+    "main.c98331ae.css.map": "/bonus-programm-react/static/css/main.c98331ae.css.map",
+    "main.f9414e51.js.map": "/bonus-programm-react/static/js/main.f9414e51.js.map",
+    "266.bded31af.chunk.js.map": "/bonus-programm-react/static/js/266.bded31af.chunk.js.map",
+    "40.51ce51c3.chunk.css.map": "/bonus-programm-react/static/css/40.51ce51c3.chunk.css.map",
+    "40.6221fe6d.chunk.js.map": "/bonus-programm-react/static/js/40.6221fe6d.chunk.js.map",
+    "635.db53b3a0.chunk.css.map": "/bonus-programm-react/static/css/635.db53b3a0.chunk.css.map",
+    "635.2c26cc44.chunk.js.map": "/bonus-programm-react/static/js/635.2c26cc44.chunk.js.map",
+    "819.06f6daca.chunk.css.map": "/bonus-programm-react/static/css/819.06f6daca.chunk.css.map",
+    "819.1bab3b8d.chunk.js.map": "/bonus-programm-react/static/js/819.1bab3b8d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/css/main.c98331ae.css",
+    "static/js/main.f9414e51.js"
   ]
 }
