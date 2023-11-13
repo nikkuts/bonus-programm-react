@@ -16,16 +16,16 @@ export default function App () {
   const dispatch = useDispatch();
   const { isRefreshing } = useAuth();
   
-  // useEffect(() => {
-  //   dispatch(refreshUser());
-  // }, [dispatch]);
-
   useEffect(() => {
-    const LocalStoreToken = localStorage.getItem('persist:auth');
-    if (JSON.parse(LocalStoreToken)) {
-      dispatch(refreshUser());
-    }
+    dispatch(refreshUser());
   }, [dispatch]);
+
+  // useEffect(() => {
+  //   const LocalStoreToken = localStorage.getItem('persist:auth');
+  //   if (JSON.parse(LocalStoreToken)) {
+  //     dispatch(refreshUser());
+  //   }
+  // }, [dispatch]);
 
   return isRefreshing ? (
     <b>Refreshing user...</b>
