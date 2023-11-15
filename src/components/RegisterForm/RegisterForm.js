@@ -8,12 +8,19 @@ export const RegisterForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.currentTarget;
+    const formData = {
+      name: form.elements.name.value,
+      email: form.elements.email.value,
+      password: form.elements.password.value,
+    };
+    const parseInviterId = JSON.parse(localStorage.getItem("inviterId"));
+
+    if (parseInviterId) {
+      formData.inviterId = parseInviterId;
+    }
+  
     dispatch(
-      register({
-        name: form.elements.name.value,
-        email: form.elements.email.value,
-        password: form.elements.password.value,
-      })
+      register(formData)
     );
     form.reset();
   };
@@ -30,6 +37,7 @@ export const RegisterForm = () => {
         <label className={css.label}>
           <input placeholder='Password' type="password" name="password" />
         </label>
+        {/* <input style="none" type="text" name="inviter" /> */}
         <button className={css.button} type="submit">Register</button>
       </form>
     </>

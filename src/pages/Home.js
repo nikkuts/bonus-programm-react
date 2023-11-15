@@ -1,3 +1,5 @@
+import { useSearchParams } from "react-router-dom";
+
 const styles = {
     container: {
       minHeight: 'calc(100vh - 50px)',
@@ -13,6 +15,10 @@ const styles = {
   };
   
   export default function Home() {
+    const [searchParams] = useSearchParams();
+    const inviterId = searchParams.get("x");
+    window.localStorage.setItem("inviterId", JSON.stringify(inviterId));
+
     return (
       <div style={styles.container}>
         <h1 style={styles.title}>
