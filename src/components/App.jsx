@@ -1,7 +1,7 @@
 import { useEffect, lazy } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Routes } from 'react-router-dom';
-import { Layout } from "./Layout";
+import { Layout } from "../components/Layout/Layout";
 import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
 import { RestrictedRoute } from "./RestrictedRoute";
@@ -19,13 +19,6 @@ export default function App () {
   useEffect(() => {
     dispatch(refreshUser());
   }, [dispatch]);
-
-  // useEffect(() => {
-  //   const LocalStoreToken = localStorage.getItem('persist:auth');
-  //   if (JSON.parse(LocalStoreToken)) {
-  //     dispatch(refreshUser());
-  //   }
-  // }, [dispatch]);
 
   return isRefreshing ? (
     <b>Refreshing user...</b>
