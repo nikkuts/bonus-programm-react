@@ -7,24 +7,43 @@
   .username {
     font-weight: 700;
     font-size: 18px;
+    color: rgb(245, 123, 10);
+  }
+
+  .link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px;
+    font-weight: 700;
+    color: #2a363b;   
+  }
+  
+.link:hover,  
+.link:focus,
+.link:active {
+    color: #0d30f5;
   }
 
   .button {
-    width: 80px;
-    height: 20px;
-    margin-left: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: calc(14/12);
+    display: inline-block;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 0 20px;
+    width: auto;
+    height: 50px;
     text-align: center;
-    letter-spacing: 0.06em;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: calc(16/14);
+    overflow: hidden;
+    outline: none;
     cursor: pointer;
-    border: 1px solid rgba(33, 33, 33, 0.8);
-    border-radius: 4px;
-}
-
-.button:hover, 
-.button:focus {
-    background-color: #c4d2dd;
-}
+    color: #000000;
+    background-color: rgb(255, 255, 0);
+  }
+  
+  .button:hover,
+  .button:focus {
+    color: #0d30f5;
+  }

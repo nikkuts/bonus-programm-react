@@ -10,7 +10,7 @@ import { PrivateRoute } from "./PrivateRoute";
 const HomePage = lazy(() => import('pages/Home'));
 const RegisterPage = lazy(() => import('pages/Register'));
 const LoginPage = lazy(() => import('pages/Login'));
-const ContactsPage = lazy(() => import('pages/Contacts'));
+const CoursesPage = lazy(() => import('pages/Courses'));
 
 export default function App () {
   const dispatch = useDispatch();
@@ -26,22 +26,23 @@ export default function App () {
     <Routes>
       <Route path="/" element={<Layout />} >
         <Route index element={<HomePage />} />
+        <Route path="/about" element={<HomePage />} />
         <Route
           path="/register"
           element={
-            <RestrictedRoute redirectTo="/contacts" component={<RegisterPage />} />
+            <RestrictedRoute redirectTo="/courses" component={<RegisterPage />} />
           }
         />
         <Route
           path="/login"
           element={
-            <RestrictedRoute redirectTo="/contacts" component={<LoginPage />} />
+            <RestrictedRoute redirectTo="/courses" component={<LoginPage />} />
           }
         />
         <Route
-          path="/contacts"
+          path="/courses"
           element={
-            <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
+            <PrivateRoute redirectTo="/login" component={<CoursesPage />} />
           }
         />
       </Route>

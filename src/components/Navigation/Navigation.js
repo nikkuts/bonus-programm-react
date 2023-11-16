@@ -8,13 +8,20 @@ export const Navigation = () => {
   return (
     <nav>
       <NavLink className={css.link} to="/">
-        Home
+        Головна
       </NavLink>
-      {isLoggedIn && (
-        <NavLink className={css.link} to="/contacts">
-          Contacts
-        </NavLink>
-      )}
+      <NavLink className={css.link} to="/about">
+        Про нас
+      </NavLink>
+      <NavLink className={css.link} to="/about">
+        Блог
+      </NavLink>
+      <NavLink className={css.link} to="/about">
+        Паляниця
+      </NavLink>
+      <NavLink className={css.link} to="/about">
+        Контакти
+      </NavLink>
     </nav>
   );
 };
