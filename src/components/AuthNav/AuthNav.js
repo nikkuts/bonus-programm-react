@@ -1,15 +1,23 @@
-import { NavLink } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import css from './AuthNav.module.css';
 
 export const AuthNav = () => {
+  const navigate = useNavigate();
+  
   return (
     <div>
-      <NavLink className={css.link} to="/register">
-        Реєстрація
-      </NavLink>
-      <NavLink className={css.link} to="/login">
+      <button type="button"
+        onClick={() => navigate("/register")} 
+        className={css.button}
+      >
+        Зареєструватися
+      </button>
+      <button type="button"
+        onClick={() => navigate("/login")} 
+        className={css.button}
+      >
         Увійти
-      </NavLink>
+      </button>
     </div>
   );
 };

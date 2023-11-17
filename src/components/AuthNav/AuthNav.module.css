@@ -1,19 +1,23 @@
-.link {
+.button {
   display: inline-block;
-  text-decoration: none;
-  padding: 12px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  padding: 0 20px;
+  width: auto;
+  height: 50px;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-size: 16px;
   font-weight: 700;
-  color: #2a363b;   
+  line-height: calc(16/14);
+  overflow: hidden;
+  outline: none;
+  cursor: pointer;
+  color: #000000;
+  background-color: rgb(255, 255, 0);
 }
 
-.link:hover  {
-  color: #1915e7;
-}
-
-.link:focus  {
-    color: #e84a5f;
-  }
-
-.link:active {
-  color: #e84a5f;
+.button:hover,
+.button:focus {
+  color: #0d30f5;
 }

@@ -11,6 +11,9 @@ const HomePage = lazy(() => import('pages/Home'));
 const RegisterPage = lazy(() => import('pages/Register'));
 const LoginPage = lazy(() => import('pages/Login'));
 const CoursesPage = lazy(() => import('pages/Courses'));
+const OfficePage = lazy(() => import('pages/Office/Office'));
+const ProfilePage = lazy(() => import('pages/Profile'));
+const BonusPage = lazy(() => import('pages/Bonus'));
 
 export default function App () {
   const dispatch = useDispatch();
@@ -45,6 +48,15 @@ export default function App () {
             <PrivateRoute redirectTo="/login" component={<CoursesPage />} />
           }
         />
+        <Route
+          path="/office"
+          element={
+            <PrivateRoute redirectTo="/login" component={<OfficePage />} />
+          }
+        >
+          <Route path="profile" element={<ProfilePage />} />
+          <Route path="bonus" element={<BonusPage />} />
+        </Route>
       </Route>
     </Routes>
   );
