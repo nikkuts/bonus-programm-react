@@ -1,20 +1,18 @@
-import { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { selectContacts } from "redux/contacts/selectors";
-import { addContact } from "redux/contacts/operations";
+import { useNavigate } from 'react-router-dom';
 import css from './Course.module.css';
 
-export default function Course ({title}) {
+export default function Course ({id, title}) {
+  const navigate = useNavigate();
 
       return (
-          <div className={css.box}>
+          <li key={id} className={css.box}>
             <h2 className={css.title}>{title}</h2>
             <button type="button"
-              // onClick={} 
+              onClick={() => navigate(`/courses/${id}`)} 
               className={css.button}
             >
               Продовжити навчання
             </button>
-          </div>
+          </li>
         );     
 };

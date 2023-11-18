@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { selectIsLoading } from "redux/contacts/selectors";
 import { fetchContacts } from "redux/contacts/operations";
 import Course from "components/Course/Course";
+import courses from "../components/courses.json";
 import Filter from "components/Filter/Filter";
 import ContactList from "components/ContactList/ContactList";
 
@@ -18,18 +19,19 @@ const styles = {
   },
 };
 
-export default function Courses () {
+export default function Courses ({courses}) {
 
   return (
     <>
         <h1 style={styles.title}>Моє навчання</h1>
         <ul style={styles.container}>
-          <li>
-            <Course title={'Курс переходу на українську мову'}/>
-          </li>
-          <li>
-            <Course title={'Граматичний курс української мови'}/>
-          </li>
+          {courses.map((course) => (
+              <Course 
+                id={course.id} 
+                title={course.title} 
+              />
+            ))
+          }
         </ul> 
     </>
   );       

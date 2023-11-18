@@ -11,7 +11,7 @@ export default function Office () {
         <ul className={css.wrapper}>
             <li>
               <Link  
-                  to="/office/profile"
+                  to="/profile"
                   className={css.link}
               >
                   Профіль
@@ -19,7 +19,7 @@ export default function Office () {
             </li>
             <li>
             <Link  
-                  to="/office/bonus"
+                  to="/bonus"
                   className={css.link}
               >
                   Бонусна програма

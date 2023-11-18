@@ -6,6 +6,7 @@ import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
 import { RestrictedRoute } from "./RestrictedRoute";
 import { PrivateRoute } from "./PrivateRoute";
+import courses from "./courses.json";
 
 const HomePage = lazy(() => import('pages/Home'));
 const RegisterPage = lazy(() => import('pages/Register'));
@@ -14,6 +15,8 @@ const CoursesPage = lazy(() => import('pages/Courses'));
 const OfficePage = lazy(() => import('pages/Office/Office'));
 const ProfilePage = lazy(() => import('pages/Profile'));
 const BonusPage = lazy(() => import('pages/Bonus'));
+const LearnPage = lazy(() => import('components/Learn/Learn'));
+const LessonPage = lazy(() => import('components/Lesson/Lesson'));
 
 export default function App () {
   const dispatch = useDispatch();
@@ -45,7 +48,15 @@ export default function App () {
         <Route
           path="/courses"
           element={
-            <PrivateRoute redirectTo="/login" component={<CoursesPage />} />
+            <PrivateRoute redirectTo="/login" component={<CoursesPage courses={courses} />} />
+          }
+        />
+        <Route path="/courses/:courseId" element={<LearnPage />} />
+        <Route path="/courses/:courseId/:lessonId" element={<LessonPage />} />
+        <Route
+          path="/learn"
+          element={
+            <PrivateRoute redirectTo="/login" component={<LearnPage />} />
           }
         />
         <Route
@@ -53,11 +64,21 @@ export default function App () {
           element={
             <PrivateRoute redirectTo="/login" component={<OfficePage />} />
           }
-        >
-          <Route path="profile" element={<ProfilePage />} />
-          <Route path="bonus" element={<BonusPage />} />
-        </Route>
+        />
+        <Route
+          path="/profile"
+          element={
+            <PrivateRoute redirectTo="/login" component={<ProfilePage />} />
+          }
+        />
+        <Route
+          path="/bonus"
+          element={
+            <PrivateRoute redirectTo="/login" component={<BonusPage />} />
+          }
+        />
       </Route>
+      <Route path="*" element={<HomePage />} />
     </Routes>
   );
 };

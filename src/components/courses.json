@@ -1,0 +1,85 @@
+[
+    { 
+        "id": "id-1", 
+        "title": "Курс переходу на українську мову", 
+        "lessons": [
+            {
+                "day": "1",
+                "theory": "",
+                "exercises": ""
+            },
+            {
+                "day": "2",
+                "theory": "",
+                "exercises": ""
+            },
+            {
+                "day": "3",
+                "theory": "",
+                "exercises": ""
+            },
+            {
+                "day": "4",
+                "theory": "",
+                "exercises": ""
+            },
+            {
+                "day": "5",
+                "theory": "",
+                "exercises": ""
+            }
+        ]  
+    },
+    { 
+        "id": "id-2", 
+        "title": "Граматичний курс української мови", 
+        "lessons": [
+            {
+                "day": "1",
+                "theme": "",
+                "theory": "https://drive.google.com/file/d/1LTqPoeXPA5K5Xk3yhtLZqb6qFXDLrO9N/view",
+                "exercises": "",
+                "answers": "",
+                "materials": "",
+                "test": "",
+                "link": "https://drive.google.com/file/d/1LTqPoeXPA5K5Xk3yhtLZqb6qFXDLrO9N/view"
+            },
+            {
+                "day": "2",
+                "theme": "",
+                "theory": "",
+                "exercises": "",
+                "answers": "",
+                "materials": "",
+                "test": ""
+            },
+            {
+                "day": "3",
+                "theme": "",
+                "theory": "",
+                "exercises": "",
+                "answers": "",
+                "materials": "",
+                "test": ""
+            },
+            {
+                "day": "4",
+                "theme": "",
+                "theory": "",
+                "exercises": "",
+                "answers": "",
+                "materials": "",
+                "test": ""
+            },
+            {
+                "day": "5",
+                "theme": "",
+                "theory": "",
+                "exercises": "",
+                "answers": "",
+                "materials": "",
+                "test": ""
+            }
+        ] 
+    }
+]
