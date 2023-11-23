@@ -1,0 +1,56 @@
+  .menu {
+    position: absolute;
+    display: block;
+    width: 250px;
+    top: 80px;
+    right: 0;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 3px 8px 14px rgba(136, 198, 253, 0.19);
+  }
+
+  .userInfo {
+    padding: 16px;
+    border-bottom: 1px solid #a3c5d3;
+  }
+
+  .userName {
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFC107;
+  }
+
+  .userEmail {
+    padding-top: 8px;
+    font-weight: 500;
+  }
+
+  .userLevel {
+    padding-top: 8px;
+    font-weight: 700;
+    color: #0d30f5;
+  }
+
+  .userLevelNum {
+    font-weight: 700;
+    color: #000000;
+  }
+
+.link {
+    display: inline-block;
+    width: 100%;
+    padding: 16px;
+    font-weight: 700;
+    color: #2a363b;   
+  }
+  
+.link:hover,  
+.link:focus,
+.link:active {
+    color: #0d30f5;
+    background-color: beige;
+  }
+
+  .officeLink li:last-child {
+    border-top: 1px solid #a3c5d3;
+  }

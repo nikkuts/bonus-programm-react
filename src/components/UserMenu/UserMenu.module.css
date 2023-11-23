@@ -3,25 +3,9 @@
     align-items: center;
     gap: 10px;
   }
-  
-  .username {
-    font-weight: 700;
-    font-size: 18px;
-    color: rgb(245, 123, 10);
-  }
 
-  .link {
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px;
-    font-weight: 700;
-    color: #2a363b;   
-  }
-  
-.link:hover,  
-.link:focus,
-.link:active {
-    color: #0d30f5;
+  .office {
+    position: relative;
   }
 
   .button {

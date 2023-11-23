@@ -1,25 +1,26 @@
-import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from 'hooks';
+import { useState } from "react";
+import OfficeMenu from 'components/officeMenu/officeMenu';
 import css from './UserMenu.module.css';
 
 export const UserMenu = () => {
-  const navigate = useNavigate();
-  const { user } = useAuth();
+  const [isOfficeMenuOpen, setIsOfficeMenuOpen] = useState(false);
+
+  const openOfficeMenu = () => setIsOfficeMenuOpen(true);
+  const closeOfficeMenu = () => setIsOfficeMenuOpen(false);
 
   return (
-    <div className={css.wrapper}>
-      <button type="button"
-        onClick={() => navigate("/courses")} 
-        className={css.button}
-      >
-        Навчатися
-      </button>
-      <Link 
-        to="/office" 
-        className={css.username}
-      >
-        {user.name}
-      </Link>
-    </div>
+      <div className={css.office}>
+        <button type="button"
+          onClick={openOfficeMenu} 
+          className={css.button}
+        >
+          Особистий кабінет
+        </button>
+        {isOfficeMenuOpen && 
+        <OfficeMenu
+          closeOfficeMenu={closeOfficeMenu}
+        />
+        }
+      </div>
   );
 };

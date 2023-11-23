@@ -1,18 +1,15 @@
-.headerLearn {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
+.learnWrapper {
+    min-height: calc(100vh - 50px);
+    padding: 30px;
 }
 
-.link {
-    display: inline-block;
-    margin-bottom: 8px;
+.title {
     font-weight: 700;
-    color: #2a363b;   
-  }
-  
-.link:hover,  
-.link:focus,
-.link:active {
-    color: #0d30f5;
-  }
+    font-size: 24px;
+}
+
+.learnList {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}

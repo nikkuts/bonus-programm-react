@@ -8,22 +8,13 @@ export default function Lesson () {
     const currentLesson = currentCourse.lessons.find(lesson => lesson.day === lessonId);
 
     return (
-        <>
-            <div className={css.headerLearn}>
-                <Link 
-                    to="/courses"
-                    className={css.link}
-                >
-                    Курси
-                </Link>
-                <span>{currentCourse.title}</span> 
-            </div>
+        <div className={css.lessonWrapper}>
             <Link 
                 to={currentLesson.link}
                 className={css.link}
             >
                 {currentLesson.link}
-            </Link>                    
-        </>
+            </Link>   
+        </div>                  
     )
   };

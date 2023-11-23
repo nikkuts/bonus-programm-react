@@ -27,6 +27,21 @@
                 "day": "5",
                 "theory": "",
                 "exercises": ""
+            },
+            {
+                "day": "6",
+                "theory": "",
+                "exercises": ""
+            },
+            {
+                "day": "7",
+                "theory": "",
+                "exercises": ""
+            },
+            {
+                "day": "8",
+                "theory": "",
+                "exercises": ""
             }
         ]  
     },
@@ -73,6 +88,33 @@
             },
             {
                 "day": "5",
+                "theme": "",
+                "theory": "",
+                "exercises": "",
+                "answers": "",
+                "materials": "",
+                "test": ""
+            },
+            {
+                "day": "6",
+                "theme": "",
+                "theory": "",
+                "exercises": "",
+                "answers": "",
+                "materials": "",
+                "test": ""
+            },
+            {
+                "day": "7",
+                "theme": "",
+                "theory": "",
+                "exercises": "",
+                "answers": "",
+                "materials": "",
+                "test": ""
+            },
+            {
+                "day": "8",
                 "theme": "",
                 "theory": "",
                 "exercises": "",

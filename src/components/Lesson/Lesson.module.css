@@ -1,12 +1,11 @@
-.headerLearn {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
+.lessonWrapper {
+    display: block;
+    width: 100%;
+    padding: 40px;
 }
 
 .link {
     display: inline-block;
-    margin-bottom: 8px;
     font-weight: 700;
     color: #2a363b; 
   }
