@@ -2,9 +2,15 @@ import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
 import css from './RegisterForm.module.css';
 
-export const RegisterForm = () => {
+export const RegisterForm = ({closeRegisterForm}) => {
   const dispatch = useDispatch();
 
+  const closeForm = e => {
+    if (e.currentTarget === e.target) {
+      closeRegisterForm()
+    }
+  };
+ 
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.currentTarget;
@@ -26,20 +32,19 @@ export const RegisterForm = () => {
   };
 
   return (
-    <>
+    <div className={css.overlay} onClick={closeForm}>
       <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
         <label className={css.label}>
-          <input placeholder='Username' type="text" name="name" />
+          <input placeholder='Тарас Петелько' type="text" name="name" />
         </label>
         <label className={css.label}>
-          <input placeholder='Email' type="email" name="email" />
+          <input placeholder='taras@gmail.com' type="email" name="email" />
         </label>
         <label className={css.label}>
-          <input placeholder='Password' type="password" name="password" />
+          <input placeholder='Пароль' type="password" name="password" />
         </label>
-        {/* <input style="none" type="text" name="inviter" /> */}
-        <button className={css.button} type="submit">Register</button>
+        <button className={css.button} type="submit">Зареєструватися</button>
       </form>
-    </>
+    </div>   
   );
 };

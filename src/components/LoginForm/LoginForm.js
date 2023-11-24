@@ -2,8 +2,14 @@ import { useDispatch } from 'react-redux';
 import { logIn } from 'redux/auth/operations';
 import css from './LoginForm.module.css';
 
-export const LoginForm = () => {
+export const LoginForm = ({closeLoginForm}) => {
   const dispatch = useDispatch();
+
+  const closeForm = e => {
+    if (e.currentTarget === e.target) {
+      closeLoginForm()
+    }
+  };
 
   const handleSubmit = e => {
     e.preventDefault();
@@ -18,7 +24,7 @@ export const LoginForm = () => {
   };
 
   return (
-    <>
+    <div className={css.overlay} onClick={closeForm}>
       <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
         <label className={css.label}>
           <input placeholder='Email' type="email" name="email" />
@@ -28,6 +34,6 @@ export const LoginForm = () => {
         </label>
         <button className={css.button} type="submit">Log In</button>
       </form>
-    </>
+    </div>
   );
 };
