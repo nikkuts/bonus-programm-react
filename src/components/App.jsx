@@ -65,13 +65,13 @@ export default function App () {
             <PrivateRoute redirectTo="/login" component={<DiaryPage />} />
           }
         />
-        <Route path="/bonus" element={<BonusPage />} />
-        {/* <Route
+        {/* <Route path="/bonus" element={<BonusPage />} /> */}
+        <Route
           path="/bonus"
           element={
             <PrivateRoute redirectTo="/login" component={<BonusPage />} />
           }
-        /> */}
+        />
       </Route>
       <Route path="*" element={<HomePage />} />
     </Routes>
