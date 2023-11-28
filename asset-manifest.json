@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/bonus-programm-react/static/css/main.bd27a4e2.css",
-    "main.js": "/bonus-programm-react/static/js/main.cb0ccb44.js",
-    "static/js/266.11ad4c26.chunk.js": "/bonus-programm-react/static/js/266.11ad4c26.chunk.js",
+    "main.js": "/bonus-programm-react/static/js/main.250bb472.js",
+    "static/js/266.9cbe59a6.chunk.js": "/bonus-programm-react/static/js/266.9cbe59a6.chunk.js",
     "static/js/756.1708a800.chunk.js": "/bonus-programm-react/static/js/756.1708a800.chunk.js",
     "static/js/490.c6da1e83.chunk.js": "/bonus-programm-react/static/js/490.c6da1e83.chunk.js",
     "static/js/876.f1496774.chunk.js": "/bonus-programm-react/static/js/876.f1496774.chunk.js",
@@ -16,8 +16,8 @@
     "static/js/643.5fe64c7d.chunk.js": "/bonus-programm-react/static/js/643.5fe64c7d.chunk.js",
     "index.html": "/bonus-programm-react/index.html",
     "main.bd27a4e2.css.map": "/bonus-programm-react/static/css/main.bd27a4e2.css.map",
-    "main.cb0ccb44.js.map": "/bonus-programm-react/static/js/main.cb0ccb44.js.map",
-    "266.11ad4c26.chunk.js.map": "/bonus-programm-react/static/js/266.11ad4c26.chunk.js.map",
+    "main.250bb472.js.map": "/bonus-programm-react/static/js/main.250bb472.js.map",
+    "266.9cbe59a6.chunk.js.map": "/bonus-programm-react/static/js/266.9cbe59a6.chunk.js.map",
     "756.1708a800.chunk.js.map": "/bonus-programm-react/static/js/756.1708a800.chunk.js.map",
     "490.c6da1e83.chunk.js.map": "/bonus-programm-react/static/js/490.c6da1e83.chunk.js.map",
     "876.f1496774.chunk.js.map": "/bonus-programm-react/static/js/876.f1496774.chunk.js.map",
@@ -32,6 +32,6 @@
   },
   "entrypoints": [
     "static/css/main.bd27a4e2.css",
-    "static/js/main.cb0ccb44.js"
+    "static/js/main.250bb472.js"
   ]
 }
