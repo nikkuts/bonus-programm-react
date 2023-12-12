@@ -17,7 +17,7 @@ export const AppBar = () => {
       <nav className={css.nav}>
         <Navigation />
         <button type="button"
-          onClick={() => navigate("/")} 
+          onClick={() => navigate("/donation")} 
           className={css.button}
         >
           Підтримати

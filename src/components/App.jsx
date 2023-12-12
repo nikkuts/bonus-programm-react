@@ -11,7 +11,9 @@ const HomePage = lazy(() => import('pages/Home'));
 const RegisterPage = lazy(() => import('pages/Register'));
 const LoginPage = lazy(() => import('pages/Login'));
 const ProfilePage = lazy(() => import('pages/Profile'));
-const BonusPage = lazy(() => import('pages/Bonus'));
+const DonationPage = lazy(() => import('pages/Donation'));
+const CalculatorPage = lazy(() => import('components/Calculator/Calculator'));
+const BonusPage = lazy(() => import('components/Bonus/Bonus'));
 const DiaryPage = lazy(() => import('pages/Diary'));
 const LearnPage = lazy(() => import('components/Learn/Learn'));
 const CoursePage = lazy(() => import('components/Course/Course'));
@@ -32,6 +34,7 @@ export default function App () {
       <Route path="/" element={<Layout />} >
         <Route index element={<HomePage />} />
         <Route path="/about" element={<HomePage />} />
+        <Route path="/donation" element={<DonationPage />} />
         <Route
           path="/register"
           element={
@@ -70,6 +73,12 @@ export default function App () {
           path="/bonus"
           element={
             <PrivateRoute redirectTo="/login" component={<BonusPage />} />
+          }
+        />
+        <Route
+          path="/calculator"
+          element={
+            <PrivateRoute redirectTo="/login" component={<CalculatorPage />} />
           }
         />
       </Route>
