@@ -8,7 +8,7 @@ export default function Course () {
     const currentCourse = courses.find(course => course.id === courseId);
 
     return (
-        <>
+        <div className={css.courseContainer}>
             <ul className={css.courseHeader}>
                 <li>
                     <Link 
@@ -48,6 +48,6 @@ export default function Course () {
                     <Outlet />
                 </Suspense>
             </div>
-        </>
+        </div>
     )
   };

@@ -1,8 +1,21 @@
-.lessonWrapper {
+.lessonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding-top: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+/* .lessonWrapper {
     display: block;
     width: 100%;
     padding: 40px;
-}
+} */
 
 .link {
     display: inline-block;
@@ -15,3 +28,10 @@
 .link:active {
     color: #0d30f5;
   }
+
+.error {
+  display: block;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+}

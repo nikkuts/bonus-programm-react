@@ -1,3 +1,7 @@
+.courseContainer {
+  width: 100%;
+}
+
 .courseHeader {
     display: flex;
     align-items: center;
