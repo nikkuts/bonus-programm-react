@@ -1,27 +1,14 @@
-// import { SHA1, enc, Base64 } from 'crypto-js';
 import Base64 from 'crypto-js/enc-base64';
 import SHA1 from 'crypto-js/sha1';
 import enc from 'crypto-js/enc-utf8';
+import { v4 as uuidv4 } from 'uuid';
 import { useAuth } from 'hooks';
 import css from './Calculator.module.css';
 
-// export default function Calculator () {
-  
-//   return (
-//     <div>
-//       <form method="POST" action="https://www.liqpay.ua/api/3/checkout" accept-charset="utf-8">
-//         <input type="hidden" name="data" value="eyJwdWJsaWNfa2V5Ijoic2FuZGJveF9pMzQ5ODg1NjExMDAiLCJ2ZXJzaW9uIjoiMyIsImFjdGlvbiI6InBheSIsImFtb3VudCI6IjQwIiwiY3VycmVuY3kiOiJVQUgiLCJkZXNjcmlwdGlvbiI6InRlc3QiLCJvcmRlcl9pZCI6IjAwMDAwMSJ9"/>
-//         <input type="hidden" name="signature" value="COl7NrEZJXge3jAsH8m5lPNjy0c="/>
-//         <input type="image" src="//static.liqpay.ua/buttons/p1ru.radius.png"/>
-//       </form>
-//     </div>   
-//   );
-// };
-
 export default function Calculator () {
   const {user} = useAuth();
-  const privateKey = 'sandbox_y7XJxkWfQbDHk9E5AxjwG2Bs05cnLaZSszE6fXSH'; // Замініть на ваш приватний ключ
-  const apiEndpoint = 'https://www.liqpay.ua/api/3/checkout'; // URL API LiqPay
+  const privateKey = 'sandbox_y7XJxkWfQbDHk9E5AxjwG2Bs05cnLaZSszE6fXSH'; 
+  const apiEndpoint = 'https://www.liqpay.ua/api/3/checkout'; 
 
   const isAmountValid = (value) => {
     const amount = parseFloat(value);
@@ -40,31 +27,32 @@ export default function Calculator () {
       return;
     }
 
+    const orderId = uuidv4();
+
     // Кодуємо дані JSON у рядок та потім у Base64
     const dataString = JSON.stringify({ 
-      public_key: 'sandbox_i34988561100', // Замініть на свій публічний ключ
+      public_key: 'sandbox_i34988561100', 
       version: '3',
       action: 'paydonate',
       amount: calc.elements.amount.value,
       currency: 'UAH',
       description: 'Підтримка проєкту',
-      order_id: '000002',
+      order_id: orderId,
+      result_url: 'https://nikkuts.github.io/bonus-programm-react/',
+      server_url: 'https://bonus-programm-backend.onrender.com',
       customer: user.id,
     });
-console.log(dataString);
     const data = Base64.stringify(enc.parse(dataString));
-console.log(data);
-    // Створюємо підпис: base64_encode( sha1( private_key + data + private_key) )
+
+    // Створюємо підпис
     const hash = SHA1(privateKey + data + privateKey);
-console.log(hash);
     const signature = Base64.stringify(hash);
-console.log(signature);
-    // Параметри, які ви хочете передати
+    
     const postData = {
       data: data,
       signature: signature,
     };
-// console.log(postData);
+
     // Створення форми та автоматичне надсилання
     const form = document.createElement('form');
     form.method = 'POST';
@@ -87,15 +75,17 @@ console.log(signature);
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
+    <form onSubmit={handleSubmit} className={css.form}>
+      <label className={css.label}>
         Введіть сумму
         <input
           type="number"
           name="amount"
         />
       </label>
-      <button type="submit">Підтримати</button>
+      <button type="submit" className={css.button}>
+        Підтримати
+      </button>
     </form>
   );
 };
