@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/570.0e4afc15.chunk.js","mappings":"kMAAe,SAASA,IACpB,OACEC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,0DAIT,C","sources":["components/Indicators/Indicators.jsx"],"sourcesContent":["export default function Indicators() {\n    return (\n      <div>\n        Показники\n      </div>\n    );\n  };"],"names":["Indicators","_jsx","children"],"sourceRoot":""}
