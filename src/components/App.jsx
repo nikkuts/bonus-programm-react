@@ -2,22 +2,26 @@ import { useEffect, lazy } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Routes } from 'react-router-dom';
 import { Layout } from "../components/Layout/Layout";
+import { Bonus } from "../components/Bonus/Bonus";
 import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
 import { RestrictedRoute } from "./RestrictedRoute";
 import { PrivateRoute } from "./PrivateRoute";
 
-const HomePage = lazy(() => import('pages/Home'));
-const RegisterPage = lazy(() => import('pages/Register'));
-const LoginPage = lazy(() => import('pages/Login'));
-const ProfilePage = lazy(() => import('pages/Profile'));
-const DonationPage = lazy(() => import('pages/Donation'));
-const CalculatorPage = lazy(() => import('components/Calculator/Calculator'));
-const BonusPage = lazy(() => import('components/Bonus/Bonus'));
-const DiaryPage = lazy(() => import('pages/Diary'));
-const LearnPage = lazy(() => import('components/Learn/Learn'));
-const CoursePage = lazy(() => import('components/Course/Course'));
-const LessonPage = lazy(() => import('components/Lesson/Lesson'));
+const HomePage = lazy(() => import('../pages/Home'));
+const RegisterPage = lazy(() => import('../pages/Register'));
+const LoginPage = lazy(() => import('../pages/Login'));
+const ProfilePage = lazy(() => import('../pages/Profile'));
+const DonationPage = lazy(() => import('../pages/Donation'));
+const CalculatorPage = lazy(() => import('../components/Calculator/Calculator'));
+const IndicatorsPage = lazy(() => import('../components/Indicators/Indicators'));
+const ToolsPage = lazy(() => import('../components/Tools/Tools'));
+const StructurePage = lazy(() => import('../components/Structure/Structure'));
+const RulesPage = lazy(() => import('../components/Rules/Rules'));
+const DiaryPage = lazy(() => import('../pages/Diary'));
+const LearnPage = lazy(() => import('../components/Learn/Learn'));
+const CoursePage = lazy(() => import('../components/Course/Course'));
+const LessonPage = lazy(() => import('../components/Lesson/Lesson'));
 
 export default function App () {
   const dispatch = useDispatch();
@@ -71,9 +75,14 @@ export default function App () {
         <Route
           path="/bonus"
           element={
-            <PrivateRoute redirectTo="/login" component={<BonusPage />} />
+            <PrivateRoute redirectTo="/login" component={<Bonus />} />
           }
-        />
+        >
+          <Route index element={<IndicatorsPage />} />
+          <Route path="tools" element={<ToolsPage />} />
+          <Route path="structure" element={<StructurePage />} />
+          <Route path="rules" element={<RulesPage />} />
+        </Route>
         <Route
           path="/calculator"
           element={

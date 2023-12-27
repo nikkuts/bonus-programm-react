@@ -1,12 +1,11 @@
 import axios from 'axios';
-// import { useAuth } from 'hooks';
+import {AXIOS_BASE_URL, API_PAY_ENDPOINT} from '../../constants';
 import css from './Calculator.module.css';
 
-axios.defaults.baseURL = 'https://bonus-programm-backend.onrender.com';
+axios.defaults.baseURL = AXIOS_BASE_URL;
 
 export default function Calculator () {
-  // const {user} = useAuth();
-  const apiEndpoint = 'https://www.liqpay.ua/api/3/checkout';
+  const apiPayEndpoint = API_PAY_ENDPOINT;
 
   const isAmountValid = (value) => {
     const amount = parseFloat(value);
@@ -21,7 +20,6 @@ export default function Calculator () {
     e.preventDefault();
     const calc = e.currentTarget;
     const amount = calc.elements.amount.value;
-    // const userId = user.id;
 
     if (!isAmountValid(amount)) {
       return;
@@ -34,7 +32,7 @@ export default function Calculator () {
       // Створення форми та автоматичне надсилання
       const form = document.createElement('form');
       form.method = 'POST';
-      form.action = apiEndpoint;
+      form.action = apiPayEndpoint;
       form.acceptCharset = 'utf-8';
   
       // Додавання прихованих полів

@@ -2,10 +2,12 @@ import { useDispatch } from "react-redux";
 import { Link } from 'react-router-dom';
 import { logOut } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
+import indicators from '../../service/Indicators';
 import css from './officeMenu.module.css';
 
 export default function OfficeMenu ({closeOfficeMenu}) {
   const {user} = useAuth();
+  const level = indicators.levelSupport(user);
   const dispatch = useDispatch();
 
   return (  
@@ -19,7 +21,8 @@ export default function OfficeMenu ({closeOfficeMenu}) {
         <li className={css.userName}>{user.name}</li>
         <li className={css.userEmail}>{user.email}</li>
         <li className={css.userLevel}>
-          Рівень підтримки: <span className={css.userLevelNum}>88</span>
+          Рівень підтримки: 
+          <span className={css.userLevelNum}> {level}</span>
         </li>
       </ul>
     </li>
