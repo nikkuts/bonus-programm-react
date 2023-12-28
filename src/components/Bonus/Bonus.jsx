@@ -5,12 +5,13 @@ import css from './Bonus.module.css';
 export const Bonus = () => {
 
     return (
-        <div className={css.courseContainer}>
-            <ul className={css.courseHeader}>
+        <div>
+            {/* <h1 className={css.bonusTitle}>Бонусна програма</h1> */}
+            <ul className={css.bonusNav}>
                 <li>
                     <Link 
                         to="/bonus"
-                        className={css.courseLink}
+                        className={css.bonusLink}
                     >
                         Показники
                     </Link>
@@ -18,7 +19,7 @@ export const Bonus = () => {
                 <li>
                     <Link 
                         to="tools"
-                        className={css.courseLink}
+                        className={css.bonusLink}
                     >
                         Інструменти
                     </Link>
@@ -26,7 +27,7 @@ export const Bonus = () => {
                 <li>
                     <Link 
                         to="structure"
-                        className={css.courseLink}
+                        className={css.bonusLink}
                     >
                         Структура
                     </Link>
@@ -34,7 +35,7 @@ export const Bonus = () => {
                 <li>
                     <Link 
                         to="rules"
-                        className={css.courseLink}
+                        className={css.bonusLink}
                     >
                         Умови бонусної програми
                     </Link> 

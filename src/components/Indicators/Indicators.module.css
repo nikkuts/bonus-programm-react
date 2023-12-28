@@ -1,0 +1,76 @@
+table {
+    border-collapse: collapse;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+tr {
+    height: 70px;
+}
+
+td {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+td:nth-child(1) {
+    width: 700px;
+    font-weight: 500;
+    color: #555;
+}
+
+td:nth-child(2) {
+    width: 200px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.level {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+}
+
+.tooltip:hover::after {
+    content: "Показує скільки українців на місяць в середньому опановують українську завдяки моїм внескам";
+    display: block;
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.button {
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 0 20px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: calc(16/14);
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    color: #000000;
+    background-color: rgb(255, 255, 0);
+  }
+  
+  .button:hover,
+  .button:focus {
+    color: #0d30f5;
+  }
