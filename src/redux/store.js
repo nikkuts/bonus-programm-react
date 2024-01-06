@@ -10,8 +10,8 @@ import {
   REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-import { contactsReducer } from './contacts/contactsSlice';
-import { filterReducer } from './contacts/filterSlice';
+import { partnersReducer } from './partners/slice';
+import { filterReducer } from './partners/filterSlice';
 import { modalReducer } from './modal/modalSlice';
 import { authReducer } from './auth/slice';
 
@@ -24,7 +24,7 @@ const authPersistConfig = {
 export const store = configureStore({
   reducer: {
     auth: persistReducer(authPersistConfig, authReducer),
-    contacts: contactsReducer,
+    partners: partnersReducer,
     filter: filterReducer,
     modal: modalReducer,
   },

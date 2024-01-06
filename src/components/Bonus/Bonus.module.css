@@ -1,6 +1,7 @@
-/* .bonusContainer {
-    width: 100%;
-  } */
+.bonusWrapper {
+    min-height: calc(100vh - 50px);
+    padding: 30px;
+}
 
   .bonusTitle {
     color: #333;

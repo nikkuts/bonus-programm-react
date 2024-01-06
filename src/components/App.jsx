@@ -14,7 +14,7 @@ const LoginPage = lazy(() => import('../pages/Login'));
 const ProfilePage = lazy(() => import('../pages/Profile'));
 const DonationPage = lazy(() => import('../pages/Donation'));
 const CalculatorPage = lazy(() => import('../components/Calculator/Calculator'));
-const IndicatorsPage = lazy(() => import('../components/Indicators/Indicators'));
+const IndicatorsPage = lazy(() => import('../pages/Indicators'));
 const ToolsPage = lazy(() => import('../components/Tools/Tools'));
 const StructurePage = lazy(() => import('../components/Structure/Structure'));
 const RulesPage = lazy(() => import('../components/Rules/Rules'));
@@ -78,8 +78,8 @@ export default function App () {
             <PrivateRoute redirectTo="/login" component={<Bonus />} />
           }
         >
-          <Route index element={<IndicatorsPage />} />
-          <Route path="tools" element={<ToolsPage />} />
+          <Route index element={<ToolsPage />} />
+          <Route path="indicators" element={<IndicatorsPage />} />
           <Route path="structure" element={<StructurePage />} />
           <Route path="rules" element={<RulesPage />} />
         </Route>

@@ -5,7 +5,7 @@ import css from './Bonus.module.css';
 export const Bonus = () => {
 
     return (
-        <div>
+        <div className={css.bonusWrapper}>
             {/* <h1 className={css.bonusTitle}>Бонусна програма</h1> */}
             <ul className={css.bonusNav}>
                 <li>
@@ -13,15 +13,15 @@ export const Bonus = () => {
                         to="/bonus"
                         className={css.bonusLink}
                     >
-                        Показники
+                        Інструменти
                     </Link>
                 </li>
                 <li>
                     <Link 
-                        to="tools"
+                        to="indicators"
                         className={css.bonusLink}
                     >
-                        Інструменти
+                        Показники
                     </Link>
                 </li>
                 <li>

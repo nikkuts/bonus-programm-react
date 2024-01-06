@@ -20,9 +20,13 @@ td:nth-child(1) {
 }
 
 td:nth-child(2) {
-    width: 200px;
+    width: 100px;
     font-weight: 700;
     color: #000000;
+}
+
+td:nth-child(3) {
+    width: 300px;
 }
 
 .level {
@@ -41,11 +45,14 @@ td:nth-child(2) {
     content: "Показує скільки українців на місяць в середньому опановують українську завдяки моїм внескам";
     display: block;
     position: absolute;
-    background-color: #000;
+    width: 200px;
+    height: auto;
+    font-size: 14px;
+    background-color: #0d30f5;
     color: #fff;
     padding: 5px;
     border-radius: 5px;
-    white-space: nowrap;
+    text-align: center;
 }
 
 .button {
