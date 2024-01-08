@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/386.b93a4757.chunk.js","mappings":"kMAAe,SAASA,IACpB,OACEC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,sEAIT,C","sources":["components/Tools/Tools.jsx"],"sourcesContent":["export default function Tools() {\n    return (\n      <div>\n        Інструменти\n      </div>\n    );\n  };"],"names":["Tools","_jsx","children"],"sourceRoot":""}
