@@ -1,1 +1,0 @@
-{"version":3,"file":"static/js/214.92b68dcf.chunk.js","mappings":"kMAAe,SAASA,IACtB,OACEC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,oIAIT,C","sources":["pages/Diary.js"],"sourcesContent":["export default function Diary() {\n  return (\n    <div>\n      Щоденник моїх досягнень\n    </div>\n  );\n};"],"names":["Diary","_jsx","children"],"sourceRoot":""}
