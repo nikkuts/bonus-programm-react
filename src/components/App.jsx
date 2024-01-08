@@ -1,8 +1,8 @@
 import { useEffect, lazy } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Routes } from 'react-router-dom';
-import { Layout } from "../components/Layout/Layout";
-import { Bonus } from "../components/Bonus/Bonus";
+import { Layout } from "./Layout/Layout";
+import { BonusLayout } from "./BonusLayout/BonusLayout";
 import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
 import { RestrictedRoute } from "./RestrictedRoute";
@@ -14,7 +14,8 @@ const LoginPage = lazy(() => import('../pages/Login'));
 const ProfilePage = lazy(() => import('../pages/Profile'));
 const DonationPage = lazy(() => import('../pages/Donation'));
 const CalculatorPage = lazy(() => import('../components/Calculator/Calculator'));
-const IndicatorsPage = lazy(() => import('../pages/Indicators'));
+// const IndicatorsPage = lazy(() => import('../pages/Indicators'));
+const IndicatorsPage = lazy(() => import('./Indicators/Indicators'));
 const ToolsPage = lazy(() => import('../components/Tools/Tools'));
 const StructurePage = lazy(() => import('../components/Structure/Structure'));
 const RulesPage = lazy(() => import('../components/Rules/Rules'));
@@ -75,11 +76,11 @@ export default function App () {
         <Route
           path="/bonus"
           element={
-            <PrivateRoute redirectTo="/login" component={<Bonus />} />
+            <PrivateRoute redirectTo="/login" component={<BonusLayout />} />
           }
         >
-          <Route index element={<ToolsPage />} />
-          <Route path="indicators" element={<IndicatorsPage />} />
+          <Route index element={<IndicatorsPage />} />
+          <Route path="tools" element={<ToolsPage />} />
           <Route path="structure" element={<StructurePage />} />
           <Route path="rules" element={<RulesPage />} />
         </Route>

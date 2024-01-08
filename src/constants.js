@@ -1,3 +1,5 @@
+export const BASE_CLIENT_URL = "https://nikkuts.github.io/bonus-programm-react"
+
 export const BASE_NAME = "/bonus-programm-react";
 
 export const AXIOS_BASE_URL = 'https://bonus-programm-backend.onrender.com';

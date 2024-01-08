@@ -1,9 +1,15 @@
+import { BASE_CLIENT_URL } from '../../constants';
+import { useAuth } from 'hooks';
 import css from './Tools.module.css';
 
 export default function Tools() {
+  const {user} = useAuth();
+
     return (
       <div className={css.containerBonus}>
     <h1>Поклич друзів разом опановувати українську та отримувати бонуси на 8 рівнів!</h1>
+    <h2>Запрошувальне посилання</h2>
+    <p>{`${BASE_CLIENT_URL}?x=${user.id}`}</p>
     <h3>Приклад отримання бонусів у програмі  “Плюсуй українську”</h3>
     <p>Припустимо, що в учасника ‘A’ на першому рівні є <span className={css.num}>5 учасників</span>, які приєдналися за його запрошенням. У кожного з них є також по 5 учасників.</p>
     <p>Таким чином, на 2-му рівні в учасника ‘A’ вже <span className={css.num}>5 * 5 = 25</span> учасників. У кожного з них є також по 5 учасників.</p>
