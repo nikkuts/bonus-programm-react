@@ -8,7 +8,7 @@ import css from './officeMenu.module.css';
 
 export default function OfficeMenu ({closeOfficeMenu}) {
   const {user} = useAuth();
-  const {level} = useSelector(selectIndicators);
+  const {levelSupport} = useSelector(selectIndicators);
   // const level = indicators.levelSupport(user);
   const dispatch = useDispatch();
 
@@ -24,7 +24,7 @@ export default function OfficeMenu ({closeOfficeMenu}) {
         <li className={css.userEmail}>{user.email}</li>
         <li className={css.userLevel}>
           Рівень підтримки: 
-          <span className={css.userLevelNum}> {level.toFixed(2)}</span>
+          <span className={css.userLevelNum}> {levelSupport.toFixed(2)}</span>
         </li>
       </ul>
     </li>

@@ -17,11 +17,11 @@ export default function Indicators() {
             </tr>
             <tr>
                 <td>Скільки українців прямо зараз переходять на українську завдяки моїм внескам на підтримку проєкту</td>
-                <td>{indicators.current}</td>
+                <td>{indicators.currentCount}</td>
             </tr>
             <tr>
                 <td>Скільки українців вже опанували українську завдяки моїм внескам на підтримку проєкту</td>
-                <td>{indicators.total}</td>
+                <td>{indicators.totalCount}</td>
             </tr>
             <tr>
                 <td>
@@ -34,7 +34,7 @@ export default function Indicators() {
                     </div>
                   </div>
                 </td>
-                <td>{indicators.level.toFixed(2)}</td>
+                <td>{indicators.levelSupport.toFixed(2)}</td>
                 <td>
                   <button type="button"
                     onClick={() => navigate("/donation")} 
