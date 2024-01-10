@@ -13,7 +13,7 @@ export default function Indicators() {
         <table>
             <tr>
                 <td>Бонусний рахунок, гривень</td>
-                <td>{indicators.bonusAccount}</td>
+                <td>{indicators.bonusAccount.toFixed(2)}</td>
             </tr>
             <tr>
                 <td>Скільки українців прямо зараз переходять на українську завдяки моїм внескам на підтримку проєкту</td>
@@ -21,7 +21,7 @@ export default function Indicators() {
             </tr>
             <tr>
                 <td>Скільки українців вже опанували українську завдяки моїм внескам на підтримку проєкту</td>
-                <td>{indicators.totalCount}</td>
+                <td>{indicators.pastCount}</td>
             </tr>
             <tr>
                 <td>
