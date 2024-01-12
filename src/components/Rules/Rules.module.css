@@ -19,11 +19,12 @@ h3 {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
 p {
-    color: #777;
+    color: #555;
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px; 
@@ -38,44 +39,29 @@ p {
     font-weight: bold;
 }
 
-table {
+.formula {
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.tableRules {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;   
+}
+
+.table {
+    width: 300px;
     border-collapse: collapse;
     font-size: 14px;
     line-height: 1.5;
+    text-align: center;
 }
 
-tr {
-    height: 70px;
-}
-
-th {
-    color: #000000;
-}
-
-td, th {
+.td, .th {
     border: 1px solid #cfcccc;
     padding: 10px;
-}
-
-/* td {
-    font-weight: 500;
-    color: #555;
-} */
-
-td:nth-child(1) {
-    width: 200px;
-}
-
-td:nth-child(2) {
-    width: 200px;
-    font-weight: 500;
-    color: #555;
-}
-
-td:nth-child(3) {
-    width: 200px;
-}
-
-td:nth-child(4) {
-    width: 200px;
 }

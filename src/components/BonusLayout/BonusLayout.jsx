@@ -36,7 +36,7 @@ export const BonusLayout = () => {
                             to="structure"
                             className={css.bonusLink}
                         >
-                            Структура
+                            Команда
                         </Link>
                     </li>
                     <li>

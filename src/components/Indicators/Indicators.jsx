@@ -9,22 +9,30 @@ export default function Indicators() {
   const indicators = useSelector(selectIndicators);
 
     return (
-      <div>
-        <table>
-            <tr>
-                <td>Бонусний рахунок, гривень</td>
-                <td>{indicators.bonusAccount.toFixed(2)}</td>
+      <div className={css.tableIndicators}>
+        <table className={css.table}>
+            <tr className={css.tr}>
+                <td className={css.tdChild1}>Бонусний рахунок, гривень</td>
+                <td className={css.tdChild2}>{indicators.bonusAccount.toFixed(2)}</td>
+                <td className={css.tdChild3}>
+                  <button type="button"
+                    onClick={() => navigate("/donation")} 
+                    className={css.button}
+                  >
+                    Вивести
+                  </button>
+                </td>
             </tr>
-            <tr>
-                <td>Скільки українців прямо зараз переходять на українську завдяки моїм внескам на підтримку проєкту</td>
-                <td>{indicators.currentCount}</td>
+            <tr className={css.tr}>
+                <td className={css.tdChild1}>Скільки українців прямо зараз переходять на українську завдяки моїм внескам на підтримку проєкту</td>
+                <td className={css.tdChild2}>{indicators.currentCount}</td>
             </tr>
-            <tr>
-                <td>Скільки українців вже опанували українську завдяки моїм внескам на підтримку проєкту</td>
-                <td>{indicators.pastCount}</td>
+            <tr className={css.tr}>
+                <td className={css.tdChild1}>Скільки українців вже опанували українську завдяки моїм внескам на підтримку проєкту</td>
+                <td className={css.tdChild2}>{indicators.pastCount}</td>
             </tr>
-            <tr>
-                <td>
+            <tr className={css.tr}>
+                <td className={css.tdChild1}>
                   <div className={css.level}>
                     <span>
                       Мій особистий рівень підтримки проєкту
@@ -34,8 +42,8 @@ export default function Indicators() {
                     </div>
                   </div>
                 </td>
-                <td>{indicators.levelSupport.toFixed(2)}</td>
-                <td>
+                <td className={css.tdChild2}>{indicators.levelSupport.toFixed(2)}</td>
+                <td className={css.tdChild3}>
                   <button type="button"
                     onClick={() => navigate("/donation")} 
                     className={css.button}

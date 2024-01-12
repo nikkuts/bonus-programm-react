@@ -1,32 +1,36 @@
-table {
+.tableIndicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
     border-collapse: collapse;
     font-size: 16px;
     line-height: 1.5;
 }
 
-tr {
-    height: 70px;
+.tr {
+    height: 80px;
 }
 
-td {
+.tdChild1 {
     padding-left: 50px;
     padding-right: 50px;
-}
-
-td:nth-child(1) {
     width: 700px;
     font-weight: 500;
     color: #555;
 }
 
-td:nth-child(2) {
+.tdChild2 {
     width: 100px;
+    text-align: center;
     font-weight: 700;
     color: #000000;
 }
 
-td:nth-child(3) {
-    width: 300px;
+.tdChild3 {
+    width: 340px;
 }
 
 .level {
@@ -57,9 +61,7 @@ td:nth-child(3) {
 
 .button {
     display: block;
-    margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     border: 1px solid #ffffff;
     border-radius: 20px;
     padding: 0 20px;
