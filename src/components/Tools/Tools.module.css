@@ -1,32 +1,39 @@
 h1 {
     color: #333;
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 h2 {
     color: #555;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 h3 {
     color: #555;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 70px;
+    margin-bottom: 50px;
 }
 
 p {
     color: #555;
     font-size: 16px;
     line-height: 1.5;
+    font-weight: 500;
     margin-bottom: 20px; 
+}
+
+.refLink {
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 .containerBonus {
@@ -35,7 +42,29 @@ p {
 
 .num {
     color: #2702fc;
-    font-weight: bold;
+    font-weight: 600;
+}
+
+.tableTools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;   
+}
+
+.table {
+    width: 900px;
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.td, .th {
+    border: 1px solid #cfcccc;
+    padding: 10px;
+    width: auto;
 }
 
 .button {
