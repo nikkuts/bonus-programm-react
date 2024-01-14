@@ -1,0 +1,38 @@
+.input {
+    border: 1px solid #dfdddd;
+    border-radius: 20px;
+    padding: 0 10px;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(16/14);
+    outline: none; /* Вимикає контур при фокусі */
+    user-select: none; /* Вимикає можливість виділення тексту */
+}
+
+.button {
+    border-radius: 10px;
+    padding: 0 10px;
+    width: 150px;
+    height: 50px;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    line-height: calc(16/14);
+    overflow: hidden;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #ff9900;
+  }
+  
+  .button:hover,
+  .button:focus {
+    background-color: #ff8800;
+  }
+
+  .text {
+    margin-left: 10px;
+  }
