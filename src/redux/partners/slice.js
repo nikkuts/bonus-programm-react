@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { 
   getIndicators, 
-  getFirstLinePartners, 
+  getPartners, 
   getByIdPartner,
-  getPartnerStructure 
+  getPartnerTeam 
 } from "./operations";
 
 const handlePending = state => {
@@ -19,9 +19,9 @@ const partnersSlice = createSlice({
   name: "partners",
   initialState: {
     indicators: {},
-    firstLinePartners: [],
+    partners: [],
     partner: null,
-    partnerStructure: [],
+    partnerTeam: [],
     isLoading: false,
     error: null
   },
@@ -34,13 +34,13 @@ const partnersSlice = createSlice({
       state.indicators = action.payload;
     })
     .addCase(getIndicators.rejected, handleRejected)
-    .addCase(getFirstLinePartners.pending, handlePending)
-    .addCase(getFirstLinePartners.fulfilled, (state, action) => {
+    .addCase(getPartners.pending, handlePending)
+    .addCase(getPartners.fulfilled, (state, action) => {
       state.isLoading = false;
       state.error = null;
-      state.firstLinePartners = action.payload;
+      state.partners = action.payload;
     })
-    .addCase(getFirstLinePartners.rejected, handleRejected)
+    .addCase(getPartners.rejected, handleRejected)
     .addCase(getByIdPartner.pending, handlePending)
     .addCase(getByIdPartner.fulfilled, (state, action) => {
       state.isLoading = false;
@@ -48,13 +48,13 @@ const partnersSlice = createSlice({
       state.partner = action.payload;
     })
     .addCase(getByIdPartner.rejected, handleRejected)
-    .addCase(getPartnerStructure.pending, handlePending)
-    .addCase(getPartnerStructure.fulfilled, (state, action) => {
+    .addCase(getPartnerTeam.pending, handlePending)
+    .addCase(getPartnerTeam.fulfilled, (state, action) => {
       state.isLoading = false;
       state.error = null;
-      state.partnerStructure = action.payload;
+      state.partnerTeam = action.payload;
     })
-    .addCase(getPartnerStructure.rejected, handleRejected)
+    .addCase(getPartnerTeam.rejected, handleRejected)
 });
 
 export const partnersReducer = partnersSlice.reducer;

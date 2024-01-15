@@ -2,6 +2,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #d7d2f3;
+    border-radius: 20px;
 }
 
 .table {

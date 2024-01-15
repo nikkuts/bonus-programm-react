@@ -1,14 +1,15 @@
 import { useEffect, Suspense } from 'react';
 import { useDispatch } from "react-redux";
 import { Link, Outlet } from 'react-router-dom';
-import { getIndicators } from 'redux/partners/operations';
+import { getIndicators, getPartners } from 'redux/partners/operations';
 import css from './BonusLayout.module.css';
 
 export const BonusLayout = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(getIndicators()); 
+        dispatch(getIndicators());
+        dispatch(getPartners()); 
     }, [dispatch]);
 
     return (
@@ -33,7 +34,7 @@ export const BonusLayout = () => {
                     </li>
                     <li>
                         <Link 
-                            to="structure"
+                            to="team"
                             className={css.bonusLink}
                         >
                             Команда

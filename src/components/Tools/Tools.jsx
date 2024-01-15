@@ -9,10 +9,10 @@ export default function Tools() {
     return (
       <div className={css.containerBonus}>
     <h1>Поклич друзів разом опановувати українську та отримувати бонуси на 8 рівнів!</h1>
-
+    <div className={css.wrapperRef}>
     <h2 className={css.refLink}>Запрошувальне посилання</h2>
     <CopyUrl url={`${BASE_CLIENT_URL}?x=${user.id}`} />
-
+    </div>
     <h3>Приклад отримання бонусів у програмі  “Плюсуй українську”</h3>
     <p>Розглянемо, коли у Вашій команді на першому рівні є <span className={css.num}>3</span> учасники, які приєдналися за Вашим запрошенням. У кожного з них є також по 3 учасники в команді.</p>
     <p>На 2-му рівні у Вас’ вже <span className={css.num}>3 * 3 = 9</span> учасників. У кожного з них є також по 3 учасники.</p>

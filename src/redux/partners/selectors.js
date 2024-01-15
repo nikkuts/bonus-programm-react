@@ -1,10 +1,10 @@
 export const selectIndicators = state => state.partners.indicators;
 
-export const selectFirstLinePartners = state => state.partners.firstLinePartners;
+export const selectPartners = state => state.partners.partners;
 
 export const selectPartner = state => state.partners.partner;
 
-export const selectPartnerStructure = state => state.partners.partnerStructure;
+export const selectPartnerTeam = state => state.partners.partnerTeam;
 
 export const selectIsLoading = state => state.partners.isLoading;
 

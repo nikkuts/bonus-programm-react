@@ -14,11 +14,10 @@ const LoginPage = lazy(() => import('../pages/Login'));
 const ProfilePage = lazy(() => import('../pages/Profile'));
 const DonationPage = lazy(() => import('../pages/Donation'));
 const CalculatorPage = lazy(() => import('../components/Calculator/Calculator'));
-// const IndicatorsPage = lazy(() => import('../pages/Indicators'));
 const IndicatorsPage = lazy(() => import('./Indicators/Indicators'));
-const ToolsPage = lazy(() => import('../components/Tools/Tools'));
-const StructurePage = lazy(() => import('../components/Structure/Structure'));
-const RulesPage = lazy(() => import('../components/Rules/Rules'));
+const ToolsPage = lazy(() => import('./Tools/Tools'));
+const TeamPage = lazy(() => import('./Team/Team'));
+const RulesPage = lazy(() => import('./Rules/Rules'));
 const DiaryPage = lazy(() => import('../pages/Diary'));
 const LearnPage = lazy(() => import('../components/Learn/Learn'));
 const CoursePage = lazy(() => import('../components/Course/Course'));
@@ -81,7 +80,7 @@ export default function App () {
         >
           <Route index element={<IndicatorsPage />} />
           <Route path="tools" element={<ToolsPage />} />
-          <Route path="structure" element={<StructurePage />} />
+          <Route path="team" element={<TeamPage />} />
           <Route path="rules" element={<RulesPage />} />
         </Route>
         <Route

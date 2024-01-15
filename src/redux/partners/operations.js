@@ -17,8 +17,8 @@ export const getIndicators = createAsyncThunk(
     }
 );
 
-export const getFirstLinePartners = createAsyncThunk(
-  "partners/getFirstLinePartners", 
+export const getPartners = createAsyncThunk(
+  "partners/getPartners", 
   async (_, thunkAPI) => {
       try {
         const response = await axios.get("/api/partners"); 
@@ -43,11 +43,11 @@ export const getFirstLinePartners = createAsyncThunk(
     }
   );
 
-  export const getPartnerStructure = createAsyncThunk(
-    "partners/getPartnerStructure",
+  export const getPartnerTeam = createAsyncThunk(
+    "partners/getPartnerTeam",
     async (partnerId, thunkAPI) => {
       try {
-        const response = await axios.get(`/api/partners/${partnerId}/structure`);
+        const response = await axios.get(`/api/partners/${partnerId}/team`);
         return response.data; 
       } 
       catch (error) {

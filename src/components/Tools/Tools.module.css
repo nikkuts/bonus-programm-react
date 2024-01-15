@@ -31,13 +31,20 @@ p {
     margin-bottom: 20px; 
 }
 
+.containerBonus {
+    padding: 40px 70px;
+}
+
+.wrapperRef {
+    display: block;
+    padding: 20px;
+    border: 1px solid #d7d2f3;
+    border-radius: 20px;
+}
+
 .refLink {
     text-align: left;
     margin-bottom: 20px;
-}
-
-.containerBonus {
-    padding: 70px;
 }
 
 .num {

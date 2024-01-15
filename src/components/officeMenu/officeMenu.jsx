@@ -3,13 +3,11 @@ import { Link } from 'react-router-dom';
 import { logOut } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
 import { selectIndicators } from 'redux/partners/selectors';
-// import indicators from '../../service/Indicators';
 import css from './officeMenu.module.css';
 
 export default function OfficeMenu ({closeOfficeMenu}) {
   const {user} = useAuth();
   const {levelSupport} = useSelector(selectIndicators);
-  // const level = indicators.levelSupport(user);
   const dispatch = useDispatch();
 
   return (  
