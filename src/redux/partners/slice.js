@@ -1,9 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { 
   getIndicators, 
-  getPartners, 
-  getByIdPartner,
-  getPartnerTeam 
+  getTeam, 
+  getByIdPartnerTeam,
+  saveTeam,
+  restorePreviosTeam,
 } from "./operations";
 
 const handlePending = state => {
@@ -18,10 +19,9 @@ const handleRejected = (state, action) => {
 const partnersSlice = createSlice({
   name: "partners",
   initialState: {
-    indicators: {},
-    partners: [],
+    indicators: null,
     partner: null,
-    partnerTeam: [],
+    history: [],
     isLoading: false,
     error: null
   },
@@ -34,27 +34,27 @@ const partnersSlice = createSlice({
       state.indicators = action.payload;
     })
     .addCase(getIndicators.rejected, handleRejected)
-    .addCase(getPartners.pending, handlePending)
-    .addCase(getPartners.fulfilled, (state, action) => {
-      state.isLoading = false;
-      state.error = null;
-      state.partners = action.payload;
-    })
-    .addCase(getPartners.rejected, handleRejected)
-    .addCase(getByIdPartner.pending, handlePending)
-    .addCase(getByIdPartner.fulfilled, (state, action) => {
+    .addCase(getTeam.pending, handlePending)
+    .addCase(getTeam.fulfilled, (state, action) => {
       state.isLoading = false;
       state.error = null;
       state.partner = action.payload;
     })
-    .addCase(getByIdPartner.rejected, handleRejected)
-    .addCase(getPartnerTeam.pending, handlePending)
-    .addCase(getPartnerTeam.fulfilled, (state, action) => {
+    .addCase(getTeam.rejected, handleRejected)
+    .addCase(getByIdPartnerTeam.pending, handlePending)
+    .addCase(getByIdPartnerTeam.fulfilled, (state, action) => {
       state.isLoading = false;
       state.error = null;
-      state.partnerTeam = action.payload;
+      state.partner = action.payload;
     })
-    .addCase(getPartnerTeam.rejected, handleRejected)
+    .addCase(getByIdPartnerTeam.rejected, handleRejected)
+    .addCase(saveTeam.fulfilled, (state, action) => {
+      state.history.push(action.payload);
+    })
+    .addCase(restorePreviosTeam.fulfilled, (state, action) => {
+      state.partner = action.payload;
+      state.history.pop();
+    })
 });
 
 export const partnersReducer = partnersSlice.reducer;

@@ -1,23 +1,22 @@
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
-import { useAuth } from 'hooks';
-import { selectIsLoading } from 'redux/partners/selectors';
+import Team from 'components/Team/Team';
+import { getTeam } from 'redux/partners/operations';
+import { selectIsLoading, selectPartner } from 'redux/partners/selectors';
 
 export default function Structure() {
   const dispatch = useDispatch();
-  const {user} = useAuth();
   const isLoading = useSelector(selectIsLoading);
+  const partner = useSelector(selectPartner);
+
+  useEffect(() => {
+    dispatch(getTeam()); 
+}, [dispatch]);
 
     return (
-      <div>
-        <h1>Команда</h1>
-        <ul>
-          <li className={css.userName}>{user.name}</li>
-          <li className={css.userEmail}>{user.email}</li>
-          <li className={css.userLevel}>
-            Рівень 
-            <span className={css.userLevelNum}> 1</span>
-          </li>
-        </ul>
-      </div>
+      <>
+        <div>{isLoading && <b>Завантаження даних...</b>}</div>
+        {partner && <Team />}
+      </>
     );
   };

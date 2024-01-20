@@ -39,51 +39,55 @@ export default function Rules () {
     <p>Бонуси з бонусного рахунку можна використовувати для підтримки проєкту та/або виводити на власну банківську карту, починаючи від суми <span className={css.num}>40</span> гривень.</p>
     <div className={css.tableRules}>
       <table className={css.table}>
-        <tr>
-            <th className={css.th}>Рівень структури учасника</th>
-            <th className={css.th}>Особистий рівень підтримки проєкту учасника</th>
-            <th className={css.th}>Бонус від суми внеску, %</th>
-        </tr>
-        <tr>
-            <td className={css.td}>1</td>
-            <td className={css.td}>1 і більше</td>
-            <td className={css.td}>10%</td>
-        </tr>
-        <tr>
-            <td className={css.td}>2</td>
-            <td className={css.td}>2 і більше</td>
-            <td className={css.td}>5%</td>
-        </tr>
-        <tr>
-            <td className={css.td}>3</td>
-            <td className={css.td}>3 і більше</td>
-            <td className={css.td}>5%</td>
-        </tr>
-        <tr>
-            <td className={css.td}>4</td>
-            <td className={css.td}>4 і більше</td>
-            <td className={css.td}>5%</td>
-        </tr>
-        <tr>
-            <td className={css.td}>5</td>
-            <td className={css.td}>5 і більше</td>
-            <td className={css.td}>5%</td>
-        </tr>
-        <tr>
-            <td className={css.td}>6</td>
-            <td className={css.td}>6 і більше</td>
-            <td className={css.td}>5%</td>
-        </tr>
-        <tr>
-            <td className={css.td}>7</td>
-            <td className={css.td}>7 і більше</td>
-            <td className={css.td}>5%</td>
-        </tr>
-        <tr>
-            <td className={css.td}>8</td>
-            <td className={css.td}>8 і більше</td>
-            <td className={css.td}>5%</td>
-        </tr>
+        <thead>
+            <tr>
+                <th className={css.th}>Рівень структури учасника</th>
+                <th className={css.th}>Особистий рівень підтримки проєкту учасника</th>
+                <th className={css.th}>Бонус від суми внеску, %</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td className={css.td}>1</td>
+                <td className={css.td}>1 і більше</td>
+                <td className={css.td}>10%</td>
+            </tr>
+            <tr>
+                <td className={css.td}>2</td>
+                <td className={css.td}>2 і більше</td>
+                <td className={css.td}>5%</td>
+            </tr>
+            <tr>
+                <td className={css.td}>3</td>
+                <td className={css.td}>3 і більше</td>
+                <td className={css.td}>5%</td>
+            </tr>
+            <tr>
+                <td className={css.td}>4</td>
+                <td className={css.td}>4 і більше</td>
+                <td className={css.td}>5%</td>
+            </tr>
+            <tr>
+                <td className={css.td}>5</td>
+                <td className={css.td}>5 і більше</td>
+                <td className={css.td}>5%</td>
+            </tr>
+            <tr>
+                <td className={css.td}>6</td>
+                <td className={css.td}>6 і більше</td>
+                <td className={css.td}>5%</td>
+            </tr>
+            <tr>
+                <td className={css.td}>7</td>
+                <td className={css.td}>7 і більше</td>
+                <td className={css.td}>5%</td>
+            </tr>
+            <tr>
+                <td className={css.td}>8</td>
+                <td className={css.td}>8 і більше</td>
+                <td className={css.td}>5%</td>
+            </tr>
+        </tbody>
       </table>
     </div>
   </div>

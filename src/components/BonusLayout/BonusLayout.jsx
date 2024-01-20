@@ -1,16 +1,8 @@
-import { useEffect, Suspense } from 'react';
-import { useDispatch } from "react-redux";
+import { Suspense } from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import { getIndicators, getPartners } from 'redux/partners/operations';
 import css from './BonusLayout.module.css';
 
 export const BonusLayout = () => {
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-        dispatch(getIndicators());
-        dispatch(getPartners()); 
-    }, [dispatch]);
 
     return (
         <>

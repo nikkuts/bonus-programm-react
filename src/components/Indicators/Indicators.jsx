@@ -1,16 +1,28 @@
-import { useSelector } from "react-redux";
+import { useEffect} from 'react';
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from 'react-router-dom';
-import { selectIndicators } from 'redux/partners/selectors';
-import { GrCircleInformation } from "react-icons/gr";
+import { getIndicators } from 'redux/partners/operations';
+import { selectIndicators, selectIsLoading } from 'redux/partners/selectors';
+import { ReactComponent as Info } from 'icons/info.svg';
 import css from './Indicators.module.css';
 
 export default function Indicators() {
+  const dispatch = useDispatch();
   const navigate = useNavigate();
   const indicators = useSelector(selectIndicators);
+  const isLoading = useSelector(selectIsLoading);
+
+    useEffect(() => {
+        dispatch(getIndicators());
+    }, [dispatch]);
 
     return (
+      <>
+      <div>{isLoading && <b>Завантаження даних...</b>}</div>
+      {indicators &&
       <div className={css.tableIndicators}>
         <table className={css.table}>
+          <tbody>
             <tr className={css.tr}>
                 <td className={css.tdChild1}>Бонусний рахунок, гривень</td>
                 <td className={css.tdChild2}>{indicators.bonusAccount.toFixed(2)}</td>
@@ -38,7 +50,7 @@ export default function Indicators() {
                       Мій особистий рівень підтримки проєкту
                     </span> 
                     <div className={css.tooltip}>
-                      <GrCircleInformation />
+                      <Info />
                     </div>
                   </div>
                 </td>
@@ -52,7 +64,9 @@ export default function Indicators() {
                   </button>
                 </td>
             </tr>
+          </tbody>
         </table>
-      </div>
+      </div>}
+      </>
     );
   };

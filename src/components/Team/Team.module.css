@@ -1,12 +1,33 @@
 .wrapperTeam {
+    position: relative;
     display: block;
     width: fit-content;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding: 10px 30px;
+    padding: 10px 50px;
     border: 1px solid #a3c5d3;
     border-radius: 20px;
+  }
+
+  .btnBack {
+    position: absolute;
+    top: 50%;
+    left: -15px;
+    transform: translateY(-50%) translateX(-100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #a3c5d3;
+    border-radius: 50%;
+  }
+
+  .btnBack:hover,  
+  .btnBack:focus {
+    background-color: beige;
+    cursor: pointer;
   }
 
   .userInfo {
@@ -29,16 +50,29 @@
     color: #FFC107;
   }
 
-  /* .userEmail {
-    font-weight: 500;
-  }
+  .tableTeam {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;   
+}
 
-  .userLevel {
-    font-weight: 700;
-    color: #0d30f5;
-  }
+.table {
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
 
-  .userLevelNum {
-    font-weight: 700;
-    color: #000000;
-  } */
+.td, .th {
+    border: 1px solid #a3c5d3;
+    padding: 10px;
+    width: auto;
+}
+
+.tr:hover,  
+.tr:focus,
+.tr:active {
+  background-color: beige;
+  cursor: pointer;
+}
