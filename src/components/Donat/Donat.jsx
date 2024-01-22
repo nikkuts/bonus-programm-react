@@ -1,10 +1,10 @@
 import axios from 'axios';
 import {AXIOS_BASE_URL, API_PAY_ENDPOINT} from '../../constants';
-import css from './Calculator.module.css';
+import css from './Donat.module.css';
 
 axios.defaults.baseURL = AXIOS_BASE_URL;
 
-export default function Calculator () {
+export default function Donat () {
   const apiPayEndpoint = API_PAY_ENDPOINT;
 
   const isAmountValid = (value) => {
@@ -59,17 +59,26 @@ export default function Calculator () {
   };
 
   return (
-    <form onSubmit={handleSubmit} className={css.form}>
-      <label className={css.label}>
-        Введіть сумму
-        <input
-          type="number"
-          name="amount"
-        />
-      </label>
-      <button type="submit" className={css.button}>
-        Підтримати
-      </button>
-    </form>
+    <>
+      <h1>
+        Допоможи
+        1 000 000 людей
+        перейти на українську
+        та звільнитися
+        від впливу росії
+      </h1>
+      <form onSubmit={handleSubmit} className={css.form}>
+        <label className={css.label}>
+          Введіть сумму
+          <input
+            type="number"
+            name="amount"
+          />
+        </label>
+        <button type="submit" className={css.button}>
+          Підтримати
+        </button>
+      </form>
+    </>
   );
 };

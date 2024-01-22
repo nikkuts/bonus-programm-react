@@ -1,9 +1,9 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 import { AppBar } from '../AppBar/AppBar';
-import css from './Layout.module.css';
+import css from './HomeLayout.module.css';
 
-export const Layout = () => {
+export const HomeLayout = () => {
 
   return (
     <div className={css.container}>

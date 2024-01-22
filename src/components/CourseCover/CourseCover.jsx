@@ -1,14 +1,14 @@
 import { useNavigate } from 'react-router-dom';
 import css from './CourseCover.module.css';
 
-export default function Course ({id, title}) {
+export default function CourseCover ({id, title}) {
   const navigate = useNavigate();
 
       return (
-          <li key={id} className={css.box}>
+          <li className={css.box}>
             <h2 className={css.title}>{title}</h2>
             <button type="button"
-              onClick={() => navigate(`/learn/${id}`)} 
+              onClick={() => navigate(`${id}`)} 
               className={css.button}
             >
               Продовжити навчання

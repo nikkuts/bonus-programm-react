@@ -30,7 +30,7 @@ export default function OfficeMenu ({closeOfficeMenu}) {
       <ul className={css.officeLink} onClick={closeOfficeMenu}>
         <li>
           <Link  
-              to="/profile"
+              to="profile"
               className={css.link}
           >
               Профіль
@@ -38,15 +38,15 @@ export default function OfficeMenu ({closeOfficeMenu}) {
         </li>
         <li>
           <Link  
-              to="/learn"
+              to="diary"
               className={css.link}
           >
-              Навчання
+              Щоденник
           </Link>
         </li>
         <li>
         <Link  
-              to="/bonus"
+              to="bonus"
               className={css.link}
           >
               Бонусна програма
@@ -55,7 +55,7 @@ export default function OfficeMenu ({closeOfficeMenu}) {
         <li>
         <Link  
             onClick={() => dispatch(logOut())}
-            to="/"
+            to="/login"
             className={css.link}
         >
             Вийти

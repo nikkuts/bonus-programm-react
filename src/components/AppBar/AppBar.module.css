@@ -3,43 +3,5 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    border-bottom: 1px solid #2a363b;
-  }
-
-  .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .logo {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 28px;
-    font-weight: 700;
-    color: #2a363b;   
-  }
-
-  .button {
-    display: inline-block;
-    border: 1px solid #ffffff;
-    border-radius: 20px;
-    padding: 0 20px;
-    width: auto;
-    height: 50px;
-    text-align: center;
-    text-overflow: ellipsis;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: calc(16/14);
-    overflow: hidden;
-    outline: none;
-    cursor: pointer;
-    color: #000000;
-    background-color: rgb(255, 255, 0);
-  }
-  
-  .button:hover,
-  .button:focus {
-    color: #0d30f5;
+    border-bottom: 1px solid #d7d2f3;
   }

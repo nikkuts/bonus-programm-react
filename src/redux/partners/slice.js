@@ -38,6 +38,7 @@ const partnersSlice = createSlice({
     .addCase(getTeam.fulfilled, (state, action) => {
       state.isLoading = false;
       state.error = null;
+      state.history = [];
       state.partner = action.payload;
     })
     .addCase(getTeam.rejected, handleRejected)

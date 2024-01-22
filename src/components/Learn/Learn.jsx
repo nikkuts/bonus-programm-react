@@ -9,7 +9,8 @@ export default function Learn () {
         <h1 className={css.title}>Моє навчання</h1>
         <ul className={css.learnList}>
           {courses.map((course) => (
-              <CourseCover 
+              <CourseCover
+                key={course.id} 
                 id={course.id} 
                 title={course.title} 
               />

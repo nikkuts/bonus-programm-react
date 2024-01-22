@@ -1,3 +1,18 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2a363b;   
+}
+  
   .office {
     position: relative;
   }

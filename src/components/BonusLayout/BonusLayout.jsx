@@ -10,7 +10,7 @@ export const BonusLayout = () => {
                 <ul className={css.bonusNav}>
                     <li>
                         <Link 
-                            to="/bonus"
+                            to=""
                             className={css.bonusLink}
                         >
                             Показники

@@ -9,24 +9,41 @@ export default function Course () {
 
     return (
         <div className={css.courseContainer}>
+            <h2 className={css.courseTitle}>{currentCourse.title}</h2>
             <ul className={css.courseHeader}>
-                <li>
-                    <Link 
-                        to="/learn"
-                        className={css.courseLink}
-                    >
-                        Курси
-                    </Link>
-                </li>
-                <li>
+                {/* <li>
                     <span>"{currentCourse.title}"</span>
+                </li> */}
+                <li>
+                    <Link 
+                        to=""
+                        className={css.courseLink}
+                    >
+                        Теорія
+                    </Link> 
                 </li>
                 <li>
                     <Link 
-                        to="/diary"
+                        to=""
                         className={css.courseLink}
                     >
-                        Щоденник моїх досягнень
+                        Вправи
+                    </Link> 
+                </li>
+                <li>
+                    <Link 
+                        to=""
+                        className={css.courseLink}
+                    >
+                        Перевірка
+                    </Link> 
+                </li>
+                <li>
+                    <Link 
+                        to=""
+                        className={css.courseLink}
+                    >
+                        Матеріали
                     </Link> 
                 </li>
             </ul>
@@ -36,7 +53,7 @@ export default function Course () {
                     currentCourse.lessons.map(lesson => (
                         <li key={lesson.day}>
                             <Link
-                                to={`/learn/${courseId}/${lesson.day}`}
+                                to={`${lesson.day}`}
                                 className={css.link}
                             >
                                 День {lesson.day}

@@ -21,12 +21,15 @@
   
   .bonusLink {
     display: inline-block;
-    font-weight: 700;
-    color: #2a363b;   
+    width: fit-content;
+    height: 40px;
+    padding: 10px;
+    font-weight: 600;
+    color: #000000;   
   }
   
   .bonusLink:hover,  
   .bonusLink:focus,
   .bonusLink:active {
-    color: #0d30f5;
+    background-color: beige;
   }

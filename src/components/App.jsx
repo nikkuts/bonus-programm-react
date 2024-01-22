@@ -1,20 +1,25 @@
 import { useEffect, lazy } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Routes } from 'react-router-dom';
-import { Layout } from "./Layout/Layout";
+import { LendingLayout } from 'components/LendingLayout';
+import { HomeLayout } from "./HomeLayout/HomeLayout";
 import { BonusLayout } from "./BonusLayout/BonusLayout";
 import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
 import { RestrictedRoute } from "./RestrictedRoute";
 import { PrivateRoute } from "./PrivateRoute";
 
+const LendingPage = lazy(() => import('../pages/Lending'));
 const HomePage = lazy(() => import('../pages/Home'));
 const RegisterPage = lazy(() => import('../pages/Register'));
 const LoginPage = lazy(() => import('../pages/Login'));
 const ProfilePage = lazy(() => import('../pages/Profile'));
-const DonationPage = lazy(() => import('../pages/Donation'));
-const CalculatorPage = lazy(() => import('../components/Calculator/Calculator'));
+const GamePage = lazy(() => import('./Game/Game'));
+const TournamentPage = lazy(() => import('./Tournament/Tournament'));
+const DonatPage = lazy(() => import('./Donat/Donat'));
+const WithdrawalPage = lazy(() => import('./Withdrawal/Withdrawal'));
 const IndicatorsPage = lazy(() => import('./Indicators/Indicators'));
+const HistoryPage = lazy(() => import('./History/History'));
 const ToolsPage = lazy(() => import('./Tools/Tools'));
 const StructurePage = lazy(() => import('../pages/Structure'));
 const RulesPage = lazy(() => import('./Rules/Rules'));
@@ -35,62 +40,75 @@ export default function App () {
     <b>Оновлення користувача...</b>
     ) : (  
     <Routes>
-      <Route path="/" element={<Layout />} >
-        <Route index element={<HomePage />} />
-        <Route path="/about" element={<HomePage />} />
-        <Route path="/donation" element={<DonationPage />} />
+      <Route path="/" element={<LendingLayout />}>
+        <Route index element={<LendingPage />} />
         <Route
-          path="/register"
-          element={
-            <RestrictedRoute redirectTo="/learn" component={<RegisterPage />} />
-          }
-        />
+            path="/register"
+            element={
+              <RestrictedRoute redirectTo="/uk" component={<RegisterPage />} />
+            }
+          />
+          <Route
+            path="/login"
+            element={
+              <RestrictedRoute redirectTo="/uk" component={<LoginPage />} />
+            }
+          />
         <Route
-          path="/login"
-          element={
-            <RestrictedRoute redirectTo="/learn" component={<LoginPage />} />
-          }
-        />
-        <Route
-          path="/profile"
-          element={
-            <PrivateRoute redirectTo="/login" component={<ProfilePage />} />
-          }
-        />
-        <Route
-          path="/learn"
-          element={
-            <PrivateRoute redirectTo="/login" component={<LearnPage />} />
-          }
-        />
-        <Route path="/learn/:courseId" element={<CoursePage />} >
-          <Route path="/learn/:courseId/:lessonId" element={<LessonPage />} />
-        </Route>
-        <Route
-          path="/diary"
-          element={
-            <PrivateRoute redirectTo="/login" component={<DiaryPage />} />
-          }
-        />
-        <Route
-          path="/bonus"
-          element={
-            <PrivateRoute redirectTo="/login" component={<BonusLayout />} />
-          }
+            path="/uk"
+            element={
+              <PrivateRoute redirectTo="/login" component={<HomeLayout />} />
+            }
         >
-          <Route index element={<IndicatorsPage />} />
-          <Route path="tools" element={<ToolsPage />} />
-          <Route path="team" element={<StructurePage />} />
-          <Route path="rules" element={<RulesPage />} />
+          <Route index element={<HomePage />} />
+          <Route path="learn" element={<LearnPage />} />
+          <Route path="learn/:courseId" element={<CoursePage />} >
+            <Route path=":lessonId" element={<LessonPage />} />
+          </Route>
+          <Route path="game" element={<GamePage />} />
+          <Route path="tournament" element={<TournamentPage />} />
+          <Route path="profile" element={<ProfilePage />} />
+          <Route path="diary" element={<DiaryPage />} />
+          {/* <Route
+            path="profile"
+            element={
+              <PrivateRoute redirectTo="/login" component={<ProfilePage />} />
+            }
+          />
+          <Route
+            path="learn"
+            element={
+              <PrivateRoute redirectTo="/login" component={<LearnPage />} />
+            }
+          />
+          <Route path="learn/:courseId" element={<CoursePage />} >
+            <Route path=":lessonId" element={<LessonPage />} />
+          </Route>
+          <Route
+            path="diary"
+            element={
+              <PrivateRoute redirectTo="/login" component={<DiaryPage />} />
+            }
+          />
+          <Route
+            path="bonus"
+            element={
+              <PrivateRoute redirectTo="/login" component={<BonusLayout />} />
+            }
+          > */}
+          <Route path="bonus" element={<BonusLayout />} >
+            <Route path="" element={<IndicatorsPage />} >
+              <Route path="history" element={<HistoryPage />} />
+            </Route>
+            <Route path="donat" element={<DonatPage />} />
+            <Route path="withdrawal" element={<WithdrawalPage />} />
+            <Route path="tools" element={<ToolsPage />} />
+            <Route path="team" element={<StructurePage />} />
+            <Route path="rules" element={<RulesPage />} />
+          </Route>
         </Route>
-        <Route
-          path="/calculator"
-          element={
-            <PrivateRoute redirectTo="/login" component={<CalculatorPage />} />
-          }
-        />
       </Route>
-      <Route path="*" element={<HomePage />} />
+      <Route path="*" element={<LendingPage />} />
     </Routes>
   );
 };
