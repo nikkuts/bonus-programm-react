@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { logOut } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
 import { selectIndicators } from 'redux/partners/selectors';
+import { ReactComponent as LogOut } from 'icons/log-out.svg';
 import css from './officeMenu.module.css';
 
 export default function OfficeMenu ({closeOfficeMenu}) {
@@ -58,7 +59,10 @@ export default function OfficeMenu ({closeOfficeMenu}) {
             to="/login"
             className={css.link}
         >
-            Вийти
+            <div className={css.logout}>
+              <span>Вийти</span>
+              <LogOut/>
+            </div>
         </Link>
         </li>
       </ul>

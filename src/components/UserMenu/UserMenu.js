@@ -4,13 +4,17 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Navigation } from 'components/Navigation/Navigation';
 import { getIndicators } from 'redux/partners/operations';
 import OfficeMenu from 'components/officeMenu/officeMenu';
+import { useAuth } from 'hooks';
 import { ReactComponent as Favicon } from 'icons/favicon.svg';
-import { ReactComponent as User } from 'icons/user-check.svg';
+import { ReactComponent as User } from 'icons/user.svg';
+import { ReactComponent as ChevronDown } from 'icons/chevron-down.svg';
+import { ReactComponent as ChevronUp } from 'icons/chevron-up.svg';
 import css from './UserMenu.module.css';
 
 export const UserMenu = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const {user} = useAuth();
 
   const [menuVisible, setMenuVisible] = useState(false);
   const userRef = useRef(null);
@@ -56,10 +60,15 @@ export const UserMenu = () => {
         onClick={toggleMenu}
         className={css.office}
       >
-        <User />
-        {menuVisible && 
-          <OfficeMenu />
-        }
+        <ul className={css.officeMenu}>
+          <li className={css.officeUser}>
+            <User /> {user.name}
+          </li>
+          <li>
+            {menuVisible ? <ChevronUp/> : <ChevronDown/>}
+          </li>
+        </ul>
+        {menuVisible && <OfficeMenu />}
       </div>
     </div>
   );

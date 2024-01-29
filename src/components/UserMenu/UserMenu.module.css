@@ -31,20 +31,30 @@
   
   .office {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 50px;
-    border-radius: 20px;
   }
 
-  .office:hover,  
-  .office:focus {
+  .officeMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .officeMenu:hover,  
+  .officeMenu:focus {
     background-color: beige;
     cursor: pointer;
   }
 
+  .officeUser {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
 
   .userName {
     font-weight: 700;

@@ -51,6 +51,13 @@
     background-color: beige;
   }
 
+.logout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
   .officeLink li:last-child {
     border-top: 1px solid #a3c5d3;
   }
