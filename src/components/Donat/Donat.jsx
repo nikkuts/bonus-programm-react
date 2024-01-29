@@ -1,5 +1,6 @@
 import axios from 'axios';
 import {AXIOS_BASE_URL, API_PAY_ENDPOINT} from '../../constants';
+import { Link } from 'react-router-dom';
 import css from './Donat.module.css';
 
 axios.defaults.baseURL = AXIOS_BASE_URL;
@@ -59,26 +60,48 @@ export default function Donat () {
   };
 
   return (
-    <>
-      <h1>
+    <div className={css.containerDonat}>
+      <h1 className={css.titleDonat}>
         Допоможи
         1 000 000 людей
         перейти на українську
         та звільнитися
         від впливу росії
       </h1>
-      <form onSubmit={handleSubmit} className={css.form}>
-        <label className={css.label}>
-          Введіть сумму
-          <input
-            type="number"
-            name="amount"
-          />
-        </label>
-        <button type="submit" className={css.button}>
-          Підтримати
-        </button>
+      <h2 className={css.decriptionDonat}>
+        Кожні 40 гривень Вашої підтримки 
+        надають можливість проєкту допомогти 
+        1 українцеві на місяць перейти на українську! 
+      </h2>
+      <form onSubmit={handleSubmit} className={css.formDonat}>
+        <ul className={css.listForm}>
+          <li>
+            <label className={css.label}>
+              Введіть бажану суму у гривнях кратну 40
+            </label>
+          </li>
+          <li>
+            <input className={css.input}
+              type="number"
+              name="amount"
+            />
+          </li>
+          <li>
+            <button type="submit" className={css.button}>
+              Підтримати
+            </button>
+          </li>
+          <li>
+            Я погоджуюсь з <Link 
+              to="https://yedyni.org/wp-content/uploads/2023/08/dogovir-oferty.pdf"
+              target="_blank"
+              className={css.oferta} 
+            >
+              Публічною офертою
+            </Link>
+          </li>
+        </ul>
       </form>
-    </>
+    </div>
   );
 };

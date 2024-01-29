@@ -3,19 +3,18 @@
 }
 
 .courseTitle {
-  color: #333;
   font-size: 20px;
-  font-weight: 600;
+  padding-top: 20px;
+  padding-left: 20px;
   text-align: left;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 .courseHeader {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
 }
 
 .courseLink {

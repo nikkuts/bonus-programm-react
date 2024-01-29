@@ -1,7 +1,7 @@
 import { useEffect, lazy } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Routes } from 'react-router-dom';
-import { LendingLayout } from 'components/LendingLayout';
+import { LendingLayout } from './LendingLayout/LendingLayout';
 import { HomeLayout } from "./HomeLayout/HomeLayout";
 import { BonusLayout } from "./BonusLayout/BonusLayout";
 import { refreshUser } from 'redux/auth/operations';
@@ -67,41 +67,14 @@ export default function App () {
           </Route>
           <Route path="game" element={<GamePage />} />
           <Route path="tournament" element={<TournamentPage />} />
+          <Route path="donat" element={<DonatPage />} />
           <Route path="profile" element={<ProfilePage />} />
           <Route path="diary" element={<DiaryPage />} />
-          {/* <Route
-            path="profile"
-            element={
-              <PrivateRoute redirectTo="/login" component={<ProfilePage />} />
-            }
-          />
-          <Route
-            path="learn"
-            element={
-              <PrivateRoute redirectTo="/login" component={<LearnPage />} />
-            }
-          />
-          <Route path="learn/:courseId" element={<CoursePage />} >
-            <Route path=":lessonId" element={<LessonPage />} />
-          </Route>
-          <Route
-            path="diary"
-            element={
-              <PrivateRoute redirectTo="/login" component={<DiaryPage />} />
-            }
-          />
-          <Route
-            path="bonus"
-            element={
-              <PrivateRoute redirectTo="/login" component={<BonusLayout />} />
-            }
-          > */}
           <Route path="bonus" element={<BonusLayout />} >
             <Route path="" element={<IndicatorsPage />} >
+              <Route path="withdrawal" element={<WithdrawalPage />} />
               <Route path="history" element={<HistoryPage />} />
             </Route>
-            <Route path="donat" element={<DonatPage />} />
-            <Route path="withdrawal" element={<WithdrawalPage />} />
             <Route path="tools" element={<ToolsPage />} />
             <Route path="team" element={<StructurePage />} />
             <Route path="rules" element={<RulesPage />} />

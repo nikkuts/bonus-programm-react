@@ -13,7 +13,7 @@ export const Navigation = () => {
           Курси
         </Link>
         <Link className={css.link} to="game">
-          Паляниця
+          Гра
         </Link>
         <Link className={css.link} to="tournament">
           Турнір

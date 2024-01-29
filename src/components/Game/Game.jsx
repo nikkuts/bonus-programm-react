@@ -1,4 +1,4 @@
-import css from './Game.module.css';
+// import css from './Game.module.css';
 
 export default function Game () {
     return (

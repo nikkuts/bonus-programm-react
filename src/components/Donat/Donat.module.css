@@ -1,0 +1,81 @@
+.containerDonat {
+    padding: 40px 70px;
+}
+
+.titleDonat {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.decriptionDonat {
+    color: #555;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.formDonat {
+    width: 400px;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #d7d2f3;
+    border-radius: 20px;
+}
+
+.listForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.label {
+    font-size: 16px;
+}
+
+.input {
+    width: 200px;
+    height: 50px;
+    padding: 10px 20px;
+    font-size: 28px;
+    border: 1px solid #dfdddd;
+    border-radius: 20px;
+    outline: none;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 0 20px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: calc(16/14);
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #3754fd;
+  }
+  
+  .button:hover,
+  .button:focus {
+    background-color: #0d30f5;
+  }
+
+  .oferta {
+    color: #0d30f5;
+    cursor: pointer;
+  }
+
+  .oferta:hover,
+  .oferta:focus {
+    color: #89a006;
+  }

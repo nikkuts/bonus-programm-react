@@ -1,16 +1,18 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import { AppBar } from '../AppBar/AppBar';
+import { UserMenu } from '../UserMenu/UserMenu';
 import css from './HomeLayout.module.css';
 
 export const HomeLayout = () => {
 
   return (
+    <>
     <div className={css.container}>
-      <AppBar />
+      <UserMenu />
       <Suspense fallback={null}>
         <Outlet />
       </Suspense>
     </div>
+    </>
   );
 };

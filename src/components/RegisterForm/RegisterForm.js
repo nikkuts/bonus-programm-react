@@ -2,22 +2,29 @@ import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
 import css from './RegisterForm.module.css';
 
-export const RegisterForm = ({closeRegisterForm}) => {
+export const RegisterForm = () => {
   const dispatch = useDispatch();
 
-  const closeForm = e => {
-    if (e.currentTarget === e.target) {
-      closeRegisterForm()
+  const isPasswordValid = (password) => {
+    if (password.length < 6) {
+      alert('Пароль має містити не менше 6 знаків');
+      return false;
     }
+    return true;
   };
  
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.currentTarget;
+    const password = form.elements.password.value;
+    
+    if (!isPasswordValid(password)) {
+      return;
+    }
     const formData = {
       name: form.elements.name.value,
       email: form.elements.email.value,
-      password: form.elements.password.value,
+      password,
     };
     const parseInviterId = JSON.parse(localStorage.getItem("inviterId"));
 
@@ -32,7 +39,7 @@ export const RegisterForm = ({closeRegisterForm}) => {
   };
 
   return (
-    <div className={css.overlay} onClick={closeForm}>
+    <div className={css.overlay}>
       <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
         <label className={css.label}>
           <input placeholder='Тарас Петелько' type="text" name="name" />

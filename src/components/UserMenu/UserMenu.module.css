@@ -1,3 +1,11 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  border-bottom: 1px solid #d7d2f3;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -6,15 +14,42 @@
 }
 
 .logo {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 28px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.textLogo {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
   font-weight: 700;
-  color: #2a363b;   
+  line-height: calc(20/18);
+  color: #0d5ef5;
 }
   
   .office {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+  }
+
+  .office:hover,  
+  .office:focus {
+    background-color: beige;
+    cursor: pointer;
+  }
+
+
+  .userName {
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFC107;
   }
 
   .button {

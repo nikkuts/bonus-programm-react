@@ -1,4 +1,4 @@
-import css from './History.module.css';
+// import css from './History.module.css';
 
 export default function History () {
     return (

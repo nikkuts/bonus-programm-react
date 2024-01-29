@@ -1,6 +1,7 @@
 // import { useSearchParams } from "react-router-dom";
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
+// import css from './LendingLayout.module.css';
 
 export const LendingLayout = () => {
     // const [searchParams] = useSearchParams();

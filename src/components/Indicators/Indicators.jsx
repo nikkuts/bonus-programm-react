@@ -58,7 +58,7 @@ export default function Indicators() {
                   <td className={css.tdChild2}>{indicators.levelSupport.toFixed(2)}</td>
                   <td className={css.tdChild3}>
                     <button type="button"
-                      onClick={() => navigate("donat")} 
+                      onClick={() => navigate("/uk/donat")}  
                       className={css.button}
                     >
                       Підтримати
