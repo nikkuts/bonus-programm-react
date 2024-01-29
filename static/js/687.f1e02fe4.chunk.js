@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkbonus_programm_react=self.webpackChunkbonus_programm_react||[]).push([[687],{2687:function(r,n,u){u.r(n),u.d(n,{default:function(){return t}});var e=u(3329);function t(){return(0,e.jsx)("div",{children:"\u0412\u0438\u0432\u0456\u0434"})}}}]);
+//# sourceMappingURL=687.f1e02fe4.chunk.js.map
