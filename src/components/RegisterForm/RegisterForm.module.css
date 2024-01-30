@@ -1,328 +1,111 @@
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+.wrapper {
   display: flex;
-  justify-content: center;
+}
+
+.wrapperForm {
+  width: 400px;
+  padding: 60px;
+}
+
+.logo {
+  display: flex;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 1200;
+  gap: 4px;
+  margin-bottom: 80px;
+}
+
+.textLogo {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: calc(20/18);
+  color: #0d5ef5;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 40px;
 }
 
 .form {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-top: 24px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 320px;
-  position: relative;
-  border-radius: 8px;
-  padding: 24px 20px;
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  overflow: hidden;
-  background-color: white;
-}
-
-.label input {
-  display: block;
-  width: 250px;
-  height: 32px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 10px;
-  font-size: 14px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-
-.button {
-  display: inline-block;
-  margin: auto;
-  border: none;
-  border-radius: 4px;
-  padding: 0 16px;
-  width: 120px;
-  height: 36px;
-  text-align: center;
-  text-overflow: ellipsis;
-  text-transform: uppercase;
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: calc(16/14);
-  overflow: hidden;
-  outline: none;
-  cursor: pointer;
-  color: #ffffff;
-  background-color: #0d5ef5;
-}
-
-.button:hover,
-.button:focus {
-  color: #0d30f5;
-  background-color: rgb(245, 245, 11);
-}
-
-
-
-/* .backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-  transition: opacity $display-time $function-time;
-  overflow-y: scroll;
-}
-
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.backdrop.is-hidden .contacts-modal {
-  transform: translate(-50%, -50%) scale(0.9);
-  opacity: 0;
-}
-
-.contacts-modal {
-  position: relative;
-  width: 280px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  padding: 28px;
-  background-color: $white-color;
-  border: 2px solid $default-color;
-  border-radius: 10px;
-  opacity: 1;
-
-  @media screen and (min-width: $tab) {
-      position: absolute;
-      width: 568px;
-      padding: 32px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 80px;
   }
-}
 
-.contacts-modal-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: flex;
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  align-items: center;
-  justify-content: center;
-  color: $black-color;;
-  background-color: transparent;
-  border: 0px transparent;
-  border-radius: 10px;
-  z-index: $second-index;
-  cursor: pointer;
-  transition: background-color $display-time $function-time;
+  .label {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .input {
+    display: block;
+    width: 280px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 30px;
+    font-size: 16px;
+    border: 1px solid #dfdddd;
+    border-radius: 20px;
+  }
+
+  .wrapperInput {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .passwordInput {
+    position: relative;
+  }
+
+  .eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .button {
+    display: block;
+    margin: auto;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 0 20px;
+    width: 280px;
+    height: 50px;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: calc(16/14);
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #3754fd;
+  }
   
-  &:hover,
-  &:focus {
-      background-color: $default-color;
+  .button:hover,
+  .button:focus {
+    background-color: #0d30f5;
   }
 
-  &:hover .contacts-modal-close,
-  &:focus .contacts-modal-close {
-      fill: $white-color;
+  .link {
+    text-decoration: underline;
+    color: #0d30f5;
+    cursor: pointer;
   }
 
-  @media screen and (min-width: $tab) {
-      top: 10px;
-      right: 10px;
-      width: 36px;
-      height: 36px;
-      padding: 6px;
-  } 
-}
-
-.contacts-modal-close {
-  width: 20px;
-  height: 20px;
-  fill: $black-color;
-  transition: fill $display-time $function-time;
-
-  @media screen and (min-width: $tab) {
-      width: 24px;
-      height: 24px;
-  } 
-}
-
-.contacts-modal-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.contacts-modal-title {
-  margin-bottom: 20px;
-  font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: calc(24/16);
-  text-align: center;
-  color: $black-color;
-
-  @media screen and (min-width: $tab) {
-      width: 322px;
-      margin-bottom: 24px;
-      font-size: 20px;
-      line-height: calc(28/20);
-  }
-}
-
-.location-picture {
-  display: block;
-  width: 224px;
-  height: 199px;
-  margin-bottom: 24px;
-  border-radius: 10px;
-
-  @media screen and (min-width: $tab) {
-      width: 448px;
-      height: 260px;
-      margin-bottom: 32px;
-  }
-} 
-
-.contacts-modal-description {
-  margin-bottom: 24px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(20/14);
-  color: $black-color;
-
-  @media screen and (min-width: $tab) {
-      margin-bottom: 32px;
-      font-size: 16px;
-      line-height: calc(22/16);
-  }
-}
-
-.contacts-modal-field input {
-  width: 224px;
-  height: 32px; 
-  margin-bottom: 12px;
-  padding-left: 12px;
-  padding-top: 8px;
-  padding-bottom: 7px;
-  background-color: rgba(248, 210, 78, 0.1);
-  border: 1px solid $background-color;
-  border-radius: 10px;
-
-  @media screen and (min-width: $tab) {
-      width: 368px;
-      height: 42px;
-      margin-bottom: 24px;
-      padding-left: 16px;
-      padding-top: 11px; 
-      padding-bottom: 11px;
-  }
-}
-
-.contacts-modal-field textarea {
-  width: 224px;
-  height: 64px; 
-  margin-bottom: 24px;
-  padding-left: 12px;
-  padding-top: 8px;
-  background-color: rgba(248, 210, 78, 0.1);
-  border: 1px solid $background-color;
-  border-radius: 10px;
-
-  @media screen and (min-width: $tab) {
-      width: 368px;
-      height: 84px;
-      margin-bottom: 32px;
-      padding-left: 16px;
-      padding-top: 11px;
-  }
-}
-
-.contacts-modal-field input::placeholder,
-.contacts-modal-field textarea::placeholder {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400px;
-  font-size: 12px;
-  line-height: calc(17/12);
-  color: $black-color;
-  
-  @media screen and (min-width: $tab) {
-      font-size: 14px;
-      line-height: calc(20/14);
-  }
-}
-
-.contacts-modal-form-btn {
-  height: 42px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: calc(15/12);
-  text-align: center;
-  color: $black-color;   
-  background-color: $default-color;
-  border: 0 solid transparent;
-  border-radius: 10px;
-  cursor: pointer;
-
-  transition: color $display-time $function-time, 
-  background-color $display-time $function-time;
-
-  &:hover {
-  color: #000000;
-  background-color: $accent-color;
+  .text {
+    margin-top: 40px;
   }
 
-  &:focus {
-  color: #FFFFFF;
-  background-color: $accent-color;
+  .image {
+    max-width: 100%;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
   }
-
-  &:disabled {
-  color: $black-color;
-  background-color: $disabled-color;
-  }
-
-  @media screen and (min-width: $tab) {
-      width: 121px;
-      font-size: 14px;
-      line-height: calc(17/14);
-  }
-}
-
-.contacts-modal-form-btn.location {
-  display: block;
-  width: 134px;
-
-  @media screen and (min-width: $tab) {
-      width: 145px;
-  }
-}
-
-.contacts-modal-form-btn.franshise {
-  width: 114px;
-
-  @media screen and (min-width: $tab) {
-      width: 121px;
-  }
-} */

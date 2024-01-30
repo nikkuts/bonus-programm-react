@@ -27,7 +27,6 @@ export const LoginForm = () => {
         password: form.elements.password.value,
       })
     );
-    form.reset();
   };
 
   return (
@@ -47,9 +46,9 @@ export const LoginForm = () => {
               type="email" 
               name="email" 
               className={css.input}
-            />   
+            />
           </div>
-          <div className={css.wrapperInput}>
+          <div className={css.wrapperInput}>   
             <label className={css.label}>
               Пароль
             </label>
@@ -69,7 +68,6 @@ export const LoginForm = () => {
               </div>
             </div>
           </div>
-          
           <button className={css.button} type="submit">Увійти</button>
         </form>
         <Link

@@ -19,6 +19,7 @@ export const register = createAsyncThunk(
       setAuthHeader(response.data.token);
       return response.data;
     } catch (error) {
+      alert(error.response.data.message); 
       return thunkAPI.rejectWithValue(error.message);
     }
   }
@@ -32,7 +33,7 @@ export const logIn = createAsyncThunk(
       setAuthHeader(response.data.token);
       return response.data;
     } catch (error) {
-      alert('Email або пароль недійсні');
+      alert("Email або пароль недійсний");
       return thunkAPI.rejectWithValue(error.message);
     }
   }
