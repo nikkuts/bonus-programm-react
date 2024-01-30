@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/849.25673c79.chunk.js","mappings":"kMAAe,SAASA,IACpB,OACEC,EAAAA,EAAAA,KAAA,OAAAC,SAAK,+FAIT,C","sources":["pages/Bonus.js"],"sourcesContent":["export default function Bonus() {\r\n    return (\r\n      <div>\r\n        Бонусна програма\r\n      </div>\r\n    );\r\n  };"],"names":["Bonus","_jsx","children"],"sourceRoot":""}
