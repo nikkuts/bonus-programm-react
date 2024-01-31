@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkbonus_programm_react=self.webpackChunkbonus_programm_react||[]).push([[797],{797:function(r,n,e){e.r(n),e.d(n,{default:function(){return t}});var u="Tournament_wrapperTournament__bQZhl",a=e(3329);function t(){return(0,a.jsx)("div",{className:u,children:"\u0422\u0443\u0440\u043d\u0456\u0440"})}}}]);
+//# sourceMappingURL=797.24c68331.chunk.js.map

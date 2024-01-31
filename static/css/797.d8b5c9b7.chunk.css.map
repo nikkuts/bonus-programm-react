@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/797.d8b5c9b7.chunk.css","mappings":"AAAA,qCACI,6BAA8B,CAC9B,iBACJ","sources":["components/Tournament/Tournament.module.css"],"sourcesContent":[".wrapperTournament {\n    min-height: calc(100vh - 50px);\n    padding: 40px 70px;\n}"],"names":[],"sourceRoot":""}
