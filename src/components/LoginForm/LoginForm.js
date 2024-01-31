@@ -8,7 +8,7 @@ import { ReactComponent as Eye } from 'icons/eye.svg';
 import bgImage from '../../service/bgimg.jpg';
 import css from './LoginForm.module.css';
 
-export const LoginForm = () => {
+export default function LoginForm () {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 

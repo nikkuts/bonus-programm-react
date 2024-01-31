@@ -8,7 +8,7 @@ import { ReactComponent as Eye } from 'icons/eye.svg';
 import bgImage from '../../service/bgimg.jpg';
 import css from './RegisterForm.module.css';
 
-export const RegisterForm = () => {
+export default function RegisterForm () {
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 

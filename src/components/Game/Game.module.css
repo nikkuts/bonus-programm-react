@@ -1,0 +1,82 @@
+.wrapperGame {
+    min-height: calc(100vh - 50px);
+    padding: 40px 70px;
+}
+
+.titleGame {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.decriptionGame {
+    color: #555;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.listGame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 50px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 136px;
+    height: 180px;
+    padding: 5px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    border: 1px solid #d7d2f3;
+    border-radius: 20px;
+}
+
+.numberItem {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff8800;  
+}
+
+.text {
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 0 20px;
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: calc(16/14);
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #3754fd;
+  }
+  
+  .button:hover,
+  .button:focus {
+    background-color: #0d30f5;
+  }
