@@ -64,7 +64,7 @@ export default function LoginForm () {
                 onClick={togglePasswordVisibility}
                 className={css.eye} 
               >
-                {showPassword ? <Eye/> : <EyeOff/>} 
+                {showPassword ? <EyeOff/> : <Eye/>} 
               </div>
             </div>
           </div>

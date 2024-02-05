@@ -7,114 +7,135 @@ export default function Course () {
     const {courseId} = useParams();
     const currentCourse = courses.find(course => course.id === courseId);
 
-    if (courseId === "id-2") {
-        
-        return (
-            <div className={css.courseContainer}>
-                <h2 className={css.courseTitle}>{currentCourse.title}</h2>
-                <ul className={css.courseHeader}>
-                    <li>
-                        <Link 
-                            to=""
-                            className={css.courseLink}
-                        >
-                            Теорія
-                        </Link> 
-                    </li>
-                    <li>
-                        <Link 
-                            to=""
-                            className={css.courseLink}
-                        >
-                            Практика
-                        </Link> 
-                    </li>
-                    <li>
-                        <Link 
-                            to=""
-                            className={css.courseLink}
-                        >
-                            Відповіді
-                        </Link> 
-                    </li>
-                    <li>
-                        <Link 
-                            to=""
-                            className={css.courseLink}
-                        >
-                            Тестування
-                        </Link> 
-                    </li>
-                    <li>
-                        <Link 
-                            to=""
-                            className={css.courseLink}
-                        >
-                            Матеріали
-                        </Link> 
-                    </li>
-                </ul>
-                <div className={css.courseWrapper}>
-                    <ul className={css.courseList}>
-                        {currentCourse &&
-                        currentCourse.lessons.map(lesson => (
-                            <li key={lesson.day}>
-                                <Link
-                                    to={`${lesson.day}`}
-                                    className={css.link}
-                                >
-                                    День {lesson.day}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                    <Suspense fallback={null}>
-                        <Outlet />
-                    </Suspense>
-                </div>
-            </div>
-        )
+    if (!currentCourse) {
+        return alert('Курс не знайдено');
     }
-
+    
     return (
         <div className={css.courseContainer}>
             <h2 className={css.courseTitle}>{currentCourse.title}</h2>
-            <ul className={css.courseHeader}>
-                <li>
-                    <Link 
-                        to=""
-                        className={css.courseLink}
-                    >
-                        Завдання червоне
-                    </Link> 
+            <ul className={css.courseWave}>
+                <li className={css.currentWave}>
+                <span className={css.numberWave}>{currentCourse.wave}</span> хвиля
                 </li>
                 <li>
-                    <Link 
-                        to=""
-                        className={css.courseLink}
+                    <Link
+                        to={`${currentCourse.canal}`}
+                        target='blank' 
+                        className={css.courseBtn}
                     >
-                        Завдання зелене
-                    </Link> 
+                        Канал
+                    </Link>
                 </li>
-            </ul>
+                <li>
+                    <Link
+                        to={`${currentCourse.chat}`}
+                        target='blank' 
+                        className={css.courseBtn}
+                    >
+                        Чат
+                    </Link>
+                </li>
+            </ul>                
             <div className={css.courseWrapper}>
                 <ul className={css.courseList}>
-                    {currentCourse &&
-                    currentCourse.lessons.map(lesson => (
+                    {currentCourse.lessons.slice(0,7).map(
+                        lesson => (
                         <li key={lesson.day}>
                             <Link
                                 to={`${lesson.day}`}
                                 className={css.link}
                             >
-                                День {lesson.day}
+                                День {lesson.day}. {lesson.theme}
                             </Link>
                         </li>
                     ))}
                 </ul>
-                <Suspense fallback={null}>
-                    <Outlet />
-                </Suspense>
+                <ul className={css.courseList}>
+                    {currentCourse.lessons.slice(0,7).map(
+                        lesson => (
+                        <li key={lesson.day}>
+                            <Link
+                                to={`${lesson.day}`}
+                                className={css.link}
+                            >
+                                День {lesson.day}. {lesson.theme}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+                <ul className={css.courseList}>
+                    {currentCourse.lessons.slice(0,7).map(
+                        lesson => (
+                        <li key={lesson.day}>
+                            <Link
+                                to={`${lesson.day}`}
+                                className={css.link}
+                            >
+                                День {lesson.day}. {lesson.theme}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
+                <ul className={css.courseList}>
+                    {currentCourse.lessons.slice(0,7).map(
+                        lesson => (
+                        <li key={lesson.day}>
+                            <Link
+                                to={`${lesson.day}`}
+                                className={css.link}
+                            >
+                                День {lesson.day}. {lesson.theme}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
             </div>
+            <Suspense fallback={null}>
+                <Outlet />
+            </Suspense>
         </div>
     )
-  };
+}
+
+    // return (
+    //     <div className={css.courseContainer}>
+    //         <h2 className={css.courseTitle}>{currentCourse.title}</h2>
+    //         <ul className={css.courseHeader}>
+    //             <li>
+    //                 <Link 
+    //                     to=""
+    //                     className={css.courseLink}
+    //                 >
+    //                     Завдання червоне
+    //                 </Link> 
+    //             </li>
+    //             <li>
+    //                 <Link 
+    //                     to=""
+    //                     className={css.courseLink}
+    //                 >
+    //                     Завдання зелене
+    //                 </Link> 
+    //             </li>
+    //         </ul>
+    //         <div className={css.courseWrapper}>
+    //             <ul className={css.courseList}>
+    //                 {currentCourse &&
+    //                 currentCourse.lessons.map(lesson => (
+    //                     <li key={lesson.day}>
+    //                         <Link
+    //                             to={`${lesson.day}`}
+    //                             className={css.link}
+    //                         >
+    //                             День {lesson.day}
+    //                         </Link>
+    //                     </li>
+    //                 ))}
+    //             </ul>
+    //             <Suspense fallback={null}>
+    //                 <Outlet />
+    //             </Suspense>
+    //         </div>
+    //     </div>
+    // )

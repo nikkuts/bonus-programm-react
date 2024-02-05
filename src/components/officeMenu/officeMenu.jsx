@@ -15,9 +15,6 @@ export default function OfficeMenu ({closeOfficeMenu}) {
 <>
   <ul className={css.menu}>
     <li>
-
-    </li>
-    <li>
       <ul className={css.userInfo}>
         <li className={css.userName}>{user.name}</li>
         <li className={css.userEmail}>{user.email}</li>

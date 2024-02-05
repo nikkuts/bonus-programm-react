@@ -1,11 +1,14 @@
 [
     { 
         "id": "id-1", 
-        "title": "Курс переходу на українську мову", 
+        "title": "Курс переходу на українську мову",
+        "wave": "22",
+        "canal": "https://t.me/+4FDSNUGr6UFhMmQy",
+        "chat": "https://t.me/+zCG5MH23nlc3Y2Ri", 
         "lessons": [
             {
                 "day": "1",
-                "theory": "",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vSgKmEhMgsQ_x19GeTw66wvhlv-tGdO2quk6kr-_iqZNWJb0JpywY7xkjrql5KbAiC0lh3-1Aq_oWgk/pub?embedded=true",
                 "exercises": ""
             },
             {
@@ -47,79 +50,81 @@
     },
     { 
         "id": "id-2", 
-        "title": "Граматичний курс української мови", 
+        "title": "Граматичний курс української мови",
+        "wave": "15",
+        "canal": "https://t.me/+p-zccEIohMFhYzU6",
+        "chat": "https://t.me/+NMeUYyEQNlY1NjYy", 
         "lessons": [
             {
                 "day": "1",
-                "theme": "",
-                "theory": "https://drive.google.com/file/d/1LTqPoeXPA5K5Xk3yhtLZqb6qFXDLrO9N/view",
-                "exercises": "",
+                "theme": "Мотивація",
+                "content": "https://drive.google.com/file/d/1LTqPoeXPA5K5Xk3yhtLZqb6qFXDLrO9N/preview",
+                "materials": "https://drive.google.com/file/d/1Md8UwHarDqC5ajCKViUjejTjf0FTdlp9/preview",
+                "practice": "",
                 "answers": "",
-                "materials": "",
-                "test": "",
-                "link": "https://drive.google.com/file/d/1LTqPoeXPA5K5Xk3yhtLZqb6qFXDLrO9N/view"
+                "test": ""
             },
             {
                 "day": "2",
                 "theme": "",
                 "theory": "",
-                "exercises": "",
-                "answers": "",
                 "materials": "",
+                "practice": "",
+                "answers": "",
                 "test": ""
             },
             {
                 "day": "3",
                 "theme": "",
                 "theory": "",
-                "exercises": "",
-                "answers": "",
                 "materials": "",
+                "practice": "",
+                "answers": "",
                 "test": ""
             },
             {
                 "day": "4",
                 "theme": "",
                 "theory": "",
-                "exercises": "",
-                "answers": "",
                 "materials": "",
+                "practice": "",
+                "answers": "",
                 "test": ""
             },
             {
                 "day": "5",
                 "theme": "",
                 "theory": "",
-                "exercises": "",
-                "answers": "",
                 "materials": "",
+                "practice": "",
+                "answers": "",
                 "test": ""
             },
             {
                 "day": "6",
                 "theme": "",
                 "theory": "",
-                "exercises": "",
-                "answers": "",
                 "materials": "",
+                "practice": "",
+                "answers": "",
                 "test": ""
             },
             {
                 "day": "7",
                 "theme": "",
                 "theory": "",
-                "exercises": "",
-                "answers": "",
                 "materials": "",
+                "practice": "",
+                "answers": "",
                 "test": ""
             },
             {
                 "day": "8",
                 "theme": "",
                 "theory": "",
-                "exercises": "",
-                "answers": "",
                 "materials": "",
+                "practice": "",
+                "answers": "",
                 "test": ""
             }
         ] 

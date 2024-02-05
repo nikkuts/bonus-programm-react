@@ -1,0 +1,26 @@
+.lessonNavigation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.lessonNavLink {
+display: inline-block;
+width: fit-content;
+height: 40px;
+padding: 10px;
+font-weight: 600;
+color: #000000;    
+}
+
+.lessonNavLink:hover,  
+.lessonNavLink:focus,
+.lessonNavLink:active {
+background-color: beige;
+}
+
+.wrapperFrame {
+  padding: 30px 100px;
+}
