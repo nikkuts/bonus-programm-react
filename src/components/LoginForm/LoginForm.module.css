@@ -1,8 +1,11 @@
 .wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
 }
 
 .wrapperForm {
+  display: block;
   width: 400px;
   padding: 60px;
 }
@@ -104,8 +107,5 @@
   }
 
   .image {
-    max-width: 100%;
-    overflow: hidden;
     width: 100%;
-    height: auto;
   }

@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 import {AXIOS_BASE_URL, API_PAY_ENDPOINT} from '../../constants';
-import { Link } from 'react-router-dom';
+import { newLevelSupport } from '../../service/newLevelSupport';
+import { useAuth } from 'hooks';
 import { ReactComponent as CheckSquare } from 'icons/check-square.svg';
 import { ReactComponent as Square } from 'icons/square.svg';
 import css from './Donat.module.css';
@@ -10,7 +12,18 @@ axios.defaults.baseURL = AXIOS_BASE_URL;
 
 export default function Donat () {
   const apiPayEndpoint = API_PAY_ENDPOINT;
+  const [checkboxSubscription, setCheckboxSubscription] = useState(false);
   const [checkboxOfertaAgreed, setCheckboxOfertaAgreed] = useState(false);
+  const [currentAmount, setCurrentAmount] = useState('');
+  const {user} = useAuth();
+
+  const handleCurrentAmount = (e) => {
+    setCurrentAmount(e.target.value);
+  }
+
+  const toggleCheckboxSubscription = () => {
+    setCheckboxSubscription(!checkboxSubscription);
+  };
 
   const toggleCheckboxOferta = () => {
     setCheckboxOfertaAgreed(!checkboxOfertaAgreed);
@@ -35,48 +48,65 @@ export default function Donat () {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const calc = e.currentTarget;
-    const amount = calc.elements.amount.value;
-    const comment = calc.elements.comment.value.trim();
-
-    if (!isAmountValid(amount)) {
-      return;
-    }
     
-    if (!isCommentValid(comment)) {
+    if (!checkboxOfertaAgreed) {
+      alert('Будь ласка, погодьтесь з умовами договору оферти');
       return;
-    }
-
-    try {
-      const response = await axios.post("/api/payments/donat", {amount, comment});
-      const postData = response.data;
-
-      // Створення форми та автоматичне надсилання
-      const form = document.createElement('form');
-      form.method = 'POST';
-      form.action = apiPayEndpoint;
-      form.acceptCharset = 'utf-8';
-  
-      // Додавання прихованих полів
-      Object.entries(postData).forEach(([name, value]) => {
-        const input = document.createElement('input');
-        input.type = 'hidden';
-        input.name = name;
-        input.value = value;
-        form.appendChild(input);
-      });
-  
-      // Додавання форми до body та автоматичне відправлення
-      document.body.appendChild(form);
-      form.submit();
-      document.body.removeChild(form); 
     } 
-    catch (error) {
-      console.error('Помилка під час відправлення форми:', error);
-      alert('Помилка відправки форми. Будь ласка, спробуйте повторити.');
-    }
-    finally {
-      calc.reset();
+    else {
+      const calc = e.currentTarget;
+      const amount = calc.elements.amount.value;
+      const comment = calc.elements.comment.value.trim();
+
+      if (!isAmountValid(amount)) {
+        return;
+      }
+      
+      if (!isCommentValid(comment)) {
+        return;
+      }
+
+      const formData = {amount};
+
+      if (comment !== '') {
+        formData.comment = comment;
+      }
+
+      if (checkboxSubscription) {
+        formData.subscribe = '1';
+      }
+
+      try {
+        const response = await axios.post("/api/payments/donat", formData);
+        const postData = response.data;
+
+        // Створення форми та автоматичне надсилання
+        const form = document.createElement('form');
+        form.method = 'POST';
+        form.action = apiPayEndpoint;
+        form.acceptCharset = 'utf-8';
+    
+        // Додавання прихованих полів
+        Object.entries(postData).forEach(([name, value]) => {
+          const input = document.createElement('input');
+          input.type = 'hidden';
+          input.name = name;
+          input.value = value;
+          form.appendChild(input);
+        });
+    
+        // Додавання форми до body та автоматичне відправлення
+        document.body.appendChild(form);
+        form.submit();
+        document.body.removeChild(form); 
+      } 
+      catch (error) {
+        console.error('Помилка під час відправлення форми:', error);
+        alert('Помилка відправки форми. Будь ласка, спробуйте повторити.');
+      }
+      finally {
+        calc.reset();
+      }
     }
   };
 
@@ -91,11 +121,21 @@ export default function Donat () {
       </h1>
       <h2 className={css.decriptionDonat}>
         Кожні 40 гривень Вашої підтримки 
-        надають можливість проєкту допомогти 
+        надають проєкту можливість допомогти 
         1 українцеві на місяць перейти на українську! 
       </h2>
       <form onSubmit={handleSubmit} className={css.formDonat}>
         <ul className={css.listForm}>
+          <li className={css.checkBox}>
+            <div 
+              onClick={toggleCheckboxSubscription} 
+            >
+              {checkboxSubscription ? <CheckSquare/> : <Square/>} 
+            </div>
+            <label className={css.text}>
+              Я погоджуюсь на щомісячний внесок 
+            </label>
+          </li>
           <li>
             <label className={css.label}>
               Введіть бажану суму у гривнях кратну 40
@@ -103,7 +143,18 @@ export default function Donat () {
             <input className={css.input}
               type="number"
               name="amount"
+              value={currentAmount}
+              placeholder='320'
+              onChange={handleCurrentAmount}
             />
+          </li>
+          <li>
+            <label className={css.label}>
+              Мій новий рівень підтримки
+            </label>
+            <div className={css.levelNum}>
+              {currentAmount !== '' && newLevelSupport(user, currentAmount).toFixed(2)}
+            </div>
           </li>
           <li>
             <label className={css.label}>
@@ -117,13 +168,12 @@ export default function Donat () {
           </li>
           <li>
             <button 
-              type="submit"
-              disabled={!checkboxOfertaAgreed} 
+              type="submit" 
               className={css.button}>
               Підтримати
             </button>
           </li>
-          <li className={css.ofertaBlock}>
+          <li className={css.checkBox}>
             <div 
               onClick={toggleCheckboxOferta} 
             >
