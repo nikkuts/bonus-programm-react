@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { Link, useNavigate } from 'react-router-dom';
 import { Navigation } from 'components/Navigation/Navigation';
 import { getIndicators } from 'redux/partners/operations';
-import OfficeMenu from 'components/officeMenu/officeMenu';
+import { OfficeMenu } from 'components/OfficeMenu/OfficeMenu';
 import { useAuth } from 'hooks';
 import { ReactComponent as Favicon } from 'icons/favicon.svg';
 import { ReactComponent as User } from 'icons/user.svg';
@@ -17,10 +17,10 @@ export const UserMenu = () => {
   const {user} = useAuth();
 
   const [menuVisible, setMenuVisible] = useState(false);
-  const userRef = useRef(null);
+  const officeRef = useRef();
 
   const handleClickOutside = (e) => {
-    if (userRef.current && !userRef.current.contains(e.target)) {
+    if (officeRef.current && !officeRef.current.contains(e.target)) {
       setMenuVisible(false);
     }
   };
@@ -56,7 +56,7 @@ export const UserMenu = () => {
         </button>
       </nav>
       <div 
-        ref={userRef}
+        ref={officeRef}
         onClick={toggleMenu}
         className={css.office}
       >
@@ -64,7 +64,13 @@ export const UserMenu = () => {
           <li className={css.officeUser}>
             <User /> {user.name}
           </li>
-          <li>
+          <li 
+            onClick={(e) => { 
+              e.preventDefault(); 
+              e.stopPropagation(); 
+              toggleMenu(); 
+            }}
+          >
             {menuVisible ? <ChevronUp/> : <ChevronDown/>}
           </li>
         </ul>

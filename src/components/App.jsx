@@ -85,8 +85,8 @@ export default function App () {
           <Route path="bonus" element={<BonusLayout />} >
             <Route path="" element={<IndicatorsPage />} >
               <Route path="withdrawal" element={<WithdrawalPage />} />
-              <Route path="history" element={<HistoryPage />} />
             </Route>
+            <Route path="history" element={<HistoryPage />} />
             <Route path="tools" element={<ToolsPage />} />
             <Route path="team" element={<StructurePage />} />
             <Route path="rules" element={<RulesPage />} />

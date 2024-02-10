@@ -4,9 +4,9 @@ import { logOut } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
 import { selectIndicators } from 'redux/partners/selectors';
 import { ReactComponent as LogOut } from 'icons/log-out.svg';
-import css from './officeMenu.module.css';
+import css from './OfficeMenu.module.css';
 
-export default function OfficeMenu ({closeOfficeMenu}) {
+export const OfficeMenu = () => {
   const {user} = useAuth();
   const {levelSupport} = useSelector(selectIndicators);
   const dispatch = useDispatch();
@@ -25,7 +25,7 @@ export default function OfficeMenu ({closeOfficeMenu}) {
       </ul>
     </li>
     <li>
-      <ul className={css.officeLink} onClick={closeOfficeMenu}>
+      <ul className={css.officeLink}>
         <li>
           <Link  
               to="profile"

@@ -38,7 +38,9 @@
   }
 
 .link {
-    display: inline-block;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
     padding: 16px;
     font-weight: 700;
@@ -56,7 +58,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 8px;
+  width: 100%;
 }
 
   .officeLink li:last-child {

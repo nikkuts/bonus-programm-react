@@ -3,6 +3,12 @@
     padding: 30px;
 }
 
+.title {
+  font-size: 24px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
   .bonusTitle {
     color: #333;
     font-size: 20px;
@@ -15,15 +21,15 @@
   .bonusNav {
       display: flex;
       align-items: center;
-      gap: 40px;
+      gap: 20px;
       padding: 20px;
   }
   
   .bonusLink {
-    display: inline-block;
+    display: block;
     width: fit-content;
     height: 40px;
-    padding: 10px;
+    padding: 10px 20px;
     font-weight: 600;
     color: #000000;   
   }
@@ -32,4 +38,27 @@
   .bonusLink:focus,
   .bonusLink:active {
     background-color: beige;
+  }
+
+  .history {
+    position: relative;
+  }
+
+  .historyMenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+  }
+
+  .historyMenu:hover,  
+  .historyMenu:focus {
+    background-color: beige;
+  }
+
+  .icon {
+    display: block;
+    width: 24px;
+    height: 24px;
   }
