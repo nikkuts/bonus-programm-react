@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from "react-redux";
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import {AXIOS_BASE_URL, API_PAY_ENDPOINT} from '../../constants';
-import { newLevelSupport } from '../../service/newLevelSupport';
-import { useAuth } from 'hooks';
+import { getNewLevelSupport } from 'service/getNewLevelSupport';
+import { getIndicators } from 'redux/partners/operations';
+import { selectIndicators } from 'redux/partners/selectors';
 import { ReactComponent as CheckSquare } from 'icons/check-square.svg';
 import { ReactComponent as Square } from 'icons/square.svg';
 import css from './Donat.module.css';
@@ -12,10 +14,13 @@ axios.defaults.baseURL = AXIOS_BASE_URL;
 
 export default function Donat () {
   const apiPayEndpoint = API_PAY_ENDPOINT;
+
   const [checkboxSubscription, setCheckboxSubscription] = useState(false);
   const [checkboxOfertaAgreed, setCheckboxOfertaAgreed] = useState(false);
   const [currentAmount, setCurrentAmount] = useState('');
-  const {user} = useAuth();
+  
+  const {totalTime, totalDonat} = useSelector(selectIndicators);
+  const dispatch = useDispatch();
 
   const handleCurrentAmount = (e) => {
     setCurrentAmount(e.target.value);
@@ -110,6 +115,10 @@ export default function Donat () {
     }
   };
 
+  useEffect(() => {
+    dispatch(getIndicators()); 
+  }, [dispatch]);
+
   return (
     <div className={css.containerDonat}>
       <h1 className={css.titleDonat}>
@@ -153,7 +162,7 @@ export default function Donat () {
               Мій новий рівень підтримки
             </label>
             <div className={css.levelNum}>
-              {currentAmount !== '' && newLevelSupport(user, currentAmount).toFixed(2)}
+              {currentAmount !== '' && getNewLevelSupport(totalTime, totalDonat, currentAmount).toFixed(2)}
             </div>
           </li>
           <li>

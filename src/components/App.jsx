@@ -20,7 +20,9 @@ const TournamentPage = lazy(() => import('./Tournament/Tournament'));
 const DonatPage = lazy(() => import('./Donat/Donat'));
 const WithdrawalPage = lazy(() => import('./Withdrawal/Withdrawal'));
 const IndicatorsPage = lazy(() => import('./Indicators/Indicators'));
-const HistoryPage = lazy(() => import('./History/History'));
+const PaymentsPage = lazy(() => import('./Payments/Payments'));
+const SubscriptionsPage = lazy(() => import('./Subscriptions/Subscriptions'));
+const AccountPage = lazy(() => import('./Account/Account'));
 const ToolsPage = lazy(() => import('./Tools/Tools'));
 const StructurePage = lazy(() => import('../pages/Structure'));
 const RulesPage = lazy(() => import('./Rules/Rules'));
@@ -86,7 +88,9 @@ export default function App () {
             <Route path="" element={<IndicatorsPage />} >
               <Route path="withdrawal" element={<WithdrawalPage />} />
             </Route>
-            <Route path="history" element={<HistoryPage />} />
+            <Route path="payments" element={<PaymentsPage />} />
+            <Route path="subscriptions" element={<SubscriptionsPage />} />
+            <Route path="account" element={<AccountPage />} />
             <Route path="tools" element={<ToolsPage />} />
             <Route path="team" element={<StructurePage />} />
             <Route path="rules" element={<RulesPage />} />

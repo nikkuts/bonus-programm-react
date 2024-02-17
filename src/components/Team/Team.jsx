@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { getByIdPartnerTeam, saveTeam, restorePreviosTeam } from 'redux/partners/operations';
 import { selectPartner, selectHistory } from 'redux/partners/selectors';
+import { handleObjDate } from "service/handleDate";
 import { ReactComponent as SkipBack } from 'icons/skip-back.svg';
 import css from './Team.module.css';
 
@@ -8,11 +9,6 @@ export default function Team() {
   const dispatch = useDispatch();
   const partner = useSelector(selectPartner);
   const history = useSelector(selectHistory);
-
-  const handleDate = (objDate) => {
-    const date = objDate.toString().split('T')[0];
-    return date;
-  };
 
   const showPreviousTeam = () => {
     const previousTeam = history[history.length - 1];
@@ -50,14 +46,15 @@ export default function Team() {
               </thead>
               <tbody>
               {partner.team.map(member => (           
-                  <tr key={member._id}
-                  onClick={() => {
-                    dispatch(saveTeam(partner))
-                    dispatch(getByIdPartnerTeam(member._id))
-                  }}
-                  className={css.tr}
+                  <tr 
+                    key={member._id}
+                    onClick={() => {
+                      dispatch(saveTeam(partner))
+                      dispatch(getByIdPartnerTeam(member._id))
+                    }}
+                    className={css.tr}
                   >
-                    <td className={css.td}>{handleDate(member.createdAt)}</td>
+                    <td className={css.td}>{handleObjDate(member.createdAt)}</td>
                     <td className={css.td}>{member.name}</td>
                     <td className={css.td}>{member.email}</td>
                     <td className={css.td}>{member.team.length}</td>

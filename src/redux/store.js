@@ -12,6 +12,8 @@ import {
 import storage from 'redux-persist/lib/storage';
 import { partnersReducer } from './partners/slice';
 import { filterReducer } from './partners/filterSlice';
+import { paymentsReducer } from './payments/slice';
+import { rangeReducer } from './payments/rangeSlice';
 import { modalReducer } from './modal/modalSlice';
 import { authReducer } from './auth/slice';
 
@@ -26,6 +28,8 @@ export const store = configureStore({
     auth: persistReducer(authPersistConfig, authReducer),
     partners: partnersReducer,
     filter: filterReducer,
+    payments: paymentsReducer,
+    range: rangeReducer,
     modal: modalReducer,
   },
   middleware(getDefaultMiddleware) {

@@ -11,7 +11,7 @@ export default function Structure() {
 
   useEffect(() => {
     dispatch(getTeam()); 
-}, [dispatch]);
+  }, [dispatch]);
 
     return (
       <>

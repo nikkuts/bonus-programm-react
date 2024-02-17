@@ -121,7 +121,7 @@ export default function RegisterForm () {
                 onClick={togglePasswordVisibility}
                 className={css.eye} 
               >
-                {showPassword ? <EyeOff/> : <Eye/>} 
+                {showPassword ? <Eye/> : <EyeOff/>} 
               </div>
             </div>
           </div>

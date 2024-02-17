@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from 'react-router-dom';
+import { getDonats } from "redux/payments/operations";
 import { logOut } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
 import { selectIndicators } from 'redux/partners/selectors';
@@ -15,8 +16,8 @@ export const HistoryMenu = () => {
         <ul className={css.menu}>
             <li>
                 <Link 
-                    onClick={() => dispatch(logOut())} 
-                    to="profile"
+                    onClick={() => dispatch(getDonats())} 
+                    to="payments"
                     className={css.historyLink}          
                 >
                     Внески
@@ -24,8 +25,8 @@ export const HistoryMenu = () => {
             </li>
             <li>
                 <Link 
-                    onClick={() => dispatch(logOut())} 
-                    to="profile"
+                    onClick={() => {}} 
+                    to="subscriptions"
                     className={css.historyLink}
                 >
                     Підписки
@@ -34,7 +35,7 @@ export const HistoryMenu = () => {
             <li>
                 <Link 
                     onClick={() => dispatch(logOut())} 
-                    to="profile"
+                    to="account"
                     className={css.historyLink}
                 >
                     Бонуси
