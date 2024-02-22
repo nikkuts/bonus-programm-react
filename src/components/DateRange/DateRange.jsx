@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useDispatch } from "react-redux";
-import { changeRange, resetInitialState } from 'redux/payments/rangeSlice';
+import { changeRange, handlePagination } from 'redux/payments/rangeSlice';
 import { convertStartDate, convertEndDate } from "service/handleDate";
 import DatePicker, {registerLocale} from 'react-datepicker';
 import uk from 'date-fns/locale/uk';
@@ -9,28 +9,25 @@ import css from './DateRange.module.css';
 
 export const DateRange = () => {
     registerLocale('uk', uk)
-  const [startDate, setStartDate] = useState(new Date().toISOString());
-  const [endDate, setEndDate] = useState(new Date().toISOString());
+  const [startDate, setStartDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(new Date());
   const dispatch = useDispatch();
 
   const handleStartDateChange = date => {
-    setStartDate(date.toISOString());
+    setStartDate(date);
   };
 
   const handleEndDateChange = date => {
-    setEndDate(date.toISOString());
+    setEndDate(date);
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    dispatch(handlePagination(1));
     const start = convertStartDate(startDate);
     const end = convertEndDate(endDate);
-    dispatch(changeRange({start, end}))
+    dispatch(changeRange({start, end}));
   };
-
-  useEffect(() => {
-    dispatch(resetInitialState());
-  }, [dispatch]);
 
   return (
     <>

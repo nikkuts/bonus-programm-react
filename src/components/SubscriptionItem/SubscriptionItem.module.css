@@ -1,0 +1,22 @@
+.td, .th {
+    border: 1px solid #a3c5d3;
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link {
+    text-decoration: underline;
+    color: #3754fd;
+}
+
+.link:hover,  
+.link:focus,
+.link:active {
+    color: #0d30f5;
+    cursor: pointer;
+  }

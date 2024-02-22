@@ -3,7 +3,8 @@ import {
     getDonats,
     getSubscriptions,
     getByIdSubscription,
-    cancelSubscribe, 
+    cancelSubscribe,
+    getAccount, 
 } from "./operations";
 
 const handlePending = state => {
@@ -20,8 +21,9 @@ const paymentsSlice = createSlice({
   initialState: {
     donats: [],
     subscriptions: [],
+    account: [],
+    totalPages: null,
     subscription: null,
-    isUnsubscribe: false,
     isLoading: false,
     error: null
   },
@@ -32,13 +34,15 @@ const paymentsSlice = createSlice({
       state.isLoading = false;
       state.error = null;
       state.donats = action.payload.donats;
+      state.totalPages = action.payload.totalPages;
     })
     .addCase(getDonats.rejected, handleRejected)
     .addCase(getSubscriptions.pending, handlePending)
     .addCase(getSubscriptions.fulfilled, (state, action) => {
       state.isLoading = false;
       state.error = null;
-      state.subscriptions = action.payload;
+      state.subscriptions = action.payload.subscriptions;
+      state.totalPages = action.payload.totalPages;
     })
     .addCase(getSubscriptions.rejected, handleRejected)
     .addCase(getByIdSubscription.pending, handlePending)
@@ -52,9 +56,23 @@ const paymentsSlice = createSlice({
     .addCase(cancelSubscribe.fulfilled, (state, action) => {
       state.isLoading = false;
       state.error = null;
-      state.isUnsubscribe = true;
+      const {orderId} = action.payload;
+      const index = state.subscriptions.findIndex(
+        ({data}) => data.order_id === orderId
+      );
+      if (index !== -1) {
+        state.subscriptions[index].objSub.isUnsubscribe = true;
+      }
     })
     .addCase(cancelSubscribe.rejected, handleRejected)
+    .addCase(getAccount.pending, handlePending)
+    .addCase(getAccount.fulfilled, (state, action) => {
+      state.isLoading = false;
+      state.error = null;
+      state.account = action.payload.account;
+      state.totalPages = action.payload.totalPages;
+    })
+    .addCase(getAccount.rejected, handleRejected)
 });
 
 export const paymentsReducer = paymentsSlice.reducer;

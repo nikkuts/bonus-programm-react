@@ -1,78 +1,38 @@
-import { useState, useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import { useSelector, useDispatch } from "react-redux";
-import {DateRange} from '../DateRange/DateRange';
+import { DateRange } from '../DateRange/DateRange';
+import { Pagination } from '../Pagination/Pagination';
 import { getDonats } from "redux/payments/operations";
 import { 
   selectIsLoading, 
   selectDonats,
+  selectPage,
   selectStart,
   selectEnd, 
 } from 'redux/payments/selectors';
-import { formatMsDate, 
-  // convertStartDate, convertEndDate 
-} from "service/handleDate";
+import { formatDate } from "service/handleDate";
 import css from './Payments.module.css';
 
 export default function Payments () {
   const dispatch = useDispatch();
-  // const [page, setPage] = useState(1);
-  // const limit = 10;
+  const limit = 2;
 
   const isLoading = useSelector(selectIsLoading);
   const donats = useSelector(selectDonats);
   const start = useSelector(selectStart);
   const end = useSelector(selectEnd);
-
-  // const getVisibleDonats = () => {
-  //   return donats.filter((donat) => 
-  //     donat.data.end_date > convertStartDate(start) && 
-  //     donat.data.end_date < convertEndDate(end)
-  //   )
-  // };
-
-  // useEffect(() => {
-  //   dispatch(getDonats()); 
-  // }, [dispatch]);
-
-  const [prevStart, setPrevStart] = useState(start);
-  const [prevEnd, setPrevEnd] = useState(end);
+  const page = useSelector(selectPage);
   
-  // const queryParams = useMemo(() => ({
-  //   start,
-  //   end,
-  //   page: page || 1,
-  //   limit,
-  // }), [start, end, page]);
-
-  // useEffect(() => {
-  //   setPage(1);
-  // }, [start, end]);
+  const queryParams = useMemo(() => ({
+    start,
+    end,
+    page,
+    limit,
+  }), [start, end, page]);
 
   useEffect(() => {
-    if (start && end) {
-      if (prevStart !== start || prevEnd !== end) {
-        dispatch(getDonats({start, end}));
-        setPrevStart(start);
-        setPrevEnd(end);
-      }
-    }    
-  }, [dispatch, prevStart, prevEnd, start, end]);
-
-  // useEffect(() => {
-  //   const initialStart = convertStartDate(new Date().toISOString());
-  //   const initialEnd = convertEndDate(new Date().toISOString());
-
-  //   if (initialStart === start && initialEnd === end) {
-  //     dispatch(getDonats(queryParams));
-  //     return;
-  //   }
-  //   // Перевірка, чи параметри змінилися
-  //   if (prevStart !== start || prevEnd !== end) {
-  //     dispatch(getDonats(queryParams));
-  //     setPrevStart(start);
-  //     setPrevEnd(end);
-  //   }
-  // }, [dispatch, queryParams, prevStart, prevEnd, start, end]);
+      dispatch(getDonats(queryParams));   
+  }, [dispatch, queryParams]);
 
     return (
       <>
@@ -98,7 +58,7 @@ export default function Payments () {
                       key={_id}
                       className={css.tr}
                     >
-                      <td className={css.td}>{formatMsDate(data.end_date)}</td>
+                      <td className={css.td}>{formatDate(data.end_date)}</td>
                       <td className={css.td}>{data.amount}</td>
                       <td className={css.td}>{data.description}</td>
                       <td className={css.td}>{data.info}</td>
@@ -109,6 +69,7 @@ export default function Payments () {
                 }
               </table>
             </div>
+            <Pagination/>
         </div>
       </>
     );

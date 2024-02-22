@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { getByIdPartnerTeam, saveTeam, restorePreviosTeam } from 'redux/partners/operations';
 import { selectPartner, selectHistory } from 'redux/partners/selectors';
-import { handleObjDate } from "service/handleDate";
+import { formatDate } from "service/handleDate";
 import { ReactComponent as SkipBack } from 'icons/skip-back.svg';
 import css from './Team.module.css';
 
@@ -54,7 +54,7 @@ export default function Team() {
                     }}
                     className={css.tr}
                   >
-                    <td className={css.td}>{handleObjDate(member.createdAt)}</td>
+                    <td className={css.td}>{formatDate(member.createdAt)}</td>
                     <td className={css.td}>{member.name}</td>
                     <td className={css.td}>{member.email}</td>
                     <td className={css.td}>{member.team.length}</td>

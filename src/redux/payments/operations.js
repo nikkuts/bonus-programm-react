@@ -29,11 +29,6 @@ export const getSubscriptions = createAsyncThunk(
   "payments/getSubscriptions", 
     async (params, thunkAPI) => {
       const searchParams = new URLSearchParams(params);
-      // searchParams.forEach((value, key) => {
-      //   if (value === '') {
-      //     searchParams.delete(key);
-      //   }
-      // });
       try {
         const response = await axios.get(
           `/api/payments/subscriptions?${searchParams.toString()}`
@@ -67,7 +62,24 @@ export const getSubscriptions = createAsyncThunk(
         return response.data; 
       } 
       catch (error) {
+        alert(error.response.data.message);
         return thunkAPI.rejectWithValue(error.message);
       }
+    }
+  );
+
+  export const getAccount = createAsyncThunk(
+    "payments/getAccount", 
+      async (params, thunkAPI) => {
+        const searchParams = new URLSearchParams(params);
+        try {
+          const response = await axios.get(
+            `/api/payments/account?${searchParams.toString()}`
+          ); 
+          return response.data;
+        } 
+        catch (error) {
+          return thunkAPI.rejectWithValue(error.message);
+        }
     }
   );

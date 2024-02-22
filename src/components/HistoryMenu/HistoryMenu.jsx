@@ -1,14 +1,9 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { Link } from 'react-router-dom';
-import { getDonats } from "redux/payments/operations";
-import { logOut } from 'redux/auth/operations';
-import { useAuth } from 'hooks';
-import { selectIndicators } from 'redux/partners/selectors';
+import { setCurrentRange } from "redux/payments/rangeSlice";
 import css from './HistoryMenu.module.css';
 
 export const HistoryMenu = () => {
-  const {user} = useAuth();
-  const {levelSupport} = useSelector(selectIndicators);
   const dispatch = useDispatch();
 
   return (  
@@ -16,7 +11,7 @@ export const HistoryMenu = () => {
         <ul className={css.menu}>
             <li>
                 <Link 
-                    onClick={() => dispatch(getDonats())} 
+                    onClick={() => dispatch(setCurrentRange())} 
                     to="payments"
                     className={css.historyLink}          
                 >
@@ -25,7 +20,7 @@ export const HistoryMenu = () => {
             </li>
             <li>
                 <Link 
-                    onClick={() => {}} 
+                    onClick={() => dispatch(setCurrentRange())} 
                     to="subscriptions"
                     className={css.historyLink}
                 >
@@ -34,7 +29,7 @@ export const HistoryMenu = () => {
             </li>
             <li>
                 <Link 
-                    onClick={() => dispatch(logOut())} 
+                    onClick={() => dispatch(setCurrentRange())} 
                     to="account"
                     className={css.historyLink}
                 >

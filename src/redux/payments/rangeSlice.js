@@ -1,12 +1,10 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { convertStartDate, convertEndDate } from "service/handleDate";
 
-// const start = convertStartDate(new Date().toISOString());
-// const end = convertEndDate(new Date().toISOString());
-
 const rangeInitialState = {
     start: null,
     end: null,
+    page: 1,
 };
 
 const rangeSlice = createSlice({
@@ -17,13 +15,15 @@ const rangeSlice = createSlice({
       state.start = action.payload.start;
       state.end = action.payload.end;
     },
-    resetInitialState(state, action) {
-      state.start = convertStartDate(new Date().toISOString());
-      state.end = convertEndDate(new Date().toISOString());
-      // return rangeInitialState;;
+    setCurrentRange(state, action) {
+      state.start = convertStartDate(new Date());
+      state.end = convertEndDate(new Date());
+    },
+    handlePagination(state, action) {
+      state.page = action.payload;
     },
   },
 });
 
-export const { changeRange, resetInitialState } = rangeSlice.actions;
+export const { changeRange, setCurrentRange, handlePagination } = rangeSlice.actions;
 export const rangeReducer = rangeSlice.reducer;
