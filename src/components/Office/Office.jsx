@@ -4,7 +4,7 @@ import { logOut } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
 import { selectIndicators } from 'redux/partners/selectors';
 import { ReactComponent as LogOut } from 'icons/log-out.svg';
-import css from './OfficeMenu.module.css';
+import css from './Office.module.css';
 
 export const OfficeMenu = () => {
   const {user} = useAuth();
