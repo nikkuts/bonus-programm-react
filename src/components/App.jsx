@@ -69,7 +69,7 @@ export default function App () {
           <Route path="learn/:courseId" element={<CoursePage />} >
             <Route path=":lessonId" element={<LessonLayout />} >
               <Route path="" element={<LessonPage />} />
-              <Route path="theory" element={<TheoryPage />} />
+              {/* <Route path="theory" element={<TheoryPage />} /> */}
               {/* <Route path="taskred" element={<TaskRedPage />} />
               <Route path="taskgreen" element={<TaskGreenPage />} />
               <Route path="theory" element={<TheoryPage />} />

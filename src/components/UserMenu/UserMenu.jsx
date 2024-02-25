@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { Link, useNavigate } from 'react-router-dom';
 import { Navigation } from 'components/Navigation/Navigation';
 import { getIndicators } from 'redux/partners/operations';
-import { OfficeMenu } from 'components/Office/Office';
+import { OfficeMenu } from 'components/OfficeMenu/OfficeMenu';
 import { useAuth } from 'hooks';
 import { ReactComponent as Favicon } from 'icons/favicon.svg';
 import { ReactComponent as User } from 'icons/user.svg';

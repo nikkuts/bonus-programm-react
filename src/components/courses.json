@@ -8,43 +8,59 @@
         "lessons": [
             {
                 "day": "1",
-                "content": "https://docs.google.com/document/d/e/2PACX-1vSgKmEhMgsQ_x19GeTw66wvhlv-tGdO2quk6kr-_iqZNWJb0JpywY7xkjrql5KbAiC0lh3-1Aq_oWgk/pub?embedded=true",
-                "exercises": ""
+                "theme": "Мотивація",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1708887881/ep1sdmrsjc7joazvgi5d.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1708892077/jlim86rhncs2nkzpakyw.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1708894530/rkwxmx0eugql0hjkvqgy.wav"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vTUIHsmDpvG6gCzfUspHDWmmwY87cNRGKJAB_VRCwaxXWwSgjPDaNDsTHfL2jITaPnKAnArdetKcM-7/pub?embedded=true"
             },
             {
                 "day": "2",
-                "theory": "",
-                "exercises": ""
+                "theme": "Знайомство",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1708890215/thufysusnccbwralobuu.jpg",
+                "audio": [],
+                "content": ""
             },
             {
                 "day": "3",
-                "theory": "",
-                "exercises": ""
+                "theme": "Помилки",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1708893311/vylpxdy7lofdpv9ecmmq.jpg",
+                "audio": [],
+                "content": ""
             },
             {
                 "day": "4",
-                "theory": "",
-                "exercises": ""
+                "theme": "Українська музика",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1708896724/z9t1fl7vdd0qkizfswbv.jpg",
+                "audio": [],
+                "content": ""
             },
             {
                 "day": "5",
-                "theory": "",
-                "exercises": ""
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
             },
             {
                 "day": "6",
-                "theory": "",
-                "exercises": ""
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
             },
             {
                 "day": "7",
-                "theory": "",
-                "exercises": ""
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
             },
             {
                 "day": "8",
-                "theory": "",
-                "exercises": ""
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
             }
         ]  
     },
@@ -130,3 +146,4 @@
         ] 
     }
 ]
+  
