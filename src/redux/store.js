@@ -16,6 +16,7 @@ import { paymentsReducer } from './payments/slice';
 import { rangeReducer } from './payments/rangeSlice';
 import { modalReducer } from './modal/modalSlice';
 import { authReducer } from './auth/slice';
+import { exercisesReducer } from './exercises/slice';
 
 const authPersistConfig = {
   key: 'auth',
@@ -31,6 +32,7 @@ export const store = configureStore({
     payments: paymentsReducer,
     range: rangeReducer,
     modal: modalReducer,
+    exercises: exercisesReducer,
   },
   middleware(getDefaultMiddleware) {
     return getDefaultMiddleware({

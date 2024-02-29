@@ -2,10 +2,14 @@ import { Suspense } from 'react';
 import { Link, useParams, Outlet } from 'react-router-dom';
 import courses from "../courses.json";
 import css from './Course.module.css';
+import { useDispatch } from "react-redux";
+import { getExercise } from 'redux/exercises/operations';
 
 export default function Course () {
     const {courseId} = useParams();
     const currentCourse = courses.find(course => course.id === courseId);
+
+    const dispatch = useDispatch();
 
     if (!currentCourse) {
         return alert('Курс не знайдено');
@@ -43,6 +47,7 @@ export default function Course () {
                         lesson => (
                         <li key={lesson.day}>
                             <Link
+                                onClick={() => dispatch(getExercise({courseId, lessonId: lesson.day}))}
                                 to={`${lesson.day}`}
                                 className={css.link}
                             >

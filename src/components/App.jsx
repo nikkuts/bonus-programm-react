@@ -30,7 +30,7 @@ const DiaryPage = lazy(() => import('../pages/Diary'));
 const LearnPage = lazy(() => import('./Learn/Learn'));
 const CoursePage = lazy(() => import('./Course/Course'));
 const LessonPage = lazy(() => import('./Lesson/Lesson'));
-const TheoryPage = lazy(() => import('./LessonFrams/Theory'));
+// const TheoryPage = lazy(() => import('./LessonFrams/Theory'));
 
 export default function App () {
   const dispatch = useDispatch();
