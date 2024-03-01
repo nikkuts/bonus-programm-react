@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import { addExercise, updateExercise } from 'redux/exercises/operations';
+import { addExercise, updateExercise, deleteFile } from 'redux/exercises/operations';
 import { selectExercise } from 'redux/exercises/selectors';
 import css from './HomeworkForm.module.css';
 
@@ -39,6 +39,22 @@ export const HomeworkForm = ({courseId, lessonId}) => {
     return true;
   };
 
+  const handleDeleteFile = () => {
+    if (fileURL === '') {
+      return;
+    };
+
+    const formData = {
+      courseId,
+      lessonId,
+      fileURL,
+    };
+
+    dispatch(
+      deleteFile(formData)
+    );
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     
@@ -60,28 +76,7 @@ export const HomeworkForm = ({courseId, lessonId}) => {
 
         formData.append('file', fileInput);
     }
-    // let formData;
-
-    // if (!isTextValid(textInput)) {
-    //     return;
-    // }
-
-    // formData = {
-    //   courseId,
-    //   lessonId, 
-    //   homework: textInput, 
-    // }
-
-    // if (fileInput) {
-    //     if (!isFileValid(fileInput)) {
-    //           return;
-    //       }
-    //       formData = {
-    //         ...formData, 
-    //         file: fileInput, 
-    //       }
-    // }
-console.log(formData.file);    
+  
     if (homework === '') {
       dispatch(
         addExercise(formData)
@@ -118,12 +113,12 @@ console.log(formData.file);
               target='blank'
               className={css.link}         
             >
-              {fileURL}
+              Прикріплений файл
             </Link>
             <Button 
               variant="danger"
               type='button' 
-              onClick={() => {}}
+              onClick={handleDeleteFile}
               className={css.dangerBtn}
             >
               Видалити файл

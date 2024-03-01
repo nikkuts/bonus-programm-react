@@ -3,6 +3,7 @@ import {
     getExercise,
     addExercise,
     updateExercise,
+    deleteFile,
 } from "./operations";
 
 const handlePending = state => {
@@ -33,9 +34,6 @@ const exercisesSlice = createSlice({
       state.isLoading = false;
       state.error = null;
       state.exercise = action.payload || initialState.exercise;
-      // state.exercise = !action.payload.fileURL ? 
-      // {...action.payload, fileURL: null} :
-      // action.payload;
     })
     .addCase(getExercise.rejected, handleRejected)
     .addCase(addExercise.pending, handlePending)
@@ -52,34 +50,13 @@ const exercisesSlice = createSlice({
       state.exercise = action.payload;
     })
     .addCase(updateExercise.rejected, handleRejected)
-    // .addCase(getByIdSubscription.pending, handlePending)
-    // .addCase(getByIdSubscription.fulfilled, (state, action) => {
-    //   state.isLoading = false;
-    //   state.error = null;
-    //   state.subscription = action.payload;
-    // })
-    // .addCase(getByIdSubscription.rejected, handleRejected)
-    // .addCase(cancelSubscribe.pending, handlePending)
-    // .addCase(cancelSubscribe.fulfilled, (state, action) => {
-    //   state.isLoading = false;
-    //   state.error = null;
-    //   const {orderId} = action.payload;
-    //   const index = state.subscriptions.findIndex(
-    //     ({data}) => data.order_id === orderId
-    //   );
-    //   if (index !== -1) {
-    //     state.subscriptions[index].objSub.isUnsubscribe = true;
-    //   }
-    // })
-    // .addCase(cancelSubscribe.rejected, handleRejected)
-    // .addCase(getAccount.pending, handlePending)
-    // .addCase(getAccount.fulfilled, (state, action) => {
-    //   state.isLoading = false;
-    //   state.error = null;
-    //   state.account = action.payload.account;
-    //   state.totalPages = action.payload.totalPages;
-    // })
-    // .addCase(getAccount.rejected, handleRejected)
+    .addCase(deleteFile.pending, handlePending)
+    .addCase(deleteFile.fulfilled, (state, action) => {
+      state.isLoading = false;
+      state.error = null;
+      state.exercise = action.payload;
+    })
+    .addCase(deleteFile.rejected, handleRejected)
 });
 
 export const exercisesReducer = exercisesSlice.reducer;

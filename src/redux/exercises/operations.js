@@ -48,16 +48,16 @@ axios.defaults.baseURL = AXIOS_BASE_URL;
     }
   );
 
-//   export const cancelSubscribe = createAsyncThunk(
-//     "payments/cancelSubscribe",
-//     async (credentials, thunkAPI) => {
-//       try {
-//         const response = await axios.post("/api/payments/unsubscribe", credentials);
-//         return response.data; 
-//       } 
-//       catch (error) {
-//         alert(error.response.data.message);
-//         return thunkAPI.rejectWithValue(error.message);
-//       }
-//     }
-//   );
+  export const deleteFile = createAsyncThunk(
+    "exercises/deleteFile",
+    async (credentials, thunkAPI) => {
+      try {
+        const response = await axios.patch("/api/exercises/file", credentials);
+        return response.data; 
+      } 
+      catch (error) {
+        alert(error.response.data.message);
+        return thunkAPI.rejectWithValue(error.message);
+      }
+    }
+  );
