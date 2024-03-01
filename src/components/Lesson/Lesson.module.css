@@ -1,0 +1,22 @@
+p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 20px; 
+}
+
+.lessonContainer {
+
+}
+
+.descriptionAudio {
+    padding: 10px 100px;
+}
+
+.wrapperAudio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 20px;
+}

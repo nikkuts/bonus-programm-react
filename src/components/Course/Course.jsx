@@ -12,7 +12,7 @@ export default function Course () {
     const dispatch = useDispatch();
 
     if (!currentCourse) {
-        return alert('Курс не знайдено');
+        return <div>Курс не знайдено</div>;
     }
     
     return (

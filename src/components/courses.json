@@ -9,51 +9,51 @@
             {
                 "day": "1",
                 "theme": "Мотивація",
-                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709234331/a5dnvdp5tpeurpkvuulb.jpg",
-                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1708892077/jlim86rhncs2nkzpakyw.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1708894530/rkwxmx0eugql0hjkvqgy.wav"],
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709325997/ejc9p1tsteure6xqfb1v.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1708894530/rkwxmx0eugql0hjkvqgy.wav", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1708892077/jlim86rhncs2nkzpakyw.mp3"],
                 "content": "https://docs.google.com/document/d/e/2PACX-1vTUIHsmDpvG6gCzfUspHDWmmwY87cNRGKJAB_VRCwaxXWwSgjPDaNDsTHfL2jITaPnKAnArdetKcM-7/pub?embedded=true"
             },
             {
                 "day": "2",
                 "theme": "Знайомство",
-                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1708890215/thufysusnccbwralobuu.jpg",
-                "audio": [],
-                "content": ""
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709326091/squ7d0c5bkq7qyf6k3kl.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709320660/ogngjqdrw1a3fwpvcmmv.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709320862/dnjw2q1rccq7oqj4hbmp.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vQBRER9vRY0F-IJb94kLRA2XAA_uhUgvgpmH_BiXAi5zQTKDmmgZn6L9nLdDzKKX73PWj5lpstKOONE/pub?embedded=true"
             },
             {
                 "day": "3",
                 "theme": "Помилки",
-                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1708893311/vylpxdy7lofdpv9ecmmq.jpg",
-                "audio": [],
-                "content": ""
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709326174/iloiiv3cjctqwciukwf9.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709323866/vuuloxm0g7jlrafvjamv.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709323922/gl8svf1sxqwnxelt25ss.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vR96iU6QXoiWPyO2j0xdSL9UDfbstz2_76UIWsWeogmbfyHZKK-Ja8KfRAijJVkh9FqpZjMaInMANIk/pub?embedded=true"
             },
             {
                 "day": "4",
                 "theme": "Українська музика",
-                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1708896724/z9t1fl7vdd0qkizfswbv.jpg",
-                "audio": [],
-                "content": ""
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709326227/e9zk4dxbblgtqscxmxin.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709324344/p5xr9ntghgrqoidhxgyc.mp3","https://res.cloudinary.com/dwnbra6yc/video/upload/v1709324393/bths249hsmaibwqs5hco.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vS2bpNE534Eds5uIJUD26_i2eNBHhdJgSoHeQBohPijr8cNNZbJCTcMTHBGKdyKN-m82F3D59mRXnr-/pub?embedded=true"
             },
             {
                 "day": "5",
-                "theme": "",
-                "image": "",
-                "audio": [],
-                "content": ""
+                "theme": "Українські фільми",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709326273/uktzrfvnvzltyzcyemzw.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709325274/dhheclstu1k5bmiziljv.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709325361/lqgqt8psq1xyhsmrgbrs.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709325414/oaivn0zse6sckvzfegof.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vQ8Gs7_fzHz6nZO1zWMQqmfrWW98m4q69w327L0Jt4oo5XjVHnsXo6b1KZx4LtknK5sFa3mnLEUZQ7u/pub?embedded=true"
             },
             {
                 "day": "6",
-                "theme": "",
-                "image": "",
-                "audio": [],
-                "content": ""
+                "theme": "Подолання мовного бар'єра",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709326803/fxlfaxatbkylgecbhmpd.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709326859/wkem3acbowpfxezefsys.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709326908/ndxge1fzmn7ggxcvuhxc.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vSGwThzoiaTJxY3WBbCq1RqDJwjdE1F_FLDcHff0vMVHTCpt3ATgJRkAc8zXY-sCGBoopBqZhwgpSWT/pub?embedded=true"
             },
             {
                 "day": "7",
-                "theme": "",
-                "image": "",
-                "audio": [],
-                "content": ""
+                "theme": "Моя україномовна спільнота",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709327293/edkk6fkky4rh6qziy6kz.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709327353/ysfe6o7w5bgxikcdx4rm.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709327392/pa1rryefbeub82iiuypp.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vS3PAYnf1wMfH6nmS7CCkg15EpAr8zWwhZe7BVi01ao2twCId_r40ekJ3tdda2f_9C56rsl1nzi2Pxz/pub?embedded=true"
             },
             {
                 "day": "8",
