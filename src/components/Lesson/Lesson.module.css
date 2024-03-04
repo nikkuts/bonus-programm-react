@@ -20,3 +20,67 @@ p {
     align-items: center;
     padding-bottom: 20px;
 }
+
+.lessonNavigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px; */
+    /* margin: 30px auto; */
+    padding: 10px 30px;
+    border: 1px solid #d7d2f3;
+    border-radius: 20px;
+}
+  
+  .lessonNavLink {
+  display: inline-block;
+  width: fit-content;
+  height: 40px;
+  padding: 10px;
+  font-weight: 600;
+  color: #000000;    
+  }
+  
+  .lessonNavLink:hover,  
+  .lessonNavLink:focus,
+  .lessonNavLink:active {
+  background-color: beige;
+  }
+  
+  .wrapperFrame {
+    padding: 20px 0;
+  }
+
+  .wrapperBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+.primaryBtn {
+    display: block;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: calc(16/14);
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    color: #000000;
+    background-color: rgb(255, 255, 0);
+  }
+  
+  .primaryBtn:hover,
+  .primaryBtn:focus {
+    /* color: #0d30f5; */
+    background-color: rgb(228, 228, 0);
+  }

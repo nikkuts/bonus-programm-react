@@ -2,7 +2,8 @@
     { 
         "id": "id-1", 
         "title": "Курс переходу на українську мову",
-        "wave": "22",
+        "wave": "23",
+        "start": "2024-03-01",
         "canal": "https://t.me/+4FDSNUGr6UFhMmQy",
         "chat": "https://t.me/+zCG5MH23nlc3Y2Ri", 
         "lessons": [
@@ -50,16 +51,156 @@
             },
             {
                 "day": "7",
-                "theme": "Моя україномовна спільнота",
+                "theme": "Моя українськомовна спільнота",
                 "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709327293/edkk6fkky4rh6qziy6kz.jpg",
                 "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709327353/ysfe6o7w5bgxikcdx4rm.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709327392/pa1rryefbeub82iiuypp.mp3"],
                 "content": "https://docs.google.com/document/d/e/2PACX-1vS3PAYnf1wMfH6nmS7CCkg15EpAr8zWwhZe7BVi01ao2twCId_r40ekJ3tdda2f_9C56rsl1nzi2Pxz/pub?embedded=true"
             },
             {
                 "day": "8",
+                "theme": "Мовна стійкість",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709481897/jtlmwrbixhwcsi5elzam.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709481971/ev0bdjbdfh1mr7lblybe.wav", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709482037/ogjnyf9mwyyyul547lvu.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vQWE21E0uqDm2NC_HzFrZIfNIJAflIvUFyRmjQK2t6hHH1qW62F3CGyrvFJHZm_yjW5a_BiBibjjs1R/pub?embedded=true"
+            },
+            {
+                "day": "9",
+                "theme": "Застосунки для вивчення української мови",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709482775/wb9oxtcdyxkkr6ijapik.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709482684/peu5chnn8kncqmymw6li.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709482730/sgqz8r8anvxz8mjcq6en.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vTzDkrbVuhA9HvvpOpsV_0c4gKM7NmMwVgYMPohcuMs8cT3JTBpYDOBXShxA5R7I3GVapfEvOn2Aea3/pub?embedded=true"
+            },
+            {
+                "day": "10",
+                "theme": "Техніки запам'ятовування",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709483115/q4tqz6z2wk4iadxzkznx.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709483163/gzarfhiomcusvrfbossq.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709483205/a1imnwdvudiz1dguphgr.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vTMLfx8i23XpSUg1LCah4wYxB3Nd8OEcFhZfryhd3qjtNKtzsBYqogr_RTjo--urosgiDkekwKmtYEc/pub?embedded=true"
+            },
+            {
+                "day": "11",
+                "theme": "Збагачення активного словника",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709483658/wxkfhmv5jnwy6yxnnom7.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709483706/d9hkcmghzctptbxihka3.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709483743/hxj5i02a923akxtdvnfe.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vRLuU8d4W6juIHASE-w0DKLohjxfZqSdUx6CisGkGwAGoKMWJN2005HJGaxZpwhaGjXziCvF2e74HtQ/pub?embedded=true"
+            },
+            {
+                "day": "12",
+                "theme": "Голос і мовлення",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709484138/ki7dpx2dhtqn2dsvxjfm.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709484181/ftiukfs2ubortdncafsv.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709484230/ljd8gnbp1etatfqgkug8.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vRgjdDFW8ivl2uyKD3tsavCX8UDeXRbfSlW0IGwCuiM2Lol257FHSPe3PI7KDj2LrV27qe02vGbh4VC/pub?embedded=true"
+            },
+            {
+                "day": "13",
+                "theme": "Мовленнєва практика",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709484566/lel6hd1wfdgoqimwygr1.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709484619/z7txbwigxv9o6krku5xg.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709484659/fpt97nmbzzo8tdwhxxbx.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vQfZW2czXE8ijKn10pscouUpxNtGWSnWcbhOCOaBETKQJkBNSFBiTuBGpIi6gRiD2jtvCxFqIQ0F_Kt/pub?embedded=true"
+            },
+            {
+                "day": "14",
+                "theme": "Звичаї та традиції",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709484959/d2ewmftbauaz15jot4c9.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709485007/lqmwx7ujqw7ym676ptwb.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709485087/tzyygdfbxzo3d4sexc3l.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vTxLZhyFLqCJWkyJQetLgo6t2hZpc80NLK0DHr4w7UCqH7sYpaw-GYBOawLBqLdBfhkhX_Dp4wJxZrE/pub?embedded=true"
+            },
+            {
+                "day": "15",
                 "theme": "",
                 "image": "",
-                "audio": [],
+                "audio": ["", ""],
+                "content": ""
+            },
+            {
+                "day": "16",
+                "theme": "",
+                "image": "",
+                "audio": ["", ""],
+                "content": ""
+            },
+            {
+                "day": "17",
+                "theme": "",
+                "image": "",
+                "audio": ["", ""],
+                "content": ""
+            },
+            {
+                "day": "18",
+                "theme": "",
+                "image": "",
+                "audio": ["", ""],
+                "content": ""
+            },
+            {
+                "day": "19",
+                "theme": "",
+                "image": "",
+                "audio": ["", ""],
+                "content": ""
+            },
+            {
+                "day": "20",
+                "theme": "",
+                "image": "",
+                "audio": ["", ""],
+                "content": ""
+            },
+            {
+                "day": "21",
+                "theme": "",
+                "image": "",
+                "audio": ["", ""],
+                "content": ""
+            },
+            {
+                "day": "22",
+                "theme": "",
+                "image": "",
+                "audio": ["", ""],
+                "content": ""
+            },
+            {
+                "day": "23",
+                "theme": "",
+                "image": "",
+                "audio": ["", ""],
+                "content": ""
+            },
+            {
+                "day": "24",
+                "theme": "",
+                "image": "",
+                "audio": ["", ""],
+                "content": ""
+            },
+            {
+                "day": "25",
+                "theme": "",
+                "image": "",
+                "audio": ["", ""],
+                "content": ""
+            },
+            {
+                "day": "26",
+                "theme": "",
+                "image": "",
+                "audio": ["", ""],
+                "content": ""
+            },
+            {
+                "day": "27",
+                "theme": "",
+                "image": "",
+                "audio": ["", ""],
+                "content": ""
+            },
+            {
+                "day": "28",
+                "theme": "",
+                "image": "",
+                "audio": ["", ""],
                 "content": ""
             }
         ]  
@@ -67,15 +208,18 @@
     { 
         "id": "id-2", 
         "title": "Граматичний курс української мови",
-        "wave": "15",
+        "wave": "16",
+        "start": "2024-03-04",
         "canal": "https://t.me/+p-zccEIohMFhYzU6",
         "chat": "https://t.me/+NMeUYyEQNlY1NjYy", 
         "lessons": [
             {
                 "day": "1",
-                "theme": "Мотивація",
-                "content": "https://drive.google.com/file/d/1LTqPoeXPA5K5Xk3yhtLZqb6qFXDLrO9N/preview",
-                "materials": "https://drive.google.com/file/d/1Md8UwHarDqC5ajCKViUjejTjf0FTdlp9/preview",
+                "theme": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709411603/wjj3h5sxevthq6xuidzb.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vRAo1uJVGQtm8NvCsG851WaPKi7TbpzX_OdFCwhyjyFyaMKQbOm2trS8VEHYpjy9vMcDqWGWu-n9rQz/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1LTqPoeXPA5K5Xk3yhtLZqb6qFXDLrO9N/preview",
+                "materials": "",
                 "practice": "",
                 "answers": "",
                 "test": ""
@@ -142,6 +286,146 @@
                 "practice": "",
                 "answers": "",
                 "test": ""
+            },
+            {
+                "day": "9",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "10",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "11",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "12",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "13",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "14",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "15",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "16",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "17",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "18",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "19",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "20",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "21",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "22",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "23",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "24",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "25",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "26",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "27",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
+            },
+            {
+                "day": "28",
+                "theme": "",
+                "image": "",
+                "audio": [],
+                "content": ""
             }
         ] 
     }

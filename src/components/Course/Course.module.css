@@ -86,3 +86,7 @@
 .error {
   text-align: center;
 }
+
+.wrapperFrame {
+  padding: 30px 100px;
+}

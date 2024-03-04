@@ -1,10 +1,8 @@
-import { useParams } from 'react-router-dom';
-import courses from "../courses.json";
+import { useSelector } from 'react-redux';
+import { selectCurrentLesson } from 'redux/exercises/selectors';
 
 export default function Theory () {
-    const {courseId, lessonId = '1'} = useParams();
-    const currentCourse = courses.find(course => course.id === courseId);
-    const currentLesson = currentCourse.lessons.find(lesson => lesson.day === lessonId);
+    const currentLesson = useSelector(selectCurrentLesson);
 
     return (
         <>

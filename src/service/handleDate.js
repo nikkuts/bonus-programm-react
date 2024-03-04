@@ -51,3 +51,25 @@ export const getNextPaymentDate = (lastPaymentDate) => {
   
   return `${year}-${month}-${day}`;
 };
+
+export const getDifferenceInDays = (date) => {
+  // Створюємо новий об'єкт дати з переданого значення
+  const objDate = new Date(date);
+  
+  // Встановлюємо часовий пояс на "Europe/Kiev"
+  const kyivObjDate = new Date(objDate.toLocaleString('en-US', { timeZone: 'Europe/Kiev' }));
+  
+  // Встановлюємо час на початок доби (00:00:00)
+  kyivObjDate.setHours(0, 0, 0, 0);
+
+  // Повертаємо час у мілісекундах
+  const kyivObjDateTime = kyivObjDate.getTime();
+
+  const currentDate = new Date();
+  const kyivCurrentDate = new Date(currentDate.toLocaleString('en-US', { timeZone: 'Europe/Kiev' }));
+  const kyivCurrentDateTime = kyivCurrentDate.getTime();
+  
+  const differenceInDays = Math.floor((kyivCurrentDateTime - kyivObjDateTime) / (1000 * 60 * 60 * 24));
+  
+  return differenceInDays;
+};

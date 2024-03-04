@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { Route, Routes } from 'react-router-dom';
 import { LendingLayout } from './LendingLayout/LendingLayout';
 import { HomeLayout } from "./HomeLayout/HomeLayout";
-import { LessonLayout } from "./LessonLayout/LessonLayout";
+// import { LessonLayout } from "./LessonLayout/LessonLayout";
 import { BonusLayout } from "./BonusLayout/BonusLayout";
 import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
@@ -30,7 +30,7 @@ const DiaryPage = lazy(() => import('../pages/Diary'));
 const LearnPage = lazy(() => import('./Learn/Learn'));
 const CoursePage = lazy(() => import('./Course/Course'));
 const LessonPage = lazy(() => import('./Lesson/Lesson'));
-// const TheoryPage = lazy(() => import('./LessonFrams/Theory'));
+const TheoryPage = lazy(() => import('./LessonFrams/Theory'));
 
 export default function App () {
   const dispatch = useDispatch();
@@ -67,13 +67,12 @@ export default function App () {
           <Route index element={<HomePage />} />
           <Route path="learn" element={<LearnPage />} />
           <Route path="learn/:courseId" element={<CoursePage />} >
-            <Route path=":lessonId" element={<LessonLayout />} >
-              <Route path="" element={<LessonPage />} />
-              {/* <Route path="theory" element={<TheoryPage />} /> */}
-              {/* <Route path="taskred" element={<TaskRedPage />} />
-              <Route path="taskgreen" element={<TaskGreenPage />} />
-              <Route path="theory" element={<TheoryPage />} />
-              <Route path="materials" element={<MaterialsPage />} />
+            <Route path="" element={<LessonPage />} />
+            <Route path=":lessonId" element={<LessonPage />} >
+            {/* <Route path=":lessonId" element={<LessonLayout />} > */}
+              {/* <Route path="" element={<LessonPage />} /> */}
+              <Route path="" element={<TheoryPage />} />
+              {/* <Route path="materials" element={<MaterialsPage />} />
               <Route path="practice" element={<PracticePage />} />
               <Route path="answers" element={<AnswersPage />} />
               <Route path="test" element={<TestPage />} /> */}

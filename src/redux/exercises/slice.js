@@ -21,7 +21,7 @@ const initialState = {
       fileURL: '',
   },
   isLoading: false,
-  error: null
+  error: null,
 }
 
 const exercisesSlice = createSlice({
