@@ -6,7 +6,6 @@ import Button from 'react-bootstrap/Button';
 import { addExercise, updateExercise, deleteFile } from 'redux/exercises/operations';
 import { selectExercise } from 'redux/exercises/selectors';
 import { BASE_CLIENT_URL } from '../../constants';
-import courses from "../courses.json";
 import css from './HomeworkForm.module.css';
 
 export const HomeworkForm = ({courseId, lessonId}) => {
@@ -14,7 +13,6 @@ export const HomeworkForm = ({courseId, lessonId}) => {
   
   const location = useLocation();
   const currentURL = location.pathname; 
-  const currentCourse = courses.find(course => course.id === courseId);
 
   const {homework, fileURL} = useSelector(selectExercise);
   const [textInput, setTextInput] = useState(homework);
@@ -144,10 +142,9 @@ export const HomeworkForm = ({courseId, lessonId}) => {
         }
         <div className={css.wrapperBtn}>
           <Link
-            to={`${currentCourse.chat}?url=${BASE_CLIENT_URL}${currentURL}&text=${encodeURIComponent(homework)}`}
-            // to={`https://t.me/alex_kuts19?url=http://localhost:3000/bonus-programm-react/uk/learn/id-1&text=${encodeURIComponent(homework)}`}
+            to={`https://t.me/share/url?url=${BASE_CLIENT_URL}${currentURL}&text=${encodeURIComponent(homework)}`}
             target='blank' 
-            className={css.courseBtn}
+            className={css.shareBtn}
           >
             Поділитися
           </Link> 

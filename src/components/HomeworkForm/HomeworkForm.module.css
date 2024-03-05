@@ -93,7 +93,7 @@
     gap: 10px;
   }
 
-  .courseBtn {
+  .shareBtn {
     display: block;
     border: 1px solid #ffffff;
     border-radius: 20px;
@@ -112,8 +112,8 @@
     background-color: #3793fd;
   }
   
-  .courseBtn:hover,
-  .courseBtn:focus {
+  .shareBtn:hover,
+  .shareBtn:focus {
     /* color: #0d30f5; */
     background-color: #3754fd;
   }
