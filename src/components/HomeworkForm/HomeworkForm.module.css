@@ -16,7 +16,8 @@
 }
 
 .label {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -88,6 +89,33 @@
   .wrapperBtn {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .courseBtn {
+    display: block;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(16/14);
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #3793fd;
+  }
+  
+  .courseBtn:hover,
+  .courseBtn:focus {
+    /* color: #0d30f5; */
+    background-color: #3754fd;
   }
 
 .primaryBtn {
@@ -95,7 +123,7 @@
     border: 1px solid #ffffff;
     border-radius: 20px;
     padding: 10px;
-    width: 120px;
+    width: 150px;
     height: 40px;
     text-align: center;
     text-overflow: ellipsis;

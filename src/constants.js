@@ -1,4 +1,5 @@
 export const BASE_CLIENT_URL = "https://nikkuts.github.io/bonus-programm-react"
+// export const BASE_CLIENT_URL = "http://localhost:3000/bonus-programm-react"
 
 export const BASE_NAME = "/bonus-programm-react";
 

@@ -98,7 +98,7 @@
     text-overflow: ellipsis;
     font-size: 18px;
     font-weight: 700;
-    line-height: calc(16/14);
+    line-height: calc(18/16);
     overflow: hidden;
     outline: none;
     cursor: pointer;

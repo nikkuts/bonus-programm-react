@@ -3,9 +3,9 @@
         "id": "id-1", 
         "title": "Курс переходу на українську мову",
         "wave": "23",
-        "start": "2024-03-01",
-        "canal": "https://t.me/+4FDSNUGr6UFhMmQy",
-        "chat": "https://t.me/+zCG5MH23nlc3Y2Ri", 
+        "start": "2024-03-04",
+        "canal": "https://t.me/+8mWOhueRbJ40YzUy",
+        "chat": "https://t.me/alex_kuts19", 
         "lessons": [
             {
                 "day": "1",
@@ -107,52 +107,52 @@
             },
             {
                 "day": "15",
-                "theme": "",
-                "image": "",
-                "audio": ["", ""],
-                "content": ""
+                "theme": "Українські книжки",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709585902/pg6pluyw0ogl7t3tictl.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709585943/wc2qvopgj6idmhyk5wzg.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709585981/zitu5ooullna4cwhlse8.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vTQ-I4UaeG5kyKmXRHLh5XBZx92SLsxn6fjrPhTramcWNxfzEpqFK1Ym6h2YKtxVF9bSsDbvr2BZ9cU/pub?embedded=true"
             },
             {
                 "day": "16",
-                "theme": "",
-                "image": "",
-                "audio": ["", ""],
-                "content": ""
+                "theme": "Українська для дітей та батьків",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709586298/cxguxyifz0pbix8jpjcy.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709586341/rcsciqkyg817qo5j8d8t.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709586377/wqyfuehy80uj33knkggr.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vRC_oeE6kNwRJtfK3PAJuvX9RaCT7ZqMzpvPRmlY5Yf0FLKiaxPuC2D9fiYlqtycY5lbE9AHyg41L-z/pub?embedded=true"
             },
             {
                 "day": "17",
-                "theme": "",
-                "image": "",
-                "audio": ["", ""],
-                "content": ""
+                "theme": "Українська на релаксі",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709586670/w9xt37jsk9kxytrs0iqp.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709586724/mpp7okkl13ruuabemmdv.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vRloMdaRQKS81IgZ0d6yqWuqRG3esOAWyKfDhi6f_4K-X0jqCcHGL-Rw89mthHu-pH2PQ0xpUos75hz/pub?embedded=true"
             },
             {
                 "day": "18",
-                "theme": "",
-                "image": "",
-                "audio": ["", ""],
-                "content": ""
+                "theme": "Жарти українською",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709587085/gnsptvdhfkvok1mls95k.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709587149/lyjkp52y80kpffohuftx.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709587189/grk3w5ibqbvgaorfhdfj.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vSIELp-KUgWmEA-ZVsGwitRxZXwZ9Q4SZUSgRJunaC7RkSmPactmPhjWyE67ayN7M_tt4rsriCgmP1T/pub?embedded=true"
             },
             {
                 "day": "19",
-                "theme": "",
-                "image": "",
-                "audio": ["", ""],
-                "content": ""
+                "theme": "Історія України",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709587463/tfuv7rxrvtteddg4xr5s.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709587500/jafwhp6zrzi4mf62bvwk.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709587542/w6jvota1un1c2bxorxtm.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vSBatdzHqAIHQ0MELNWrcdg8Rxz9fqyMPDV-TAQ8Mjh6ev5N8hX3JOTcqMso0D4JqWHfXZ-KAXL3dkd/pub?embedded=true"
             },
             {
                 "day": "20",
-                "theme": "",
-                "image": "",
-                "audio": ["", ""],
-                "content": ""
+                "theme": "Українська культура",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709587908/hyv2q1oc2jbvajqafnuv.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709587945/cdb40ymnzsqjtddm0iw7.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709587977/zewtqfjqpvlkshwwjg92.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vTyPdY34np3m08baDCLgSOwgspIDJQR3tdCJspIzDczi_-cJ1honqC_08kZFzEupjfwyN7Cl63pVh8X/pub?embedded=true"
             },
             {
                 "day": "21",
-                "theme": "",
-                "image": "",
-                "audio": ["", ""],
-                "content": ""
+                "theme": "Видатні українці та українки",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709588263/cc37geznrxyg1u8jvs3r.jpg",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709588304/etzbvpj6q6mbcbxf8tpl.mp3", "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709588340/vngdyc4kxudtuadx2z4x.mp3"],
+                "content": "https://docs.google.com/document/d/e/2PACX-1vQvoypw4gJsgDzv4I_Vr9Ba0iFVJIp8m8TWNNJHZnDKazBPlp60AH0NW9VWlRJ4t83VvO4Q5u9JefwQ/pub?embedded=true"
             },
             {
                 "day": "22",
@@ -210,8 +210,8 @@
         "title": "Граматичний курс української мови",
         "wave": "16",
         "start": "2024-03-04",
-        "canal": "https://t.me/+p-zccEIohMFhYzU6",
-        "chat": "https://t.me/+NMeUYyEQNlY1NjYy", 
+        "canal": "https://t.me/+jOWyUesXOQswNmVi",
+        "chat": "https://t.me/+KQgFv1iqPncxMmJi", 
         "lessons": [
             {
                 "day": "1",
