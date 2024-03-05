@@ -107,7 +107,7 @@ export default function Course () {
                     ))}
                 </ul>
                 <ul className={css.courseList}>
-                    {currentCourse.lessons.slice(0,7).map(
+                    {currentCourse.lessons.slice(21,28).map(
                         lesson => (
                         <li key={lesson.day}>
                             <Link
