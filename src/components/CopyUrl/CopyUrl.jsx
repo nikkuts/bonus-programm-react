@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom';
 import { useClipboard } from 'use-clipboard-copy';
-import { BsCopy } from "react-icons/bs";
+import { ReactComponent as Copy } from 'icons/copy.svg';
+import { ReactComponent as Telegram } from 'icons/telegram.svg';
 import css from './CopyUrl.module.css'
 
 export default function CopyUrl({ url }) {
@@ -8,21 +10,30 @@ export default function CopyUrl({ url }) {
         alert('Ваше посилання скопійовано')
       }
   });
+  const text = 'Тут ми разом з однодумцями плюсуємо українську) Доєднуйся'
+
   return (
-    <div>
-      <input 
-        ref={clipboard.target} 
-        value={url} 
-        readOnly
-        className={css.input} 
-      />
-      <button 
-        onClick={clipboard.copy}
-        className={css.button}
+    <div className={css.wrapper}>
+        <input 
+          ref={clipboard.target} 
+          value={url} 
+          readOnly
+          className={css.input} 
+        />
+        <button 
+          onClick={clipboard.copy}
+          className={css.button}
+        >
+          <Copy />
+          <span className={css.text}>Скопіювати</span>
+        </button>
+      <Link
+        to={`https://t.me/share/url?url=${url}&text=${encodeURIComponent(text)}`} 
+        target='blank'
+        className={css.telegramBtn}
       >
-        <BsCopy />
-        <span className={css.text}>Скопіювати</span>
-      </button>
+        <Telegram />
+      </Link>
     </div>
   );
 }

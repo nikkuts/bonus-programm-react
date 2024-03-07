@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { Link, useLocation } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
@@ -9,17 +9,18 @@ import { BASE_CLIENT_URL } from '../../constants';
 import css from './HomeworkForm.module.css';
 
 export const HomeworkForm = ({courseId, lessonId}) => {
-  const dispatch = useDispatch();
-  
+  const dispatch = useDispatch(); 
   const location = useLocation();
   const currentURL = location.pathname; 
 
   const {homework, fileURL} = useSelector(selectExercise);
   const [textInput, setTextInput] = useState(homework);
   const [fileInput, setFileInput] = useState(null);
+  const [isActiveTextarea, setIsActiveTextarea] = useState(false);
 
   const handleTextChange = (e) => {
     setTextInput(e.target.value);
+    setIsActiveTextarea(true);
   };
 
   const handleFileChange = (e) => {
@@ -90,7 +91,40 @@ export const HomeworkForm = ({courseId, lessonId}) => {
         updateExercise(formData)
       );
     }
+    setIsActiveTextarea(false);
   };
+
+  const shareHomework = () => {
+    if (homework === '' || isActiveTextarea) {
+      alert('Спочатку збережіть домашню роботу.');
+      return;
+    }
+
+    if (fileURL && fileURL !== '') {
+      window.open(`https://t.me/share/url?url=${fileURL}&text=${encodeURIComponent(homework)}`);
+    } else {
+      window.open(`https://t.me/share/url?url=${BASE_CLIENT_URL}${currentURL}&text=${encodeURIComponent(homework)}`);
+    }
+  };
+
+  useEffect(() => {
+    // Функція-обробник для обробки події beforeunload
+    const handleBeforeUnload = (e) => {
+      // Перевірка, чи активне текстове поле, і якщо так, попередження користувача
+      if (isActiveTextarea) {
+        e.preventDefault();
+        e.returnValue = '';
+      }
+    };
+
+    // Додавання обробника події beforeunload при монтуванні компонента
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    // Видалення обробника події beforeunload при розмонтуванні компонента
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, [isActiveTextarea]);
 
   return (
     <>
@@ -141,13 +175,12 @@ export const HomeworkForm = ({courseId, lessonId}) => {
           </Form.Group>
         }
         <div className={css.wrapperBtn}>
-          <Link
-            to={`https://t.me/share/url?url=${BASE_CLIENT_URL}${currentURL}&text=${encodeURIComponent(homework)}`}
-            target='blank' 
+          <Button
+            onClick={shareHomework} 
             className={css.shareBtn}
           >
             Поділитися
-          </Link> 
+          </Button> 
           <Button 
             variant="primary"
             type="submit"

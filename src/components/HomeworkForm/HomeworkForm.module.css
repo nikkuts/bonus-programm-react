@@ -110,13 +110,12 @@
     outline: none;
     cursor: pointer;
     color: #ffffff;
-    background-color: #3793fd;
+    background-color: #37b4fd;
   }
   
   .shareBtn:hover,
   .shareBtn:focus {
-    /* color: #0d30f5; */
-    background-color: #3754fd;
+    background-color: #3793fd;
   }
 
 .primaryBtn {
