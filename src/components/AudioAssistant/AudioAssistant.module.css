@@ -1,0 +1,18 @@
+p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.descriptionAudio {
+    padding: 0 100px;
+}
+
+.wrapperAudio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 300px;
+}

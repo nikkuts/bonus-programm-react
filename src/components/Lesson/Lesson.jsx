@@ -87,30 +87,7 @@ export default function Lesson () {
             {courseId === 'id-2' &&
             <>
                 <img src={currentLesson.image} alt={`День ${currentLesson.day}`} width="100%" />
-                {currentLesson.content && (
-                    <div className={css.wrapperFrame}>
-                        <iframe 
-                            title="Вставка Google doc"
-                            src={currentLesson.content} 
-                            width="100%" height="600" frameBorder="0" allow="autoplay"
-                        />
-                    </div>
-                )}
-                {!isLessonId ?
-                    <Link 
-                        to={`${currentLesson.day}`}
-                        className={css.wrapperBtn}
-                    >
-                        <Button 
-                            variant="primary"
-                            type="button"
-                            className={css.primaryBtn}
-                        >
-                            Почати урок
-                        </Button>
-                    </Link>
-                :
-                <>
+                {isLessonId && (
                     <ul className={css.lessonNavigation}>
                         <li>
                             <Link 
@@ -122,34 +99,77 @@ export default function Lesson () {
                         </li>
                         <li>
                             <Link 
-                                to=""
+                                to="theory"
                                 className={css.lessonNavLink}
                             >
                                 Теорія
                             </Link> 
                         </li>
+                        {currentLesson.audio.length > 0 &&
                         <li>
                             <Link 
-                                to=""
+                                to="audio"
+                                className={css.lessonNavLink}
+                            >
+                                Аудіопомічник
+                            </Link> 
+                        </li>
+                        }
+                        <li>
+                            <Link 
+                                to="practice"
                                 className={css.lessonNavLink}
                             >
                                 Практика
                             </Link> 
                         </li>
+                        {currentLesson.video.length > 0 &&
                         <li>
                             <Link 
-                                to=""
+                                to="video"
+                                className={css.lessonNavLink}
+                            >
+                                Відео
+                            </Link> 
+                        </li>
+                        }
+                        {currentLesson.test !== '' &&
+                        <li>
+                            <Link 
+                                to="test"
                                 className={css.lessonNavLink}
                             >
                                 Тестування
                             </Link> 
                         </li>
+                        }
                     </ul>
-                    <div className={css.wrapperFrame}>
-                        <Suspense fallback={null}>
-                            <Outlet /> 
-                        </Suspense>  
-                    </div>
+                )}
+                <div className={css.wrapperFrame}>
+                    <Suspense fallback={null}>
+                        <Outlet /> 
+                    </Suspense>  
+                </div>
+                
+                {!isLessonId &&
+                <>
+                    <iframe 
+                        title="Вставка Google doc"
+                        src={currentLesson.content} 
+                        width="100%" height="600" frameBorder="0" allow="autoplay"
+                    />   
+                    <Link 
+                        to={`${currentLesson.day}/theory`}
+                        className={css.wrapperBtn}
+                    >
+                        <Button 
+                            variant="primary"
+                            type="button"
+                            className={css.primaryBtn}
+                        >
+                            Почати урок
+                        </Button>
+                    </Link>
                 </>
                 }
             </>

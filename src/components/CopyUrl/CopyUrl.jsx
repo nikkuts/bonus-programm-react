@@ -10,7 +10,7 @@ export default function CopyUrl({ url }) {
         alert('Ваше посилання скопійовано')
       }
   });
-  const text = 'Тут ми разом з однодумцями плюсуємо українську) Доєднуйся'
+  const text = 'Тут отримую потужну підтримку у переході на українську! Доєднуйся'
 
   return (
     <div className={css.wrapper}>

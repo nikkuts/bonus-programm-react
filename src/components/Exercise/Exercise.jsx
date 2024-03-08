@@ -37,7 +37,7 @@ export const Exercise = ({exercise}) => {
                     title="Вставка Wordwall"
                     style={{ maxWidth: '100%' }} 
                     src={exercise} 
-                    width="1200" height="650" frameBorder="0" allowFullScreen>
+                    width="1150" height="650" frameBorder="0" allowFullScreen>
                 </iframe>
             </div>
         </div>           

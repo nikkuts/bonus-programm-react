@@ -1,0 +1,32 @@
+p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.descriptionVideo {
+    padding: 0 100px;
+}
+
+.wrapperVideo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 300px;
+    padding-left: 100px;
+}
+
+.link {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #3754fd;   
+  }
+  
+  .link:hover,  
+  .link:focus,
+  .link:active {
+    color: #0d30f5;
+  }

@@ -30,7 +30,11 @@ const DiaryPage = lazy(() => import('../pages/Diary'));
 const LearnPage = lazy(() => import('./Learn/Learn'));
 const CoursePage = lazy(() => import('./Course/Course'));
 const LessonPage = lazy(() => import('./Lesson/Lesson'));
+const ContentPage = lazy(() => import('./LessonFrams/Content'));
 const TheoryPage = lazy(() => import('./LessonFrams/Theory'));
+const PracticePage = lazy(() => import('./LessonFrams/Practice'));
+const AudioAssistantPage = lazy(() => import('./AudioAssistant/AudioAssistant'));
+const VideoMaterialsPage = lazy(() => import('./VideoMaterials/VideoMaterials'));
 
 export default function App () {
   const dispatch = useDispatch();
@@ -71,11 +75,12 @@ export default function App () {
             <Route path=":lessonId" element={<LessonPage />} >
             {/* <Route path=":lessonId" element={<LessonLayout />} > */}
               {/* <Route path="" element={<LessonPage />} /> */}
-              <Route path="" element={<TheoryPage />} />
-              {/* <Route path="materials" element={<MaterialsPage />} />
+              <Route path="" element={<ContentPage />} />
+              <Route path="theory" element={<TheoryPage />} />
               <Route path="practice" element={<PracticePage />} />
-              <Route path="answers" element={<AnswersPage />} />
-              <Route path="test" element={<TestPage />} /> */}
+              <Route path="audio" element={<AudioAssistantPage />} />
+              <Route path="video" element={<VideoMaterialsPage />} />
+              {/* <Route path="test" element={<TestPage />} /> */}
             </Route>
           </Route>
           <Route path="game" element={<GamePage />} />

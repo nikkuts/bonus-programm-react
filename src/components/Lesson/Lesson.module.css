@@ -7,7 +7,9 @@ p {
 }
 
 .lessonContainer {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .descriptionAudio {
@@ -25,10 +27,7 @@ p {
     display: flex;
     align-items: center;
     gap: 20px;
-    /* padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px; */
-    /* margin: 30px auto; */
+    margin: 30px auto;
     padding: 10px 30px;
     border: 1px solid #d7d2f3;
     border-radius: 20px;
@@ -49,9 +48,9 @@ p {
   background-color: beige;
   }
   
-  .wrapperFrame {
+  /* .wrapperFrame {
     padding: 20px 0;
-  }
+  } */
 
   .wrapperBtn {
     display: flex;
@@ -81,6 +80,5 @@ p {
   
   .primaryBtn:hover,
   .primaryBtn:focus {
-    /* color: #0d30f5; */
     background-color: rgb(228, 228, 0);
   }
