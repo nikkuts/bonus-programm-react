@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector,useDispatch } from 'react-redux';
 import { Suspense } from 'react';
 import { Link, Outlet, useParams } from 'react-router-dom';
 import { selectExercise } from 'redux/exercises/selectors';
+import { toogleModal } from 'redux/modal/modalSlice';
+import { selectModal } from 'redux/modal/selectors';
+import { Test } from 'components/Test/Test';
 import { HomeworkForm } from 'components/HomeworkForm/HomeworkForm';
 import { getDifferenceInDays } from 'service/handleDate';
 import courses from "../courses.json";
@@ -10,6 +13,8 @@ import css from './Lesson.module.css';
 import { Button } from 'react-bootstrap';
 
 export default function Lesson () {
+    const dispatch = useDispatch();
+    const isModalOpen = useSelector(selectModal);
     const { homework } = useSelector(selectExercise);
     const [nextHomework, setNextHomework] = useState(homework);
     const [isLessonId, setIsLessonId] = useState(true);
@@ -28,6 +33,10 @@ export default function Lesson () {
     } else {
         currentLesson = currentCourse.lessons.find(lesson => lesson.day === lessonId);
     }
+
+    const handleClickTest = () => {
+        dispatch(toogleModal());
+      };
 
     useEffect(() => {
         if (!lessonId) {
@@ -136,13 +145,18 @@ export default function Lesson () {
                         {currentLesson.test !== '' &&
                         <li>
                             <Link 
-                                to="test"
+                                onClick={handleClickTest}
                                 className={css.lessonNavLink}
                             >
                                 Тестування
                             </Link> 
                         </li>
                         }
+                        {isModalOpen && 
+                        <Test
+                            test={currentLesson.test}
+                        />
+                        }  
                     </ul>
                 )}
                 <div className={css.wrapperFrame}>

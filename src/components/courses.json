@@ -209,7 +209,7 @@
         "id": "id-2", 
         "title": "Граматичний курс української мови",
         "wave": "16",
-        "start": "2024-03-08",
+        "start": "2024-03-04",
         "canal": "https://t.me/+jOWyUesXOQswNmVi",
         "chat": "https://t.me/+KQgFv1iqPncxMmJi", 
         "lessons": [
@@ -220,14 +220,12 @@
                 "content": "https://docs.google.com/document/d/e/2PACX-1vRAo1uJVGQtm8NvCsG851WaPKi7TbpzX_OdFCwhyjyFyaMKQbOm2trS8VEHYpjy9vMcDqWGWu-n9rQz/pub?embedded=true",
                 "theory": "https://drive.google.com/file/d/1LTqPoeXPA5K5Xk3yhtLZqb6qFXDLrO9N/preview",
                 "practice": "",
-                "answers": "",
                 "audio": [],
                 "video": [
-                    {"title": "Налаштування мови смартфона", "url": "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709920368/fj1jcxrcvy8qaes7thwk.mp4"},
-                    {"title": "Українізуємо Facebook", "url": "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709920420/qi7lwaigjkksha2tuoxw.mp4"},
-                    {"title": "Українізуємо Instagram", "url": "https://res.cloudinary.com/dwnbra6yc/video/upload/v1709920471/d0atjhf4tpjrhx1c6bsf.mp4"}
+                    {"title": "Налаштування мови смартфона", "url": "https://drive.google.com/file/d/1kt4JMLRreHWZUxgGfskTethgz6eZsGfF/preview"},
+                    {"title": "Українізуємо Facebook", "url": "https://drive.google.com/file/d/1YbBlkZ_pfZIPNvub7nWkTj7dLHQfiBxQ/preview"},
+                    {"title": "Українізуємо Instagram", "url": "https://drive.google.com/file/d/1gwQoD-jlVXOJRMad9zCxZ0vkYq3pw0sD/preview"}
                 ],
-                "materials": [],
                 "test": ""
             },
             {
@@ -237,72 +235,70 @@
                 "content": "https://docs.google.com/document/d/e/2PACX-1vQfvsDyW9wtVS3ZJX8iW6TgbElKzQhfaY-QVtGQ6o7gRfhEzqYtYEse0nCuQhUHlUtfffTElr2MAf3G/pub?embedded=true",
                 "theory": "https://drive.google.com/file/d/1udaRi2CBFRnQFIHfxFAa-Zq4xDbuAQwu/preview",
                 "practice": "https://drive.google.com/file/d/1nIyib0J7tIRLeqPa4RdU0BdlTCqNUWLe/preview",
-                "answers": "",
                 "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709899811/f7yecro4tjfjjoqfacm2.mp3"],
                 "video": [
                     {"title": "Український алфавіт", "url": "https://drive.google.com/file/d/12DJYa0j8S2bsZkooYeGBkApDf_-WIO18/preview"}
                 ],
-                "materials": [],
-                "test": ""
+                "test": "https://wordwall.net/uk/embed/499c6c65bfd646a58e6effed19541b29?themeId=1&templateId=5&fontStackId=0"
             },
             {
                 "day": "3",
                 "theme": "Транскрипція. Звукосполучення",
-                "image": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709984462/z3ym5sjaqro6umclwelg.jpg",
                 "content": "https://docs.google.com/document/d/e/2PACX-1vR69rSh0bZw_Jv90k00fkazmuXK96g1rjrfw7cyS8dWUgxF8d3ipVYARR55CJgcGqfXSrSLUjw_VahY/pub?embedded=true",
                 "theory": "https://drive.google.com/file/d/1Ng1rq9je7zzoMpPDHcb85QH88mtvWdv_/preview",
                 "practice": "https://drive.google.com/file/d/1pb8ZE2WCAxs2ewabqyjtkEpoLESP_gZj/preview",
-                "answers": "",
-                "audio": [],
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709979037/vgaqvy5sqxbt4qhmokmq.mp3"],
                 "video": [],
-                "materials": [],
-                "test": ""
+                "test": "https://wordwall.net/uk/embed/d232dfaa0d334c7092974d2fc7b74591?themeId=1&templateId=5&fontStackId=0"
             },
             {
                 "day": "4",
                 "theme": "Етикетні формули. Кличний відмінок",
-                "image": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709984509/rehqnczyilrtwpbktxj8.jpg",
                 "content": "https://docs.google.com/document/d/e/2PACX-1vTw6DL_2OHA7MKP8WA8lJ0QN28hrxYv8KP8JMEXQOVQpiugAKQxG-ZKZgVUVKzgrZiC7Pn50Jve5QTd/pub?embedded=true",
                 "theory": "https://drive.google.com/file/d/1EI9-Q7AXI0R11RIB2F0CUMfS5HS6jxPh/preview",
                 "practice": "https://drive.google.com/file/d/13N9rpC4NjzLDeVbvU7FAGphag_ihpo5U/preview",
-                "answers": "",
-                "audio": [],
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709979644/jhzr9oems9hidkboxpoe.mp3"],
                 "video": [],
-                "materials": [],
-                "test": ""
+                "test": "https://wordwall.net/uk/embed/d80e2568cfbf461c865e5aba0c283509?themeId=1&templateId=5&fontStackId=0"
             },
             {
                 "day": "5",
                 "theme": "Наголоси",
-                "image": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709984542/yxyx9th3ym6lc89cc9ii.jpg",
                 "content": "https://docs.google.com/document/d/e/2PACX-1vTr6AdxXp2CbUZ8fIp-EWOhZmjUCt_UY9G7-wfu1R2hzejA5VeRlW_-fPO2fpyQwdn03YP175g7LG30/pub?embedded=true",
                 "theory": "https://drive.google.com/file/d/1iwcRvDYtcHhJO81ISa6fGN7hbUQNTwdL/preview",
                 "practice": "https://drive.google.com/file/d/1-LDRAtSwhPDhDieemKG3Lr2az7x2sGUy/preview",
-                "answers": "",
-                "materials": "",
-                "test": ""
+                "audio": [],
+                "video": [
+                    {"title": "Як полюбити свій голос та звучати українською вишукано. Частина 1", "url": "https://www.youtube.com/embed/qGVLE8jaSb8?si=6jec7KLXGbjZvv6r"},
+                    {"title": "Як полюбити свій голос та звучати українською вишукано. Частина 2", "url": "https://www.youtube.com/embed/BgbhbqQ2zOg?si=2GsIpB3Xmktz0R97"},
+                    {"title": "Як полюбити свій голос та звучати українською вишукано. Частина 3", "url": "https://www.youtube.com/embed/ApvihU3yCTk?si=aiaK2QHcwLHNJAXB"}
+                ],
+                "test": "https://wordwall.net/uk/embed/c97e0f1b3d9745089e4bfbed0f8aa0d9?themeId=1&templateId=5&fontStackId=0"
             },
             {
                 "day": "6",
                 "theme": "Правопис власних назв",
-                "image": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709984571/vpkqkwsqp36lbrjirmnh.jpg",
                 "content": "https://docs.google.com/document/d/e/2PACX-1vSzV-eY5J52Mrqobu2YEa5S0fqpd2pvNrtIaoYTWZOcYbST3deZlmO2l2xqr-JfFSE_mx---Vr4m_PL/pub?embedded=true",
                 "theory": "https://drive.google.com/file/d/1siavo83LVtxX0Jt_ZyJbd6Zkp0pGpcwt/preview",
                 "practice": "https://drive.google.com/file/d/1bNw-vnOpJIv-Or1u27X1X957cF8Z2kOM/preview",
-                "answers": "",
-                "materials": "",
-                "test": ""
+                "audio": [],
+                "video": [],
+                "test": "https://wordwall.net/uk/embed/3b0c2311bb2d499481ea511d87e26d78?themeId=1&templateId=5&fontStackId=0"
             },
             {
                 "day": "7",
                 "theme": "Числівники. Частина 1",
-                "image": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1709984601/du5khi8dtmzoqmdqvvzt.jpg",
                 "content": "https://docs.google.com/document/d/e/2PACX-1vSt0lXXqK420UP30z-JGO1tbUGvvTQwVgdz60_wg51Vz5g5rAVmoZjM45CewpvKvmTgl38S-_GEyVDA/pub?embedded=true",
                 "theory": "https://drive.google.com/file/d/1tCw84u8F5bCMU4V1abtGMQpCUjbvdKFG/preview",
                 "practice": "https://drive.google.com/file/d/1Q2XUAKbNxtPW_Aiuq_kZwVcRJt_e4iuv/preview",
-                "answers": "",
-                "materials": "",
-                "test": ""
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709984244/eaphiycvk7iwxjelhzxg.mp3"],
+                "video": [],
+                "test": "https://wordwall.net/uk/embed/6459bf537e874f6196d7f6323432ea01?themeId=1&templateId=5&fontStackId=0"
             },
             {
                 "day": "8",
@@ -311,8 +307,12 @@
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
@@ -322,8 +322,12 @@
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
@@ -333,8 +337,12 @@
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
@@ -344,8 +352,12 @@
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
@@ -355,8 +367,12 @@
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
@@ -366,8 +382,12 @@
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
@@ -377,8 +397,12 @@
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
@@ -388,8 +412,12 @@
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
@@ -399,8 +427,12 @@
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
@@ -410,8 +442,12 @@
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
@@ -421,8 +457,12 @@
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
@@ -432,8 +472,12 @@
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
@@ -443,8 +487,12 @@
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
@@ -454,85 +502,113 @@
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
                 "day": "22",
-                "theme": "",
+                "theme": "Лексична помилка",
                 "image": "",
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
                 "day": "23",
-                "theme": "",
+                "theme": "Питальні речення",
                 "image": "",
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
                 "day": "24",
-                "theme": "",
+                "theme": "Правопис іменників",
                 "image": "",
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
                 "day": "25",
-                "theme": "",
+                "theme": "Правила милозвучності",
                 "image": "",
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
                 "day": "26",
-                "theme": "",
+                "theme": "Пряма та непряма мова",
                 "image": "",
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
                 "day": "27",
-                "theme": "",
+                "theme": "Вставні слова",
                 "image": "",
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""},
+                    {"title": "", "url": ""}
+                ],
                 "test": ""
             },
             {
                 "day": "28",
-                "theme": "",
+                "theme": "Підсумки курсу",
                 "image": "",
                 "content": "",
                 "theory": "",
                 "practice": "",
-                "answers": "",
-                "materials": "",
+                "audio": [],
+                "video": [],
                 "test": ""
             }
         ] 

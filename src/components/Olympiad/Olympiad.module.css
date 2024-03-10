@@ -1,0 +1,138 @@
+h1 {
+    color: #333;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+h2 {
+    color: #555;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h3 {
+    color: #555;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+p {
+    color: #555;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.containerTournament {
+    min-height: calc(100vh - 50px);
+    padding: 70px;
+}
+
+.num {
+    color: #2702fc;
+    font-weight: 600;
+}
+
+.formula {
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.result {
+    margin-bottom: 30px;
+}
+
+.wrapperRating {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rating {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.tableTournament {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    width: 320px;
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.td, .th {
+    border: 1px solid #a3c5d3;
+    padding: 10px;
+}
+
+.rules {
+    margin-top: 70px;
+}
+
+.startBtn {
+    display: block;
+    margin: auto;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 0 20px;
+    width: auto;
+    height: 50px;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: calc(16/14);
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #3754fd;
+  }
+  
+  .startBtn:hover,
+  .startBtn:focus {
+    background-color: #0d30f5;
+  }
+
+  .button {
+    display: block;
+    margin: auto;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 0 20px;
+    width: auto;
+    height: 50px;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: calc(16/14);
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    color: #000000;
+    background-color: rgb(255, 255, 0);
+  }
+  
+  .button:hover,
+  .button:focus {
+    background-color: rgb(228, 228, 0);
+  }

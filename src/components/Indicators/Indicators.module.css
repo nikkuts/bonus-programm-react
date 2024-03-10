@@ -24,7 +24,7 @@
     padding-right: 50px;
     width: 700px;
     font-weight: 500;
-    color: #555;
+    color: #000000;
 }
 
 .tdChild2 {
@@ -86,5 +86,5 @@
   
   .button:hover,
   .button:focus {
-    color: #0d30f5;
+    background-color: rgb(228, 228, 0);
   }

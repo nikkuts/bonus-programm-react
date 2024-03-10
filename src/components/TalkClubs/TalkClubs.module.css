@@ -1,0 +1,106 @@
+.wrapper {
+    min-height: calc(100vh - 50px);
+    padding: 70px;
+}
+
+.title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.decription {
+    color: #555;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.listBenefits {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.itemBenefit {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 50px;
+    padding-left: 30px;
+    color: #000000;
+    background-color: rgb(240, 240, 240);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    border: 1px solid #d7d2f3;
+    border-radius: 20px;
+}
+
+.filterFields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.filterFields label {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+.filterFields input {
+    display: block;
+    width: 220px;
+    height: 32px;
+    padding-left: 10px;
+    font-size: 14px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.listClubs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    /* margin-bottom: 40px; */
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    border: 1px solid #d7d2f3;
+    border-radius: 20px;
+}
+
+.link {
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #3754fd;   
+  }
+  
+  .link:hover,  
+  .link:focus,
+  .link:active {
+    color: #0d30f5;
+  }

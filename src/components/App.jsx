@@ -3,7 +3,6 @@ import { useDispatch } from "react-redux";
 import { Route, Routes } from 'react-router-dom';
 import { LendingLayout } from './LendingLayout/LendingLayout';
 import { HomeLayout } from "./HomeLayout/HomeLayout";
-// import { LessonLayout } from "./LessonLayout/LessonLayout";
 import { BonusLayout } from "./BonusLayout/BonusLayout";
 import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
@@ -16,9 +15,8 @@ const RegisterPage = lazy(() => import('./RegisterForm/RegisterForm'));
 const LoginPage = lazy(() => import('./LoginForm/LoginForm'));
 const ProfilePage = lazy(() => import('../pages/Profile'));
 const GamePage = lazy(() => import('./Game/Game'));
-const TournamentPage = lazy(() => import('./Tournament/Tournament'));
+const OlympiadPage = lazy(() => import('./Olympiad/Olympiad'));
 const DonatPage = lazy(() => import('./Donat/Donat'));
-const WithdrawalPage = lazy(() => import('./Withdrawal/Withdrawal'));
 const IndicatorsPage = lazy(() => import('./Indicators/Indicators'));
 const PaymentsPage = lazy(() => import('./Payments/Payments'));
 const SubscriptionsPage = lazy(() => import('./Subscriptions/Subscriptions'));
@@ -27,6 +25,7 @@ const ToolsPage = lazy(() => import('./Tools/Tools'));
 const StructurePage = lazy(() => import('../pages/Structure'));
 const RulesPage = lazy(() => import('./Rules/Rules'));
 const DiaryPage = lazy(() => import('../pages/Diary'));
+const TalkClubsPage = lazy(() => import('./TalkClubs/TalkClubs'));
 const LearnPage = lazy(() => import('./Learn/Learn'));
 const CoursePage = lazy(() => import('./Course/Course'));
 const LessonPage = lazy(() => import('./Lesson/Lesson'));
@@ -73,25 +72,21 @@ export default function App () {
           <Route path="learn/:courseId" element={<CoursePage />} >
             <Route path="" element={<LessonPage />} />
             <Route path=":lessonId" element={<LessonPage />} >
-            {/* <Route path=":lessonId" element={<LessonLayout />} > */}
-              {/* <Route path="" element={<LessonPage />} /> */}
               <Route path="" element={<ContentPage />} />
               <Route path="theory" element={<TheoryPage />} />
               <Route path="practice" element={<PracticePage />} />
               <Route path="audio" element={<AudioAssistantPage />} />
               <Route path="video" element={<VideoMaterialsPage />} />
-              {/* <Route path="test" element={<TestPage />} /> */}
             </Route>
           </Route>
           <Route path="game" element={<GamePage />} />
-          <Route path="tournament" element={<TournamentPage />} />
+          <Route path="olympiad" element={<OlympiadPage />} />
           <Route path="donat" element={<DonatPage />} />
           <Route path="profile" element={<ProfilePage />} />
           <Route path="diary" element={<DiaryPage />} />
+          <Route path="clubs" element={<TalkClubsPage />} />
           <Route path="bonus" element={<BonusLayout />} >
-            <Route path="" element={<IndicatorsPage />} >
-              <Route path="withdrawal" element={<WithdrawalPage />} />
-            </Route>
+            <Route path="" element={<IndicatorsPage />} />
             <Route path="payments" element={<PaymentsPage />} />
             <Route path="subscriptions" element={<SubscriptionsPage />} />
             <Route path="account" element={<AccountPage />} />

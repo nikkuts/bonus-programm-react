@@ -19,6 +19,6 @@ export default function Filter () {
               onChange={handlerChangeFilter}
           />
           </label>
-  </div>
+    </div>
   )
 };

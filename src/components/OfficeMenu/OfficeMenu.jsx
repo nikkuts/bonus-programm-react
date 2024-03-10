@@ -43,6 +43,14 @@ export const OfficeMenu = () => {
           </Link>
         </li>
         <li>
+          <Link  
+              to="clubs"
+              className={css.link}
+          >
+              Розмовні клуби
+          </Link>
+        </li>
+        <li>
         <Link  
               to="bonus"
               className={css.link}
