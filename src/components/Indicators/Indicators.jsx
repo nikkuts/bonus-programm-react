@@ -6,7 +6,7 @@ import { selectIndicators, selectIsLoading } from 'redux/partners/selectors';
 import { ReactComponent as Info } from 'icons/info.svg';
 import css from './Indicators.module.css';
 
-export default function Indicators() {
+export default function Indicators () {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const indicators = useSelector(selectIndicators);

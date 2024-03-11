@@ -62,7 +62,7 @@ export default function Payments () {
                       <td className={css.td}>{data.amount}</td>
                       <td className={css.td}>{data.description}</td>
                       <td className={css.td}>{data.info}</td>
-                      <td className={css.td}>{data.action === 'pay' ? 'разовий' : 'регулярний'}</td>
+                      <td className={css.td}>{data.action === 'pay' ? 'разовий' : 'щомісячний'}</td>
                     </tr>
                 ))}
                 </tbody>

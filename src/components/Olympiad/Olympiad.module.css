@@ -1,7 +1,7 @@
 h1 {
     color: #333;
     font-size: 32px;
-    font-weight: 700;
+    /* font-weight: 700; */
     text-align: center;
     margin-bottom: 70px;
 }
@@ -31,21 +31,18 @@ p {
     margin-bottom: 20px;
 }
 
-.containerTournament {
+.container {
     min-height: calc(100vh - 50px);
-    padding: 70px;
+    padding: 40px 70px;
+}
+
+.title {
+    font-weight: 600;
 }
 
 .num {
     color: #2702fc;
     font-weight: 600;
-}
-
-.formula {
-    color: #555;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
 }
 
 .result {

@@ -18,6 +18,10 @@ body {
   background-color: #fef9f9;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }

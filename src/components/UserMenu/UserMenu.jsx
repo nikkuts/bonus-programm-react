@@ -42,7 +42,10 @@ export const UserMenu = () => {
 
   return (
     <div className={css.header}>
-      <Link to="" className={css.logo}>
+      <Link 
+        to={"https://yedyni.org/"}
+        target="blank" 
+        className={css.logo}>
         <Favicon />
         <span className={css.textLogo}>ЄДИНІ</span>
       </Link>
