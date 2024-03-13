@@ -156,7 +156,15 @@ export default function Lesson () {
                         <Test
                             test={currentLesson.test}
                         />
-                        }  
+                        }
+                        <li>
+                            <Link 
+                                to="diary"
+                                className={css.lessonNavLink}
+                            >
+                                Щоденник
+                            </Link> 
+                        </li>  
                     </ul>
                 )}
                 <div className={css.wrapperFrame}>

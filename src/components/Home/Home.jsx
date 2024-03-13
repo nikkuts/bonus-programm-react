@@ -50,6 +50,11 @@ export default function Home () {
                     </td>
                 </tr>
                 <tr className={css.tr}>
+                    <td className={css.tdChild1}><span className={css.child1}>Проходження тестування</span></td>
+                    <td className={css.tdChild2}>сума набраних балів</td>
+                    <td className={css.tdChild3}></td>
+                </tr>
+                <tr className={css.tr}>
                     <td className={css.tdChild1}><span className={css.child1}>Організація розмовного клубу за місцем свого проживання</span></td>
                     <td className={css.tdChild2}>4000</td>
                     <td className={css.tdChild3}>

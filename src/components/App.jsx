@@ -33,6 +33,7 @@ const TheoryPage = lazy(() => import('./LessonFrams/Theory'));
 const PracticePage = lazy(() => import('./LessonFrams/Practice'));
 const AudioAssistantPage = lazy(() => import('./AudioAssistant/AudioAssistant'));
 const VideoMaterialsPage = lazy(() => import('./VideoMaterials/VideoMaterials'));
+const DiaryPage = lazy(() => import('./Diary/Diary'));
 
 export default function App () {
   const dispatch = useDispatch();
@@ -76,6 +77,7 @@ export default function App () {
               <Route path="practice" element={<PracticePage />} />
               <Route path="audio" element={<AudioAssistantPage />} />
               <Route path="video" element={<VideoMaterialsPage />} />
+              <Route path="diary" element={<DiaryPage />} />
             </Route>
           </Route>
           <Route path="game" element={<GamePage />} />
