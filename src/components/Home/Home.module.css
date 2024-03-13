@@ -1,11 +1,11 @@
 .wrapperHome {
     min-height: calc(100vh - 50px);
-    padding: 40px 70px;
+    padding: 40px 0px;
 }
 
 .titleHome {
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 400;
     text-align: center;
     margin-bottom: 40px;
 }
@@ -19,24 +19,12 @@
     height: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
-    /* font-size: 28px;
-    text-align: center;
-    color: #0d30f5; */
     border: 1px solid #d7d2f3;
     border-radius: 20px;
     outline: none;
 }
 
 .trace {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px; */
     font-size: 28px;
     text-align: center;
     color: #0d30f5;
@@ -48,12 +36,12 @@
     font-size: 20px;
 }
 
-p {
-    color: #555;
-    font-size: 16px;
+.description {
+    color: #000000;
+    font-size: 18px;
     font-weight: 500;
     line-height: 1.5;
-    margin-bottom: 40px;
+    padding: 40px 70px;
 }
 
 .titleTable {
@@ -62,7 +50,6 @@ p {
     font-size: 18px;
     line-height: calc(18/16);
     letter-spacing: 0.01em;
-    padding-top: 20px;
 }
 
 .sertificate {
@@ -89,7 +76,7 @@ p {
 }
 
 .tr {
-    height: 75px;
+    height: 80px;
 }
 
 .th {

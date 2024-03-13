@@ -37,7 +37,7 @@ export default function Payments () {
     return (
       <>
         <div>{isLoading && <b>Завантаження даних...</b>}</div> 
-        <div className={css.containerBonus}>
+        <div>
           <h2 className={css.title}>Історія моїх внесків</h2>
           <DateRange />
           <div className={css.tableHistory}>

@@ -1,9 +1,9 @@
 import { useEffect, lazy } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Routes } from 'react-router-dom';
-import { LendingLayout } from './LendingLayout/LendingLayout';
-import { HomeLayout } from "./HomeLayout/HomeLayout";
-import { BonusLayout } from "./BonusLayout/BonusLayout";
+import { LendingLayout } from './LendingLayout';
+import { HomeLayout } from "./HomeLayout";
+import { BonusLayout } from "./BonusLayout";
 import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
 import { RestrictedRoute } from "./RestrictedRoute";
@@ -24,7 +24,6 @@ const AccountPage = lazy(() => import('./Account/Account'));
 const ToolsPage = lazy(() => import('./Tools/Tools'));
 const StructurePage = lazy(() => import('../pages/Structure'));
 const RulesPage = lazy(() => import('./Rules/Rules'));
-const DiaryPage = lazy(() => import('../pages/Diary'));
 const TalkClubsPage = lazy(() => import('./TalkClubs/TalkClubs'));
 const LearnPage = lazy(() => import('./Learn/Learn'));
 const CoursePage = lazy(() => import('./Course/Course'));
@@ -83,7 +82,6 @@ export default function App () {
           <Route path="olympiad" element={<OlympiadPage />} />
           <Route path="donat" element={<DonatPage />} />
           <Route path="profile" element={<ProfilePage />} />
-          <Route path="diary" element={<DiaryPage />} />
           <Route path="clubs" element={<TalkClubsPage />} />
           <Route path="bonus" element={<BonusLayout />} >
             <Route path="" element={<IndicatorsPage />} />

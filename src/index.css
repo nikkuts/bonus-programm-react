@@ -66,16 +66,17 @@ button {
   cursor: pointer;
 }
 
-/* .container {
+.container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
+  width: 320px;
   
   @media screen and (min-width: 480px) {
       width: 480px;
   }
 
-  @media screen and (min-width: 770px) {
-      width: 770px;
+  @media screen and (min-width: 768px) {
+      width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -90,4 +91,4 @@ button {
 .no-scroll {
   max-width: 100vw;
   overflow-y: hidden;
-} */
+}

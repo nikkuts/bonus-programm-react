@@ -25,7 +25,7 @@ export default function Home () {
                 </div>
                 <span className={css.points}>балів</span>
             </div>
-            <p>Цей показник у загальному відображає рівень моєї причетності до реалізації цілей проєкту “Єдині”. А саме, перейти на українську та допомогти це зробити іншим українцям.</p>
+            <p className={css.description}>Цей показник у загальному відображає рівень моєї причетності до реалізації цілей проєкту “Єдині”. А саме, перейти на українську та допомогти це зробити іншим українцям.</p>
             <p className={css.titleTable}>Завдяки яким досягненням зростає мій українськомовний слід разом із Єдиними?</p>
             <div className={css.tableTrace}>
             <table className={css.table}>
@@ -51,7 +51,7 @@ export default function Home () {
                 </tr>
                 <tr className={css.tr}>
                     <td className={css.tdChild1}><span className={css.child1}>Організація розмовного клубу за місцем свого проживання</span></td>
-                    <td className={css.tdChild2}>1000</td>
+                    <td className={css.tdChild2}>4000</td>
                     <td className={css.tdChild3}>
                         <button type="button"
                         onClick={() => navigate("clubs")} 
@@ -83,7 +83,7 @@ export default function Home () {
                     <td className={css.tdChild2}>40</td>
                     <td className={css.tdChild3}>
                         <button type="button"
-                        onClick={() => navigate("bonus/rules")}  
+                        onClick={() => navigate("bonus/tools")}  
                         className={css.button}
                         >
                         Детальніше

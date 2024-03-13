@@ -37,7 +37,7 @@
       return (
         <>
           <div>{isLoading && <b>Завантаження даних...</b>}</div> 
-          <div className={css.containerBonus}>
+          <div>
             <h2 className={css.title}>Історія бонусного рахунку</h2>
             <DateRange />
             <div className={css.tableHistory}>

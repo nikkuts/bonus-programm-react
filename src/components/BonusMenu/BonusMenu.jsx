@@ -1,14 +1,11 @@
-import { useState, useEffect, useRef, Suspense } from 'react';
-// import { useDispatch } from "react-redux";
-import { Link, Outlet } from 'react-router-dom';
+import { useState, useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { HistoryMenu } from 'components/HistoryMenu/HistoryMenu';
 import { ReactComponent as ChevronDown } from 'icons/chevron-down.svg';
 import { ReactComponent as ChevronUp } from 'icons/chevron-up.svg';
-import css from './BonusLayout.module.css';
+import css from './BonusMenu.module.css';
 
-export const BonusLayout = () => {
-    // const dispatch = useDispatch();
-
+export const BonusMenu = () => {
     const [menuVisible, setMenuVisible] = useState(false);
     const historyRef = useRef();
 
@@ -21,10 +18,6 @@ export const BonusLayout = () => {
     const toggleMenu = () => {
         setMenuVisible((prevVisible) => !prevVisible);
     };
-
-    // useEffect(() => {
-    //     dispatch(getIndicators()); 
-    // }, [dispatch]);
 
     useEffect(() => {
         document.addEventListener('click', handleClickOutside);
@@ -96,9 +89,6 @@ export const BonusLayout = () => {
                         </Link> 
                     </li>
                 </ul>
-                <Suspense fallback={null}>
-                    <Outlet />
-                </Suspense>
             </div>
         </>
     )

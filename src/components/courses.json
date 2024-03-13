@@ -226,7 +226,8 @@
                     {"title": "Українізуємо Facebook", "url": "https://drive.google.com/file/d/1YbBlkZ_pfZIPNvub7nWkTj7dLHQfiBxQ/preview"},
                     {"title": "Українізуємо Instagram", "url": "https://drive.google.com/file/d/1gwQoD-jlVXOJRMad9zCxZ0vkYq3pw0sD/preview"}
                 ],
-                "test": ""
+                "test": "",
+                "diary": ""
             },
             {
                 "day": "2",
@@ -239,7 +240,8 @@
                 "video": [
                     {"title": "Український алфавіт", "url": "https://drive.google.com/file/d/12DJYa0j8S2bsZkooYeGBkApDf_-WIO18/preview"}
                 ],
-                "test": "https://wordwall.net/uk/embed/499c6c65bfd646a58e6effed19541b29?themeId=1&templateId=5&fontStackId=0"
+                "test": "https://wordwall.net/uk/embed/499c6c65bfd646a58e6effed19541b29?themeId=1&templateId=5&fontStackId=0",
+                "diary": ""
             },
             {
                 "day": "3",
@@ -250,7 +252,8 @@
                 "practice": "https://drive.google.com/file/d/1pb8ZE2WCAxs2ewabqyjtkEpoLESP_gZj/preview",
                 "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709979037/vgaqvy5sqxbt4qhmokmq.mp3"],
                 "video": [],
-                "test": "https://wordwall.net/uk/embed/d232dfaa0d334c7092974d2fc7b74591?themeId=1&templateId=5&fontStackId=0"
+                "test": "https://wordwall.net/uk/embed/d232dfaa0d334c7092974d2fc7b74591?themeId=1&templateId=5&fontStackId=0",
+                "diary": ""
             },
             {
                 "day": "4",
@@ -261,7 +264,8 @@
                 "practice": "https://drive.google.com/file/d/13N9rpC4NjzLDeVbvU7FAGphag_ihpo5U/preview",
                 "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709979644/jhzr9oems9hidkboxpoe.mp3"],
                 "video": [],
-                "test": "https://wordwall.net/uk/embed/d80e2568cfbf461c865e5aba0c283509?themeId=1&templateId=5&fontStackId=0"
+                "test": "https://wordwall.net/uk/embed/d80e2568cfbf461c865e5aba0c283509?themeId=1&templateId=5&fontStackId=0",
+                "diary": ""
             },
             {
                 "day": "5",
@@ -276,7 +280,8 @@
                     {"title": "Як полюбити свій голос та звучати українською вишукано. Частина 2", "url": "https://www.youtube.com/embed/BgbhbqQ2zOg?si=2GsIpB3Xmktz0R97"},
                     {"title": "Як полюбити свій голос та звучати українською вишукано. Частина 3", "url": "https://www.youtube.com/embed/ApvihU3yCTk?si=aiaK2QHcwLHNJAXB"}
                 ],
-                "test": "https://wordwall.net/uk/embed/c97e0f1b3d9745089e4bfbed0f8aa0d9?themeId=1&templateId=5&fontStackId=0"
+                "test": "https://wordwall.net/uk/embed/c97e0f1b3d9745089e4bfbed0f8aa0d9?themeId=1&templateId=5&fontStackId=0",
+                "diary": ""
             },
             {
                 "day": "6",
@@ -287,7 +292,8 @@
                 "practice": "https://drive.google.com/file/d/1bNw-vnOpJIv-Or1u27X1X957cF8Z2kOM/preview",
                 "audio": [],
                 "video": [],
-                "test": "https://wordwall.net/uk/embed/3b0c2311bb2d499481ea511d87e26d78?themeId=1&templateId=5&fontStackId=0"
+                "test": "https://wordwall.net/uk/embed/3b0c2311bb2d499481ea511d87e26d78?themeId=1&templateId=5&fontStackId=0",
+                "diary": ""
             },
             {
                 "day": "7",
@@ -298,112 +304,94 @@
                 "practice": "https://drive.google.com/file/d/1Q2XUAKbNxtPW_Aiuq_kZwVcRJt_e4iuv/preview",
                 "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1709984244/eaphiycvk7iwxjelhzxg.mp3"],
                 "video": [],
-                "test": "https://wordwall.net/uk/embed/6459bf537e874f6196d7f6323432ea01?themeId=1&templateId=5&fontStackId=0"
+                "test": "https://wordwall.net/uk/embed/6459bf537e874f6196d7f6323432ea01?themeId=1&templateId=5&fontStackId=0",
+                "diary": ""
             },
             {
                 "day": "8",
                 "theme": "Числівники. Частина 2",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710190920/mjk0cvt7zxquomrref13.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vRRp5KOJqFs0x7ha_38IYcIELmRWYqnIHSibCOAUoD5n9f_IA64iKFao1B_Yuifus5V452mg3wThd_s/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1h1PUwnaG9G7YcsLJMO6cIvex80yHSQcP/preview",
+                "practice": "https://drive.google.com/file/d/1O1GBY8B4bLU09bkBlpp73ABDiwy_lkgb/preview",
                 "audio": [],
-                "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
-                ],
-                "test": ""
+                "video": [],
+                "test": "https://wordwall.net/uk/embed/233a7e8e6ef943ad85ca512858968146?themeId=1&templateId=5&fontStackId=0",
+                "diary": ""
             },
             {
                 "day": "9",
                 "theme": "Займенники",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710191317/xqceozdy38dzvrcuwsqh.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vQRS0IZ6dnmcaqfj3KCvFJRHdeTV-F5lwr1-iOYmdTPdsleO802-AH6I7hnz2tn4TnzLClx8fIZKALU/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1LbIptoUETE2xFxfUcVv2fN1Kil5JnaKq/preview",
+                "practice": "https://drive.google.com/file/d/1PK1aX7jhwdv1fqxd0YfhYpoKdgnL2b9s/preview",
                 "audio": [],
-                "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
-                ],
-                "test": ""
+                "video": [],
+                "test": "https://wordwall.net/uk/embed/cf43f74193f448bca516ee9e099a6876?themeId=1&templateId=5&fontStackId=0",
+                "diary": ""
             },
             {
                 "day": "10",
                 "theme": "Написання слів з пів",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710192095/hvufal3buk3adks90f1g.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vShcAqe5rVwkty0c9iMDpW3NHTvvN-9JP5gxQC_BfVpoksORv3uwtK283WftBjR-JprtTrAhSohgfZO/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1fW1VgVFr3XLAN55RKc0gcFPjFQ4dJhlX/preview",
+                "practice": "https://drive.google.com/file/d/1fVPBDmknYkt7QuseH1yFP5kP9_-gTGoe/preview",
                 "audio": [],
-                "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
-                ],
-                "test": ""
+                "video": [],
+                "test": "https://wordwall.net/uk/embed/6d567e8814d74d8e98c3e4d264248ba0?themeId=1&templateId=5&fontStackId=0",
+                "diary": ""
             },
             {
                 "day": "11",
                 "theme": "Сполучники. Кома у простому реченні",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710192541/nep0q8tnnrwyisdu5k4i.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vRh0r07RdDvrrB2mtg1EwgdXagvSgQyTYmRCtS4hZsIdjvxb8KZlramqj8mNaj4_ifZcXgi7NSTv5Ws/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1m52Q5rh6gg42321zFWJlgLkTZtFiMd77/preview",
+                "practice": "https://drive.google.com/file/d/1iPuHqHJ6Uit6x7Accbg0ibjQDuKmofaK/preview",
                 "audio": [],
-                "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
-                ],
-                "test": ""
+                "video": [],
+                "test": "https://wordwall.net/uk/embed/95b1ca25f86b4de08522e5f73153a7cd?themeId=1&templateId=5&fontStackId=0",
+                "diary": ""
             },
             {
                 "day": "12",
                 "theme": "Розділові знаки у складному реченні",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710193025/q96gkcn14hgvorvxn16f.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vQCupymx7v7Tm1MEUL1D8Pa08exdaNNKajhwLfE4vch0PsdewUatn6L4_WWFhtu1DGk_DUpUf3c1lyQ/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1DNS3WwiUorkXO9oc0Kuk0rufFEUCxeXA/preview",
+                "practice": "https://drive.google.com/file/d/10RzBqWgAWKDeMCAuqxIu3qnh691upDvV/preview",
                 "audio": [],
                 "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
+                    {"title": "Розділові знаки як спосіб мислення - Олександра Малаш Єдині", "url": "https://www.youtube.com/embed/q_vBv--3h5k?si=6pe_OdXfLz4KIeUB"}
                 ],
-                "test": ""
+                "test": "https://wordwall.net/uk/embed/87a3bcc67dcb481c849a36541c259166?themeId=1&templateId=5&fontStackId=0",
+                "diary": ""
             },
             {
                 "day": "13",
                 "theme": "Лексичне багатство мови",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710193698/xfhbrbtezdyyd6f6jr9t.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vTMC0DYSIxJdQfOF4ggsuU20y0laFwYz_aofiovR-_RYDtavGmZaeVDTtObrDAofOMq_X9YOxzeTEiG/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1BLde1QUShXz8UnTcZhyqcvR44139JsrH/preview",
+                "practice": "https://drive.google.com/file/d/1HNZ-XYPdjeoAGjwrT4iXevcnLzU8b1mg/preview",
                 "audio": [],
-                "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
-                ],
-                "test": ""
+                "video": [],
+                "test": "https://wordwall.net/uk/embed/0fccbe6fb00e4f67b6eea7488fef8b98?themeId=1&templateId=5&fontStackId=0",
+                "diary": ""
             },
             {
                 "day": "14",
                 "theme": "Апостроф",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
-                "audio": [],
-                "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
-                ],
-                "test": ""
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710194206/nztw7nhiim2phfqsyhpm.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vS1OwVlBiQg6tOWVgupE5-cSW8AZbjoACaRshNTgWIsGk0r6JMYu93gEirujVGQm2gvbIuAl9c-Tlmv/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1pKrgwsaETn36bxbL8h4TKVqlZbkFNQGp/preview",
+                "practice": "https://drive.google.com/file/d/1C6_3bxgfwuzuolJqOWBv7cHcnF3qrf64/preview",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1710194373/qak1wrvt7qsbpje0tbfu.mp3"],
+                "video": [],
+                "test": "https://wordwall.net/uk/embed/069b62f840e746d78a2436ec6e0c50a0?themeId=1&templateId=5&fontStackId=0",
+                "diary": ""
             },
             {
                 "day": "15",
@@ -418,7 +406,8 @@
                     {"title": "", "url": ""},
                     {"title": "", "url": ""}
                 ],
-                "test": ""
+                "test": "",
+                "diary": ""
             },
             {
                 "day": "16",
@@ -433,7 +422,8 @@
                     {"title": "", "url": ""},
                     {"title": "", "url": ""}
                 ],
-                "test": ""
+                "test": "",
+                "diary": ""
             },
             {
                 "day": "17",
@@ -448,7 +438,8 @@
                     {"title": "", "url": ""},
                     {"title": "", "url": ""}
                 ],
-                "test": ""
+                "test": "",
+                "diary": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710279530/rgi9qwaexm4qvxogy854.png"
             },
             {
                 "day": "18",
@@ -463,7 +454,8 @@
                     {"title": "", "url": ""},
                     {"title": "", "url": ""}
                 ],
-                "test": ""
+                "test": "",
+                "diary": ""
             },
             {
                 "day": "19",
@@ -478,7 +470,8 @@
                     {"title": "", "url": ""},
                     {"title": "", "url": ""}
                 ],
-                "test": ""
+                "test": "",
+                "diary": ""
             },
             {
                 "day": "20",
@@ -493,7 +486,8 @@
                     {"title": "", "url": ""},
                     {"title": "", "url": ""}
                 ],
-                "test": ""
+                "test": "",
+                "diary": ""
             },
             {
                 "day": "21",
@@ -508,7 +502,8 @@
                     {"title": "", "url": ""},
                     {"title": "", "url": ""}
                 ],
-                "test": ""
+                "test": "",
+                "diary": ""
             },
             {
                 "day": "22",
@@ -523,7 +518,8 @@
                     {"title": "", "url": ""},
                     {"title": "", "url": ""}
                 ],
-                "test": ""
+                "test": "",
+                "diary": ""
             },
             {
                 "day": "23",
@@ -538,7 +534,8 @@
                     {"title": "", "url": ""},
                     {"title": "", "url": ""}
                 ],
-                "test": ""
+                "test": "",
+                "diary": ""
             },
             {
                 "day": "24",
@@ -553,7 +550,8 @@
                     {"title": "", "url": ""},
                     {"title": "", "url": ""}
                 ],
-                "test": ""
+                "test": "",
+                "diary": ""
             },
             {
                 "day": "25",
@@ -568,7 +566,8 @@
                     {"title": "", "url": ""},
                     {"title": "", "url": ""}
                 ],
-                "test": ""
+                "test": "",
+                "diary": ""
             },
             {
                 "day": "26",
@@ -583,7 +582,8 @@
                     {"title": "", "url": ""},
                     {"title": "", "url": ""}
                 ],
-                "test": ""
+                "test": "",
+                "diary": ""
             },
             {
                 "day": "27",
@@ -598,7 +598,8 @@
                     {"title": "", "url": ""},
                     {"title": "", "url": ""}
                 ],
-                "test": ""
+                "test": "",
+                "diary": ""
             },
             {
                 "day": "28",
@@ -609,7 +610,8 @@
                 "practice": "",
                 "audio": [],
                 "video": [],
-                "test": ""
+                "test": "",
+                "diary": ""
             }
         ] 
     }

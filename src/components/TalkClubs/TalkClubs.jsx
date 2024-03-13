@@ -68,15 +68,15 @@ export default function TalkClubs () {
             {getVisibleClubs().map(({city, form}, index) => (
                 <li
                   key={index}
-                  className={css.item}
+                  // className={css.item}
                 >
-                  {city}
+                  {/* {city} */}
                   <Link
                     to={form}
                     target="blank"
-                    className={css.link}
+                    className={css.item}
                   >
-                    Відкрити
+                    {city}
                   </Link>
                 </li> 
             ))}

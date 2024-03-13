@@ -10,7 +10,7 @@ export default function Tools() {
       <div className={css.containerBonus}>
         <h1>Поклич друзів разом опановувати українську та отримувати бонуси на 8 рівнів!</h1>
         <div className={css.wrapperRef}>
-        <h2 className={css.refLink}>Запрошувальне посилання</h2>
+        <h2 className={css.refLink}>Запрошувальне покликання</h2>
         <CopyUrl url={`${BASE_CLIENT_URL}?x=${user.id}`} />
         </div>
         <h3>Приклад отримання бонусів у програмі  “Плюсуй українську”</h3>

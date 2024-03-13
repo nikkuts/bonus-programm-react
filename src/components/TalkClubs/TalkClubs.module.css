@@ -78,14 +78,14 @@
 
 .item {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 200px;
     height: 100px;
     padding: 5px;
     text-align: center;
-    color: #333;
+    color: #000000;
+    background-color: rgb(240, 240, 240);
     font-size: 14px;
     line-height: 1.5;
     font-weight: 500;
@@ -100,8 +100,9 @@
     color: #3754fd;   
   }
   
-  .link:hover,  
-  .link:focus,
-  .link:active {
+  .item:hover,  
+  .item:focus,
+  .item:active {
     color: #0d30f5;
+    background-color: rgba(230, 230, 230);
   }

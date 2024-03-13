@@ -1,13 +1,13 @@
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import { UserMenu } from '../UserMenu/UserMenu';
-import css from './HomeLayout.module.css';
+import { UserMenu } from 'components/UserMenu/UserMenu';
+import './../index.css';
 
 export const HomeLayout = () => {
 
   return (
     <>
-    <div className={css.container}>
+    <div className="container">
       <UserMenu />
       <Suspense fallback={null}>
         <Outlet />

@@ -1,10 +1,14 @@
+.containerBonus {
+    min-height: calc(100vh - 50px);
+    padding: 0px 50px;
+}
+
 .tableIndicators {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     border: 1px solid #d7d2f3;
     border-radius: 20px;
 }
@@ -13,6 +17,7 @@
     border-collapse: collapse;
     font-size: 16px;
     line-height: 1.5;
+    color: #000000;
 }
 
 .tr {
@@ -22,7 +27,7 @@
 .tdChild1 {
     padding-left: 50px;
     padding-right: 50px;
-    width: 700px;
+    width: 640px;
     font-weight: 500;
     color: #000000;
 }
@@ -35,7 +40,7 @@
 }
 
 .tdChild3 {
-    width: 340px;
+    width: 300px;
 }
 
 .level {

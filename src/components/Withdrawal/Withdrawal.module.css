@@ -1,0 +1,110 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1200;
+  }
+  
+  .overlay.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+.form {
+    width: 480px;
+    padding: 40px;
+    background-color: #fef9f9;
+    border: 1px solid #0d30f5;
+    border-radius: 20px;
+}
+
+.listForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.label {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.input {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #dfdddd;
+    border-radius: 20px;
+    outline: none;
+}
+
+.input::placeholder {
+  color: rgba(0, 0, 0, 0.4); 
+}
+
+.button {
+    display: block;
+    margin: auto;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 0 20px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: calc(16/14);
+    overflow: hidden;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #3754fd;
+  }
+  
+  .button:hover,
+  .button:focus {
+    background-color: #0d30f5;
+  }
+
+  .itemCheckBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .checkBox {
+    width: 20px;
+    height: 20px;
+  }
+
+  .text {
+    display: block;
+    /* height: 20px; */
+    font-size: 16px;
+  }
+
+  .oferta {
+    color: #0d30f5;
+    cursor: pointer;
+  }
+
+  .oferta:hover,
+  .oferta:focus {
+    color: #89a006;
+  }

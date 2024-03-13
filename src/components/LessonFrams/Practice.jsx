@@ -30,7 +30,8 @@ export default function Practice () {
                     courseId={courseId}
                     lessonId={lessonId}
                 />
-            }       
+            }
+            <img src={currentLesson.diary} alt='Щоденник' width="100%" />       
         </>           
     )
   };

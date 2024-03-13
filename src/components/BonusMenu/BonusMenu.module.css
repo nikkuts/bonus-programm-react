@@ -1,5 +1,4 @@
 .bonusWrapper {
-    min-height: calc(100vh - 50px);
     padding: 30px;
 }
 
@@ -8,21 +7,12 @@
   text-align: left;
   margin-bottom: 30px;
 }
-
-  .bonusTitle {
-    color: #333;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: left;
-    margin-top: 20px;
-    /* margin-bottom: 15px; */
-  }
   
   .bonusNav {
       display: flex;
       align-items: center;
       gap: 20px;
-      padding: 20px;
+      padding: 0 20px;
   }
   
   .bonusLink {

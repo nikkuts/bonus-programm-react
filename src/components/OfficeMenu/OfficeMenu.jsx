@@ -35,12 +35,6 @@ export const OfficeMenu = () => {
           </Link>
         </li>
         <li>
-          <Link  
-              to="diary"
-              className={css.link}
-          >
-              Щоденник
-          </Link>
         </li>
         <li>
           <Link  

@@ -7,7 +7,7 @@ import css from './CopyUrl.module.css'
 export default function CopyUrl({ url }) {
   const clipboard = useClipboard({
     onSuccess() {
-        alert('Ваше посилання скопійовано')
+        alert('Ваше покликання скопійовано')
       }
   });
   const text = 'Тут отримую потужну підтримку у переході на українську! Доєднуйся'
