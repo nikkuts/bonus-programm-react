@@ -1,0 +1,59 @@
+.menu {
+    position: absolute;
+    display: block;
+    width: 250px;
+    top: 80px;
+    right: 0;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 3px 8px 14px rgba(136, 198, 253, 0.19);
+    z-index: 100;
+  }
+
+  .containerProfile {
+    min-height: calc(100vh - 50px);
+    padding: 30px;
+}
+
+.title {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .userInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: fit-content;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border: 1px solid #a3c5d3;
+    border-radius: 20px;
+  }
+
+  .userName {
+    font-weight: 700;
+    font-size: 18px;
+    color: #ff9900;
+  }
+
+  .userEmail {
+    font-weight: 500;
+  }
+
+  .registerDate {
+    font-weight: 700;
+    color: #000000;
+  }
+
+  /* .userLevel {
+    font-weight: 700;
+    color: #0d30f5;
+  } */
+
+  .userLevelNum {
+    font-weight: 700;
+    color: #0d30f5;
+  }

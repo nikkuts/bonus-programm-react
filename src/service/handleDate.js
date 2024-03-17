@@ -34,7 +34,7 @@ export const formatDate = (date) => {
   const month = ('0' + dateParts[0]).slice(-2); 
   const day = ('0' + dateParts[1]).slice(-2);
 
-  return `${year}-${month}-${day}`;
+  return `${day}-${month}-${year}`;
 };
 
 export const getNextPaymentDate = (lastPaymentDate) => {
@@ -49,7 +49,7 @@ export const getNextPaymentDate = (lastPaymentDate) => {
   const month = ('0' + (kyivObjDate.getMonth() + 1)).slice(-2); 
   const day = ('0' + kyivObjDate.getDate()).slice(-2);
   
-  return `${year}-${month}-${day}`;
+  return `${day}-${month}-${year}`;
 };
 
 export const getDifferenceInDays = (date) => {

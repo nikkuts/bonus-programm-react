@@ -13,7 +13,7 @@ const LendingPage = lazy(() => import('../pages/Lending'));
 const HomePage = lazy(() => import('./Home/Home'));
 const RegisterPage = lazy(() => import('./RegisterForm/RegisterForm'));
 const LoginPage = lazy(() => import('./LoginForm/LoginForm'));
-const ProfilePage = lazy(() => import('../pages/Profile'));
+const ProfilePage = lazy(() => import('./Profile/Profile'));
 const GamePage = lazy(() => import('./Game/Game'));
 const OlympiadPage = lazy(() => import('./Olympiad/Olympiad'));
 const DonatPage = lazy(() => import('./Donat/Donat'));

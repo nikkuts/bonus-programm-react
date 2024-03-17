@@ -55,7 +55,7 @@ export default function Home () {
                     <td className={css.tdChild3}></td>
                 </tr>
                 <tr className={css.tr}>
-                    <td className={css.tdChild1}><span className={css.child1}>Організація розмовного клубу за місцем свого проживання</span></td>
+                    <td className={css.tdChild1}><span className={css.child1}>Організація розмовного клубу</span></td>
                     <td className={css.tdChild2}>4000</td>
                     <td className={css.tdChild3}>
                         <button type="button"
@@ -99,6 +99,18 @@ export default function Home () {
                     <td className={css.tdChild1}><span className={css.child1}>Пройдений курс учасником моєї команди</span></td>
                     <td className={css.tdChild2}>400</td>
                     <td className={css.tdChild3}></td>
+                </tr>
+                <tr className={css.tr}>
+                    <td className={css.tdChild1}><span className={css.child1}>Отримання винагороди у бонусній програмі</span></td>
+                    <td className={css.tdChild2}>сума отриманих бонусів</td>
+                    <td className={css.tdChild3}>
+                        <button type="button"
+                        onClick={() => navigate("bonus/rules")} 
+                        className={css.button}
+                        >
+                        Детальніше
+                        </button>
+                    </td>
                 </tr>
                 <tr className={css.tr}>
                     <td className={css.tdChild1}><span className={css.child1}>Участь у олімпіаді</span></td>
