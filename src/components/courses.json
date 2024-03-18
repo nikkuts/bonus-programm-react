@@ -423,79 +423,61 @@
             {
                 "day": "17",
                 "theme": "Написання ненаголошених е/и. Написання префіксів",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710784345/vxez2mrucq0sqfocjmve.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vQZqtuYJznrOSxVRSf4OSMSvEr1nos4eK5ThHuOHw4dSbi6MF-KFXQsJ-WlR07GT4wgBZXZaaW8GE7t/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1EGG8DNshOq905PYPXhanx4lprxTz0gzE/preview",
+                "practice": "https://drive.google.com/file/d/12pnI7ZmCMv-eABObenS1Y3aE6NjF7UQ8/preview",
                 "audio": [],
-                "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
-                ],
+                "video": [],
                 "test": "https://wordwall.net/uk/embed/7fb165856c7e4f90b391f677ad83ea7e?themeId=1&templateId=5&fontStackId=0",
                 "diary": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710279530/rgi9qwaexm4qvxogy854.png"
             },
             {
                 "day": "18",
                 "theme": "Написання слів з “не“",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710788209/jqisqaq3fqt2qc88awoj.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vSUYVNC-mhsTdEjXPXl1FGWuhEtNO4-ArJNcMokK1pSSgTRXP4MswtD1uZ_VodZqdlXSWcOhD9fze4v/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1naaEKBNRonvUB4ykWgmh2DvZA8fM4K_T/preview",
+                "practice": "https://drive.google.com/file/d/1QiOoV5c4zIFPvbwfGFPsRM43x4whXMc6/preview",
                 "audio": [],
-                "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
-                ],
+                "video": [],
                 "test": "https://wordwall.net/uk/embed/be100951a4284510aed83b4b7c6bdd2c?themeId=1&templateId=5&fontStackId=0",
                 "diary": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710700405/a9gmvc73pxp6o1o7e2xf.png"
             },
             {
                 "day": "19",
                 "theme": "Відмінювання іменників",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710790358/clpif1xqepqfvfhw8yhd.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vS-b51SGgC2Ts6cyxpB-9eHxkkCPPy4Gk53kQ9Z-jReLswmozm_kZjkNfrYsCyZoCfLFHt5VE5vQooI/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1iy3mJYGJlI5J8s3FRyCK2epe6YEz9346/preview",
+                "practice": "https://drive.google.com/file/d/1xsVcyeCtA1CbtQrc9sTaVXRKvBRb3T4U/preview",
                 "audio": [],
-                "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
-                ],
+                "video": [],
                 "test": "https://wordwall.net/uk/embed/fcb13e3559f3479fb3fb2d5ea9f4d19d?themeId=1&templateId=5&fontStackId=0",
                 "diary": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710698754/ljd8moy6n20i6ymaxztl.png"
             },
             {
                 "day": "20",
                 "theme": "Ступені порівняння прикметників",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
-                "audio": [],
-                "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
-                ],
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710790520/xz8alea9xidjtwal1xhs.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vTLLGRJwfvbcLY66eEmkbIfYV1ZUEuiubd8WWbnQL-7flOLSA6MnWlDaVO69Lh5ioCXAogVN9ldepiC/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1LK5gULxXDDPY3R8ymJe4xSOGsjoT1AqV/preview",
+                "practice": "https://drive.google.com/file/d/1po48ToD2_BNsSRGbE22xpA92TfCYHFqU/preview",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1710791035/fluzs5shc34ypxiq5dy6.mp3"],
+                "video": [],
                 "test": "https://wordwall.net/uk/embed/16904309e14b46308500a9e61530ba67?themeId=1&templateId=5&fontStackId=0",
                 "diary": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710698509/tu0mpva4s0fbmteoefmd.png"
             },
             {
                 "day": "21",
                 "theme": "Знову про етикетні формули",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710791556/lodbxtgbjkeiaoffvzdf.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vQFL33VARSZnaPQYn0U2vPkS6SrPsgrGDqEJ3M4rZICUO1pIf-z-pAQyLvVIQf2iHwa9lgVViZrqdLA/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1BadW5bYjLMLYURHhkdHcTTHiOKgjcRF_/preview",
+                "practice": "https://drive.google.com/file/d/1Jecjwn6Om-XQQYpAs3HxJ8QRFstHVE0j/preview",
                 "audio": [],
                 "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
+                    {"title": "Зустріч із Катериною Поліщук", "url": "https://www.youtube.com/embed/o-EJDyKuptE?si=NVvvM4I-rZ2PVDpZ"}
                 ],
                 "test": "https://wordwall.net/uk/embed/f4b8dff7a94f43dab3942265e8f4f31d?themeId=1&templateId=5&fontStackId=0",
                 "diary": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710698795/eaxfnha5mkyssnjr29jq.png"
@@ -599,7 +581,7 @@
             {
                 "day": "28",
                 "theme": "Підсумки курсу",
-                "image": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710791590/gvnizlo1v4jz0krdjkza.jpg",
                 "content": "",
                 "theory": "",
                 "practice": "",
