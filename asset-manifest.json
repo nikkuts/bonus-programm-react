@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bonus-programm-react/static/css/main.8ca2aadf.css",
-    "main.js": "/bonus-programm-react/static/js/main.c59709bc.js",
+    "main.js": "/bonus-programm-react/static/js/main.6e3fe8e4.js",
     "static/js/814.246f5c80.chunk.js": "/bonus-programm-react/static/js/814.246f5c80.chunk.js",
     "static/css/433.ae255526.chunk.css": "/bonus-programm-react/static/css/433.ae255526.chunk.css",
     "static/js/433.30bd5d51.chunk.js": "/bonus-programm-react/static/js/433.30bd5d51.chunk.js",
@@ -14,7 +14,7 @@
     "static/css/396.11ea3595.chunk.css": "/bonus-programm-react/static/css/396.11ea3595.chunk.css",
     "static/js/396.29ec95a8.chunk.js": "/bonus-programm-react/static/js/396.29ec95a8.chunk.js",
     "static/css/255.a90a789b.chunk.css": "/bonus-programm-react/static/css/255.a90a789b.chunk.css",
-    "static/js/255.5b7909c6.chunk.js": "/bonus-programm-react/static/js/255.5b7909c6.chunk.js",
+    "static/js/255.c8330c31.chunk.js": "/bonus-programm-react/static/js/255.c8330c31.chunk.js",
     "static/css/55.ee096f8d.chunk.css": "/bonus-programm-react/static/css/55.ee096f8d.chunk.css",
     "static/js/55.c28db7f5.chunk.js": "/bonus-programm-react/static/js/55.c28db7f5.chunk.js",
     "static/css/391.b712a36b.chunk.css": "/bonus-programm-react/static/css/391.b712a36b.chunk.css",
@@ -30,7 +30,7 @@
     "static/css/454.d03ff67f.chunk.css": "/bonus-programm-react/static/css/454.d03ff67f.chunk.css",
     "static/js/454.bad9430c.chunk.js": "/bonus-programm-react/static/js/454.bad9430c.chunk.js",
     "static/css/613.2bb8e4c4.chunk.css": "/bonus-programm-react/static/css/613.2bb8e4c4.chunk.css",
-    "static/js/613.c8340af1.chunk.js": "/bonus-programm-react/static/js/613.c8340af1.chunk.js",
+    "static/js/613.8c49615b.chunk.js": "/bonus-programm-react/static/js/613.8c49615b.chunk.js",
     "static/css/794.87c14d27.chunk.css": "/bonus-programm-react/static/css/794.87c14d27.chunk.css",
     "static/js/794.6069535c.chunk.js": "/bonus-programm-react/static/js/794.6069535c.chunk.js",
     "static/css/245.338102d9.chunk.css": "/bonus-programm-react/static/css/245.338102d9.chunk.css",
@@ -52,7 +52,7 @@
     "static/css/785.9b78f1d6.chunk.css": "/bonus-programm-react/static/css/785.9b78f1d6.chunk.css",
     "static/js/785.a3274468.chunk.js": "/bonus-programm-react/static/js/785.a3274468.chunk.js",
     "static/js/275.0e657f82.chunk.js": "/bonus-programm-react/static/js/275.0e657f82.chunk.js",
-    "static/js/196.3b1b00d6.chunk.js": "/bonus-programm-react/static/js/196.3b1b00d6.chunk.js",
+    "static/js/196.530fcd3d.chunk.js": "/bonus-programm-react/static/js/196.530fcd3d.chunk.js",
     "static/media/bgimg.jpg": "/bonus-programm-react/static/media/bgimg.bf49d2fa50721f150db1.jpg",
     "static/media/telegram.svg": "/bonus-programm-react/static/media/telegram.e2ec5d8c7a7ffeabeb885abbcf942029.svg",
     "index.html": "/bonus-programm-react/index.html",
@@ -71,7 +71,7 @@
     "static/media/chevron-down.svg": "/bonus-programm-react/static/media/chevron-down.476353c5120e6ce4c953bcb73ac6ce6e.svg",
     "static/media/chevron-up.svg": "/bonus-programm-react/static/media/chevron-up.67a726a68dca14f2869593e917fafbc2.svg",
     "main.8ca2aadf.css.map": "/bonus-programm-react/static/css/main.8ca2aadf.css.map",
-    "main.c59709bc.js.map": "/bonus-programm-react/static/js/main.c59709bc.js.map",
+    "main.6e3fe8e4.js.map": "/bonus-programm-react/static/js/main.6e3fe8e4.js.map",
     "814.246f5c80.chunk.js.map": "/bonus-programm-react/static/js/814.246f5c80.chunk.js.map",
     "433.ae255526.chunk.css.map": "/bonus-programm-react/static/css/433.ae255526.chunk.css.map",
     "433.30bd5d51.chunk.js.map": "/bonus-programm-react/static/js/433.30bd5d51.chunk.js.map",
@@ -84,7 +84,7 @@
     "396.11ea3595.chunk.css.map": "/bonus-programm-react/static/css/396.11ea3595.chunk.css.map",
     "396.29ec95a8.chunk.js.map": "/bonus-programm-react/static/js/396.29ec95a8.chunk.js.map",
     "255.a90a789b.chunk.css.map": "/bonus-programm-react/static/css/255.a90a789b.chunk.css.map",
-    "255.5b7909c6.chunk.js.map": "/bonus-programm-react/static/js/255.5b7909c6.chunk.js.map",
+    "255.c8330c31.chunk.js.map": "/bonus-programm-react/static/js/255.c8330c31.chunk.js.map",
     "55.ee096f8d.chunk.css.map": "/bonus-programm-react/static/css/55.ee096f8d.chunk.css.map",
     "55.c28db7f5.chunk.js.map": "/bonus-programm-react/static/js/55.c28db7f5.chunk.js.map",
     "391.b712a36b.chunk.css.map": "/bonus-programm-react/static/css/391.b712a36b.chunk.css.map",
@@ -100,7 +100,7 @@
     "454.d03ff67f.chunk.css.map": "/bonus-programm-react/static/css/454.d03ff67f.chunk.css.map",
     "454.bad9430c.chunk.js.map": "/bonus-programm-react/static/js/454.bad9430c.chunk.js.map",
     "613.2bb8e4c4.chunk.css.map": "/bonus-programm-react/static/css/613.2bb8e4c4.chunk.css.map",
-    "613.c8340af1.chunk.js.map": "/bonus-programm-react/static/js/613.c8340af1.chunk.js.map",
+    "613.8c49615b.chunk.js.map": "/bonus-programm-react/static/js/613.8c49615b.chunk.js.map",
     "794.87c14d27.chunk.css.map": "/bonus-programm-react/static/css/794.87c14d27.chunk.css.map",
     "794.6069535c.chunk.js.map": "/bonus-programm-react/static/js/794.6069535c.chunk.js.map",
     "245.338102d9.chunk.css.map": "/bonus-programm-react/static/css/245.338102d9.chunk.css.map",
@@ -125,6 +125,6 @@
   },
   "entrypoints": [
     "static/css/main.8ca2aadf.css",
-    "static/js/main.c59709bc.js"
+    "static/js/main.6e3fe8e4.js"
   ]
 }
