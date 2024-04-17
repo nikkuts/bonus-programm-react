@@ -485,95 +485,73 @@
             {
                 "day": "22",
                 "theme": "Лексична помилка",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1713368651/q3if0imqly5sbwvouu6z.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vTXqZSieoTvcA9EF0mkEKri1NT8G0LVDN7kKeQLrsVzlQZ5qBpvY23H4T4HPrKAxusfh5JUehCshqQJ/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1szXChVn0XGxSBO-CXPZ-5iE-CTnPbnOr/preview",
+                "practice": "https://drive.google.com/file/d/1iNRB1BzdAgIyLITjtOpqMJ2sSCa8kriY/preview",
                 "audio": [],
-                "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
-                ],
+                "video": [],
                 "test": "https://wordwall.net/uk/embed/d18b437d505943a68b1505c8f8a7c5fb?themeId=1&templateId=5&fontStackId=0",
                 "diary": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710698841/ixgwaqglwumdeohstemt.png"
             },
             {
                 "day": "23",
                 "theme": "Питальні речення",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
-                "audio": [],
-                "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
-                ],
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1713371601/q4l1zezyd267yazu3ogc.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vT2p8WnKMISuxeOIXIRaZZprN7MR_koYo-4vGwKW_0jSKyOjqcxXY05pPuc54ZgClwnCdpFRHGoaVXc/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1NQaT-o3n2Go4ICHtuJLOCDCerroJvj9w/preview",
+                "practice": "https://drive.google.com/file/d/1Vt1hRcu-RWoQLdjDdVzi33vTInthTtna/preview",
+                "audio": ["https://res.cloudinary.com/dwnbra6yc/video/upload/v1713371711/qstszzxmmsdkeyt2jrq7.mp3"],
+                "video": [],
                 "test": "https://wordwall.net/uk/embed/f69fc6914b8249cb9be2927df0eabb4d?themeId=1&templateId=5&fontStackId=0",
                 "diary": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710700405/a9gmvc73pxp6o1o7e2xf.png"
             },
             {
                 "day": "24",
                 "theme": "Правопис іменників",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1713372538/wafkmxievblzupbwte4r.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vSTOtwjCk5l0VPSW14LngNrxoEey4pIg21beFLNlhI4d7v1kxLN4JDqurf1p-RakONaB56RG6whNgY1/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1bVNne7x8X5eLJv6hrj56_d7acqqvFZfr/preview",
+                "practice": "https://drive.google.com/file/d/1a04JdkgbaeHf7TQjnYCC7JqNvCXET4FP/preview",
                 "audio": [],
-                "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
-                ],
+                "video": [],
                 "test": "https://wordwall.net/uk/embed/0835e85f875e4dd5bb67052f8b7270f9?themeId=1&templateId=5&fontStackId=0",
                 "diary": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710700186/ogulqjw3xawrs7ta1kdz.png"
             },
             {
                 "day": "25",
                 "theme": "Правила милозвучності",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1713373170/b2fjeg2absidy8lmzf6e.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vTPM5nFIJrwMHWS4yeT34YXrOU3Aoo8vDkwn5CE46ITim4zUPsaVsSwSxV9Lts9GhR8_0G08JD9UNg8/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1kxKV3aWk7I7o-GrWFv1AiwzrYajjdqAL/preview",
+                "practice": "https://drive.google.com/file/d/1PePrqipeaUzCPUOCNz0Rh5ZMOFL53etB/preview",
                 "audio": [],
-                "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
-                ],
+                "video": [],
                 "test": "https://wordwall.net/uk/embed/289df10b34324ec990c6855081cc6ac7?themeId=1&templateId=5&fontStackId=0",
                 "diary": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710698886/jmr5nzxtvzcg0vteugbv.png"
             },
             {
                 "day": "26",
                 "theme": "Пряма та непряма мова",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1713373690/q84elbwqbxj5aitsmlqt.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vSFAhRz7nqaTydUyW3vo5SSdd3QXl3BK5sHJ2CXAIQKuoqVyMH6LgIPPydOqyP1DA1OjgwYMkOfNBjg/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1tv1v4EkUn7crgv3AX-HEAs5w-Qewoecw/preview",
+                "practice": "https://drive.google.com/file/d/1hw6w-3kNdunkVtrAAoibH6HRPhshZWq9/preview",
                 "audio": [],
-                "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
-                ],
+                "video": [],
                 "test": "https://wordwall.net/uk/embed/074c9db59b3e44f099abf0234cd7fda8?themeId=1&templateId=5&fontStackId=0",
                 "diary": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710700497/cpbojxmbhl9l7zmglqz7.png"
             },
             {
                 "day": "27",
                 "theme": "Вставні слова",
-                "image": "",
-                "content": "",
-                "theory": "",
-                "practice": "",
+                "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1713374561/smwrfoaodjhjn5zhztav.jpg",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vT0EBoCePlSNJg5U6jE9t5Y9r70lfUn5uIqNl2PkxgHUhd52lRk-6q9oDiFy2G9xbRU1GqWRzY9K1KT/pub?embedded=true",
+                "theory": "https://drive.google.com/file/d/1GuJCAQjD_Ngi-bpY1WCqWrMdYB9crCBO/preview",
+                "practice": "https://drive.google.com/file/d/1BX8rS5BQVEG0_4YUAQi_AMESWcSVAg9J/preview",
                 "audio": [],
                 "video": [
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""},
-                    {"title": "", "url": ""}
+                    {"title": "Розділові знаки як спосіб мислення - Олександра Малаш Єдині", "url": "https://www.youtube.com/embed/q_vBv--3h5k?si=02M6OOVrCnLhWBOV"}
                 ],
                 "test": "https://wordwall.net/uk/embed/ed082aee72744b60bb0960435b7c8508?themeId=1&templateId=5&fontStackId=0",
                 "diary": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710700565/zle5qkommspzexpmagjr.png"
@@ -582,9 +560,9 @@
                 "day": "28",
                 "theme": "Підсумки курсу",
                 "image": "https://res.cloudinary.com/dwnbra6yc/image/upload/v1710791590/gvnizlo1v4jz0krdjkza.jpg",
-                "content": "",
+                "content": "https://docs.google.com/document/d/e/2PACX-1vQd_TReU1jWJ13-uAJMU_u3tE5wVOcKOaPq3tXDgxG7fYnzMin-I8tqRfA6qKHsMUrUR-jy2TEqqv7G/pub?embedded=true",
                 "theory": "",
-                "practice": "",
+                "practice": "https://drive.google.com/file/d/16aOsu4jJ2ZcwYI8X3d_WekGAy5Ffcprc/preview",
                 "audio": [],
                 "video": [],
                 "test": "",
